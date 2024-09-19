@@ -43,7 +43,7 @@ p{
 }
 
 /* Templates */
-/* Styling that can be used on multiple pages */
+/* Styling that can be used on multiple pages or elements */
 section.left{
 
 }
@@ -52,8 +52,8 @@ section.right{
 
 }
 
-/* Page Specific */
-/* Styling that applies to only one page */
+/* Page/Element Specific */
+/* Styling that applies to only one page or element */
 img.frontpage{
 
 }
