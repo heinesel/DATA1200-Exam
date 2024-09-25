@@ -36,8 +36,22 @@ section.right{
 
 /* Page/Element Specific */
 /* Styling that applies to only one page or element */
-img.frontpage{
 
+/* matmod */
+details.matmod{
+    border: 0.2rem solid yellow;
+    border-left: 0.4rem solid rgb(196, 196, 102);
+    border-radius: 0.2rem;
+    padding: 0.2rem;
+    text-align: center;
+}
+details[open].matmod{
+    font-size: 1.2rem;
+    text-align: center;
+    background: rgb(226, 129, 1)
+}
+summary.matmod{
+    font-size: 1.2rem;
 }
 
 
