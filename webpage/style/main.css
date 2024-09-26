@@ -65,9 +65,12 @@ details.matmod:last-child{
     cursor: pointer;
 }
 details[open].matmod{
-    font-size: 1rem;
-    text-align: center;
-    line-height: 1.3rem;
+    font-size: 1.1rem;
+    text-align: center
+}
+details[open].matmod p{
+    text-align: left;
+    line-height: 2rem;
 }
 summary{
     font-size: 1.2rem;
