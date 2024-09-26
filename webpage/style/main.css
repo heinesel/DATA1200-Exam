@@ -1,3 +1,8 @@
+/*Applies to everything*/
+:root{
+    font-family: Helvetica, Arial, sans-serif;
+}
+
 /* Header */
 /* Everything to do with Header, should be same for all pages */
 header{
@@ -37,21 +42,38 @@ section.right{
 /* Page/Element Specific */
 /* Styling that applies to only one page or element */
 
-/* matmod */
-details.matmod{
-    border: 0.2rem solid yellow;
-    border-left: 0.4rem solid rgb(196, 196, 102);
-    border-radius: 0.2rem;
+/* matmod info closing boxes*/
+/*                          */
+section.matmod{
+    width: auto;
+    margin-right: 20%;
+    margin-left: 20%;
     padding: 0.2rem;
+
+}
+details.matmod{
+    border-top: 0.1rem solid;
+    padding: 1rem;
     text-align: center;
+    cursor: pointer;
+}
+/*makes borders not overlap*/
+details.matmod:last-child{
+    border-bottom: 0.1rem solid;
+    padding: 1rem;
+    text-align: center;
+    cursor: pointer;
 }
 details[open].matmod{
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-align: center;
-    background: rgb(226, 129, 1)
+    line-height: 1.3rem;
 }
-summary.matmod{
+summary{
     font-size: 1.2rem;
+    font-weight: bold;
+    padding: 0.8rem;
+    
 }
 
 
