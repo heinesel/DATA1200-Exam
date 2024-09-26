@@ -1,4 +1,4 @@
-/*Applies to everything*/
+/*Applies to everything, be careful about what you put here*/
 :root{
     font-family: Helvetica, Arial, sans-serif;
 }
@@ -28,7 +28,16 @@ body{
 p{
 
 }
-
+a:link{
+    color: black;
+    font-weight: bold;
+}
+a:hover{
+    color: red;
+}
+a:visited{
+    color: purple;
+}
 /* Templates */
 /* Styling that can be used on multiple pages or elements */
 section.left{
@@ -44,7 +53,7 @@ section.right{
 
 /* matmod info closing boxes*/
 /*                          */
-section.matmod{
+section.matmodinfo{
     width: auto;
     margin-right: 20%;
     margin-left: 20%;
@@ -54,29 +63,25 @@ section.matmod{
 details.matmod{
     border-top: 0.1rem solid;
     padding: 1rem;
-    text-align: center;
-    cursor: pointer;
 }
 /*makes borders not overlap*/
 details.matmod:last-child{
     border-bottom: 0.1rem solid;
-    padding: 1rem;
-    text-align: center;
-    cursor: pointer;
 }
 details[open].matmod{
     font-size: 1.1rem;
-    text-align: center
 }
-details[open].matmod p, ul{
+details[open].matmod p, ul, h2{
     text-align: left;
     line-height: 2rem;
+    font-size: 1rem;
 }
 summary{
     font-size: 1.2rem;
     font-weight: bold;
     padding: 0.8rem;
-    
+    cursor:pointer;
+    text-align: left;
 }
 
 
