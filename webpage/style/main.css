@@ -51,6 +51,45 @@ section.right{
 /* Page/Element Specific */
 /* Styling that applies to only one page or element */
 
+/* Styling of tables */
+table {
+    border-collapse: collapse;
+    border: 2px solid #CCCCCC;
+    width: 100%;              
+    letter-spacing: 1px;
+    font-size: 0.9rem;        
+    margin: 20px 0;            
+}
+
+td, th {
+    border: 1px solid #D3D3D3; 
+    padding: 12px 20px;       
+}
+
+th {
+    background-color: #E8E8E8; 
+    color: #333;               
+    font-weight: bold;
+}
+
+td {
+    text-align: left; 
+}
+
+tr:nth-child(even) td {
+    background-color: #F9F9F9;  /* lys grått farge */
+}
+
+tr:nth-child(odd) td {
+    background-color: #FFFFFF; /* hvit farge */
+}
+
+caption {
+    padding: 12px;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
 /* matmod info closing boxes*/
 /*                          */
 section.matmodinfo{
