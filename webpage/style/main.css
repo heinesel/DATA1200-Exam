@@ -68,7 +68,7 @@ details[open].matmod{
     font-size: 1.1rem;
     text-align: center
 }
-details[open].matmod p{
+details[open].matmod p, ul{
     text-align: left;
     line-height: 2rem;
 }
