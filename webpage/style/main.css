@@ -98,9 +98,10 @@ caption {
 /*                          */
 section.matmodinfo{
     width: auto;
-    margin-right: 20%;
-    margin-left: 20%;
-    padding: 0.2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-left: 0%;
+    margin-right: 0%;
 
 }
 details.matmod{
@@ -112,15 +113,15 @@ details.matmod:last-child{
     border-bottom: 0.1rem solid;
 }
 details[open].matmod{
-    font-size: 1.1rem;
+    font-size: 1.1em;
 }
 details[open].matmod p, ul, h2{
     text-align: left;
     line-height: 2rem;
-    font-size: 1rem;
+    font-size: 1em;
 }
 summary{
-    font-size: 1.2rem;
+    font-size: 1.2em;
     font-weight: bold;
     padding: 0.8rem;
     cursor:pointer;
