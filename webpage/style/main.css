@@ -71,12 +71,10 @@ td {
 
 tr:nth-child(even) td {
     background-color: #F9F9F9;
-    /* lys grått farge */
 }
 
 tr:nth-child(odd) td {
     background-color: #FFFFFF;
-    /* hvit farge */
 }
 
 caption {
@@ -137,4 +135,5 @@ summary {
 
 summary.smalltext {
     font-size: 1em;
+    font-weight: normal;
 }
