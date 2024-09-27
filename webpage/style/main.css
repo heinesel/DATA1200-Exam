@@ -134,6 +134,9 @@ summary{
     cursor:pointer;
     text-align: left;
 }
+summary.small{
+    font-size: 1em;
+}
 
 
 
