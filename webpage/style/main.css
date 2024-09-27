@@ -1,52 +1,42 @@
 /*Applies to everything, be careful about what you put here*/
-:root{
+:root {
     font-family: Helvetica, Arial, sans-serif;
 }
 
 /* Header */
 /* Everything to do with Header, should be same for all pages */
-header{
+header {}
 
-}
-
-nav{
-
-}
+nav {}
 
 /* Footer */
 /* Everything to do with footer, should be same on all pages */
-footer{
-
-}
+footer {}
 
 /* General */
 /* CSS that applies to all pages only */
-body{
+body {}
 
-}
+p {}
 
-p{
-
-}
-a:link{
+a:link {
     color: black;
     font-weight: bold;
 }
-a:hover{
+
+a:hover {
     color: red;
 }
-a:visited{
+
+a:visited {
     color: purple;
 }
+
 /* Templates */
 /* Styling that can be used on multiple pages or elements */
-section.left{
+section.left {}
 
-}
-
-section.right{
-
-}
+section.right {}
 
 /* Page/Element Specific */
 /* Styling that applies to only one page or element */
@@ -56,34 +46,37 @@ table {
     border-collapse: collapse;
     border: 2px solid #CCCCCC;
     border-radius: 5px;
-    width: 100%;              
+    width: 100%;
     letter-spacing: 1px;
-    font-size: 0.9rem;        
-    margin: 20px 0;            
+    font-size: 0.9rem;
+    margin: 20px 0;
 }
 
-td, th {
-    border: 1px solid #D3D3D3; 
+td,
+th {
+    border: 1px solid #D3D3D3;
     padding: 12px 20px;
-    line-height: 1,5;       
+    line-height: 1, 5;
 }
 
 th {
-    background-color: #E8E8E8; 
-    color: #333;               
+    background-color: #E8E8E8;
+    color: #333;
     font-weight: bold;
 }
 
 td {
-    text-align: left; 
+    text-align: left;
 }
 
 tr:nth-child(even) td {
-    background-color: #F9F9F9;  /* lys grått farge */
+    background-color: #F9F9F9;
+    /* lys grått farge */
 }
 
 tr:nth-child(odd) td {
-    background-color: #FFFFFF; /* hvit farge */
+    background-color: #FFFFFF;
+    /* hvit farge */
 }
 
 caption {
@@ -96,7 +89,7 @@ caption {
 
 /* matmod info closing boxes*/
 /*                          */
-section.matmodinfo{
+section.matmodinfo {
     width: 65%;
     max-width: 100%;
     padding-top: 1rem;
@@ -105,39 +98,43 @@ section.matmodinfo{
     margin-right: auto;
 
 }
-@media (max-width: 600px){
-    section.matmodinfo{
+
+@media (max-width: 600px) {
+    section.matmodinfo {
         width: 100%;
     }
 }
 
-details.matmod{
+details.matmod {
     border-top: 0.1rem solid;
     padding: 1rem;
 }
+
 /*makes borders not overlap*/
-details.matmod:last-child{
+details.matmod:last-child {
     border-bottom: 0.1rem solid;
 }
-details[open].matmod{
+
+details[open].matmod {
     font-size: 1.1em;
 }
-details[open].matmod p, ul, h2{
+
+details[open].matmod p,
+ul,
+h2 {
     text-align: left;
     line-height: 2rem;
     font-size: 1em;
 }
-summary{
+
+summary {
     font-size: 1.2em;
     font-weight: bold;
     padding: 0.8rem;
-    cursor:pointer;
+    cursor: pointer;
     text-align: left;
 }
-summary.small{
+
+summary.smalltext {
     font-size: 1em;
 }
-
-
-
-
