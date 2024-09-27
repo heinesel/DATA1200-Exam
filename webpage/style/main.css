@@ -97,13 +97,20 @@ caption {
 /* matmod info closing boxes*/
 /*                          */
 section.matmodinfo{
-    width: auto;
+    width: 65%;
+    max-width: 100%;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    margin-left: 0%;
-    margin-right: 0%;
+    margin-left: auto;
+    margin-right: auto;
 
 }
+@media (max-width: 600px){
+    section.matmodinfo{
+        width: 100%;
+    }
+}
+
 details.matmod{
     border-top: 0.1rem solid;
     padding: 1rem;
