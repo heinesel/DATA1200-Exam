@@ -21,8 +21,8 @@ header {
 margin: 0 15px;
 }
 
-.menu a, .menu a:visited {
-    color: #004080 !important;
+.menu a{
+    color: #004080 !important; /*!imporant so the color does not change according to other link changes*/
     text-decoration: none;
     font-size: 1.2rem;
 }
