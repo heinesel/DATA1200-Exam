@@ -139,18 +139,14 @@ details.matmod:last-child {
     border-bottom: 0.1rem solid;
 }
 
-details[open].matmod {
-    font-size: 1.1em;
-}
-
 details[open].matmod p, ul, h2 {
     text-align: left;
     line-height: 2rem;
-    font-size: 1em;
+    font-size: 1rem;
 }
 
 summary {
-    font-size: 1.2em;
+    font-size: 1.2rem;
     font-weight: bold;
     padding: 0.8rem;
     cursor: pointer;
@@ -158,6 +154,6 @@ summary {
 }
 
 summary.smalltext {
-    font-size: 1em;
+    font-size: 1rem;
     font-weight: normal;
 }
