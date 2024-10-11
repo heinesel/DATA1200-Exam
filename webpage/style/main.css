@@ -148,7 +148,14 @@ table {
     margin: 1.25em 0;
     table-layout: fixed;
 }
-
+table a {
+    color: 
+    text-decoration: none;
+}
+table a:hover {
+    text-decoration: underline;
+    text-decoration-color: #333;
+}
 td,th {
     border: 0.0625em solid #D3D3D3;
     padding: 0.75em 1.25em;
