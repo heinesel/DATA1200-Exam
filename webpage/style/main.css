@@ -200,3 +200,9 @@ caption {
     color: #555
 }
 
+/*Images in matmod */
+img.matmod{
+    size: 500px;
+    height: 400px;
+    padding-top: 2rem;
+}
