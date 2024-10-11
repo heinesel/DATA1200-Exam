@@ -72,12 +72,18 @@ a:visited {
 
 /* Templates */
 /* Styling that can be used on multiple pages or elements */
+p.sixty-width{
+    max-width:60%;
+    margin:auto;
+    padding: 1rem;
+}
+
 section.grid-container {
     display: grid;
-    grid-template-columns: auto auto auto auto;
-    gap: 0.2em 0.2em ;
-    margin-right: 10%;
-    margin-left: 10%;
+    grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr)); /*auto-resizing grid layout: https://blog.stackademic.com/auto-resizing-grid-layout-with-html-css-3ec0e3b56c52 */
+    gap: 0em 2em ;
+    margin-right: 15%;
+    margin-left: 15%;
    
 }
 div.grid-item{
@@ -86,6 +92,7 @@ div.grid-item{
     border-top: solid 0.1rem;
     padding: 1rem;
 }
+
 
 /* Page/Element Specific */
 /* Styling that applies to only one page or element */
@@ -202,7 +209,8 @@ caption {
 
 /*Images in matmod */
 img.matmodtop{
-    size: 500px;
-    height: 400px;
-    padding-bottom: 1.5rem;
+    max-width: 60%;
+    height: auto;
+    width: auto;
+    padding-bottom: 1rem;
 }
