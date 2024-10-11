@@ -44,8 +44,9 @@ footer {
 /* General */
 /* CSS that applies to all pages only */
 h1{
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-align: center;
+    padding: 1rem;
 }
 a:link {
     color: blue;
@@ -62,19 +63,24 @@ a:visited {
 
 /* Templates */
 /* Styling that can be used on multiple pages or elements */
+p.big-centered{
+    font-size: 1.3em;
+    text-align: center;
+}
+
 section.grid-container {
     display: grid;
     grid-template-columns: auto auto auto auto;
-    gap: 0.2rem 0.2rem ;
+    gap: 0.2em 0.2em ;
     margin-right: 10%;
     margin-left: 10%;
    
 }
 div.grid-item{
-    font-size: 1rem;
+    font-size: 1em;
     text-align: center;
-    border-top: solid 0.1em;
-    padding: 1em;
+    border-top: solid 0.1rem;
+    padding: 1rem;
 }
 
 section.left {}
@@ -127,26 +133,26 @@ summary {
 }
 
 summary.smalltext { /*Makes summary text normal where needed*/
-    font-size: 1rem;
+    font-size: 1em;
     font-weight: normal;
 }
 
 /* Styling of tables in matmod*/
 table {
     border-collapse: collapse;
-    border: 2px solid #CCCCCC;
-    border-radius: 5px;
+    border: 0.125em solid #CCCCCC;
+    border-radius: 0.3125em;
     width: 100%;
-    letter-spacing: 1px;
+    letter-spacing: 0.0625em;
     font-size: 0.9rem;
-    margin: 20px 0;
+    margin: 1.25em 0;
+    table-layout: fixed;
 }
 
-td,
-th {
-    border: 1px solid #D3D3D3;
-    padding: 12px 20px;
-    line-height: 1, 5;
+td,th {
+    border: 0.0625em solid #D3D3D3;
+    padding: 0.75em 1.25em;
+    line-height: 1.5;
 }
 
 th {
@@ -169,7 +175,7 @@ tr:nth-child(odd) td {
 
 caption {
     text-align: left;
-    padding: 12px;
+    padding: 0.75em;
     font-weight: bold;
     font-size: 1rem;
     color: #555
