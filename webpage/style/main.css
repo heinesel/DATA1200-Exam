@@ -8,7 +8,7 @@
 /* Everything to do with Header, should be same for all pages */
 header {
     background-color: #E0E8F0;
-    padding: 2rem;
+    padding: 20px;
     text-align: center;
 }
 .menu {
@@ -19,7 +19,7 @@ header {
     margin: 0;
 }
 .menu li {
-    margin: 0 1rem;
+margin: 0 15px;
 }
 
 .menu a{
@@ -30,7 +30,11 @@ header {
 .menu a:hover {
     text-decoration: underline;
 }
-
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 /* Footer */
 /* Everything to do with footer, should be same on all pages */
 footer {
@@ -39,12 +43,9 @@ footer {
 
 /* General */
 /* CSS that applies to all pages only */
-
-/*I need the text uncentered while coding Github.html*/
-/* Make a seperate h1 or p class for GitHub for now*/
 h1, h2, h3,h4 ,h5 ,h6{
     text-align: center;
-    padding: 0rem;
+    padding: 1rem;
 }
 h1 {
     font-size: 2rem;
@@ -54,8 +55,7 @@ h2 {
 }
 body{
     text-align: center;
-    padding:0;
-    margin:0;
+    padding: 1rem;
 }
 a:link {
     color: blue;
@@ -70,24 +70,17 @@ a:visited {
     color: purple;
 }
 
-
 /* Templates */
 /* Styling that can be used on multiple pages or elements */
-p.sixty-width{
-    max-width:60%;
-    margin:auto;
-    padding: 1rem;
-}
-
-section.grid-container-shortinfo{
+section.grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr)); /*auto-resizing grid layout: https://blog.stackademic.com/auto-resizing-grid-layout-with-html-css-3ec0e3b56c52 */
-    gap: 0em 2em ;
-    margin-right: 15%;
-    margin-left: 15%;
+    grid-template-columns: auto auto auto auto;
+    gap: 0.2em 0.2em ;
+    margin-right: 10%;
+    margin-left: 10%;
    
 }
-div.grid-item-shortinfo{
+div.grid-item{
     font-size: 1em;
     text-align: center;
     border-top: solid 0.1rem;
@@ -109,6 +102,12 @@ section.matmodinfo {
 
 }
 
+@media (max-width: 768px) {
+    section.matmodinfo {
+        width: 100%;
+    }
+}
+
 details.matmod {
     border-top: 0.1rem solid;
     padding: 1rem;
@@ -119,17 +118,17 @@ details.matmod:last-child {
     border-bottom: 0.1rem solid;
 }
 
-details[open].matmod p{
+details[open].matmod > p{
     text-align: left;
     line-height: 2rem;
     font-size: 1rem;
 }
-details[open].matmod ul{
+details[open].matmod > ul{
     text-align: left;
     line-height: 2rem;
-    font-size: 1em;
+    font-size: 1rem;
 }
-details[open].matmod h2 {
+details[open].matmod > h2 {
     text-align: left;
     line-height: 2rem;
     font-size: 1em;
@@ -163,11 +162,11 @@ table a {
     color: inherit !important;
     font-weight:400 !important ;
     text-decoration: underline;
-    text-decoration-color: #007BFF;
+    text-decoration-color: blue;
 }
 table a:hover {
     text-decoration: underline !important;
-    text-decoration-color: #0056b3 !important;
+    text-decoration-color: #333 !important;
 }
 td,th {
     border: 0.0625em solid #D3D3D3;
@@ -197,29 +196,7 @@ caption {
     text-align: left;
     padding: 0.75em;
     font-weight: bold;
-    font-size: 1em;
+    font-size: 1rem;
     color: #555
-
 }
 
-/*Images in matmod */
-img.matmodtop{
-    max-width: 70%;
-    height: auto;
-    width: auto;
-    padding-bottom: 1rem;
-}
-
-/*Changes for small screen devices*/
-/*                                */
-@media (max-width: 768px) {
-    section.matmodinfo {
-        width: 100%;
-    }
-    section.grid-container-shortinfo{
-    grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr)); 
-    gap: 0 2em ;
-    margin-right: auto;
-    margin-left: auto;
-    }
-}
