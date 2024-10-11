@@ -159,8 +159,10 @@ table {
     table-layout: fixed;
 }
 table a {
-    color: #CCCCCC !important;
-    text-decoration: none;
+    color: inherit !important;
+    font-weight:400 !important ;
+    text-decoration: underline;
+    text-decoration-color: yellow;
 }
 table a:hover {
     text-decoration: underline !important;
