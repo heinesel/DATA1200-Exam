@@ -79,7 +79,7 @@ p.sixty-width{
     padding: 1rem;
 }
 
-section.grid-container {
+section.grid-container-shortinfo{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr)); /*auto-resizing grid layout: https://blog.stackademic.com/auto-resizing-grid-layout-with-html-css-3ec0e3b56c52 */
     gap: 0em 2em ;
@@ -87,7 +87,7 @@ section.grid-container {
     margin-left: 15%;
    
 }
-div.grid-item{
+div.grid-item-shortinfo{
     font-size: 1em;
     text-align: center;
     border-top: solid 0.1rem;
@@ -216,7 +216,7 @@ img.matmodtop{
     section.matmodinfo {
         width: 100%;
     }
-    section.grid-container{
+    section.grid-container-shortinfo{
     grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr)); 
     gap: 0 2em ;
     margin-right: auto;
