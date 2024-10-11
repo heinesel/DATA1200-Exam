@@ -43,6 +43,8 @@ footer {
 
 /* General */
 /* CSS that applies to all pages only */
+
+/*I need the text uncentered while coding Github.html*/
 h1, h2, h3,h4 ,h5 ,h6{
     text-align: center;
     padding: 0rem;
@@ -69,6 +71,7 @@ a:hover {
 a:visited {
     color: purple;
 }
+
 
 /* Templates */
 /* Styling that can be used on multiple pages or elements */
@@ -205,6 +208,7 @@ caption {
     font-weight: bold;
     font-size: 1rem;
     color: #555
+
 }
 
 /*Images in matmod */
