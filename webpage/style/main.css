@@ -37,16 +37,18 @@ nav {
 }
 /* Footer */
 /* Everything to do with footer, should be same on all pages */
-footer {}
+footer {
+
+}
 
 /* General */
 /* CSS that applies to all pages only */
-body {}
-
-p {}
-
+h1{
+    font-size: 1.5rem;
+    text-align: center;
+}
 a:link {
-    color: black;
+    color: blue;
     font-weight: bold;
 }
 
@@ -60,56 +62,27 @@ a:visited {
 
 /* Templates */
 /* Styling that can be used on multiple pages or elements */
+section.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 0.2rem 0.2rem ;
+    margin-right: 10%;
+    margin-left: 10%;
+   
+}
+div.grid-item{
+    font-size: 1rem;
+    text-align: center;
+    border-top: solid 0.1em;
+    padding: 1em;
+}
+
 section.left {}
 
 section.right {}
 
 /* Page/Element Specific */
 /* Styling that applies to only one page or element */
-
-/* Styling of tables */
-table {
-    border-collapse: collapse;
-    border: 2px solid #CCCCCC;
-    border-radius: 5px;
-    width: 100%;
-    letter-spacing: 1px;
-    font-size: 0.9rem;
-    margin: 20px 0;
-}
-
-td,
-th {
-    border: 1px solid #D3D3D3;
-    padding: 12px 20px;
-    line-height: 1, 5;
-}
-
-th {
-    background-color: #E8E8E8;
-    color: #333;
-    font-weight: bold;
-}
-
-td {
-    text-align: left;
-}
-
-tr:nth-child(even) td {
-    background-color: #F9F9F9;
-}
-
-tr:nth-child(odd) td {
-    background-color: #FFFFFF;
-}
-
-caption {
-    text-align: left;
-    padding: 12px;
-    font-weight: bold;
-    font-size: 1rem;
-    color: #555
-}
 
 /* matmod info closing boxes*/
 /*                          */
@@ -157,3 +130,48 @@ summary.smalltext { /*Makes summary text normal where needed*/
     font-size: 1rem;
     font-weight: normal;
 }
+
+/* Styling of tables in matmod*/
+table {
+    border-collapse: collapse;
+    border: 2px solid #CCCCCC;
+    border-radius: 5px;
+    width: 100%;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+    margin: 20px 0;
+}
+
+td,
+th {
+    border: 1px solid #D3D3D3;
+    padding: 12px 20px;
+    line-height: 1, 5;
+}
+
+th {
+    background-color: #E8E8E8;
+    color: #333;
+    font-weight: bold;
+}
+
+td {
+    text-align: left;
+}
+
+tr:nth-child(even) td {
+    background-color: #F9F9F9;
+}
+
+tr:nth-child(odd) td {
+    background-color: #FFFFFF;
+}
+
+caption {
+    text-align: left;
+    padding: 12px;
+    font-weight: bold;
+    font-size: 1rem;
+    color: #555
+}
+
