@@ -47,7 +47,7 @@ footer {
 /*I need the text uncentered while coding Github.html*/
 h1, h2, h3,h4 ,h5 ,h6{
     text-align: center;
-    padding: 1rem;
+    padding: 0rem;
 }
 h1 {
     font-size: 2rem;
@@ -205,8 +205,8 @@ caption {
 }
 
 /*Images in matmod */
-img.matmod{
+img.matmodtop{
     size: 500px;
     height: 400px;
-    padding-top: 2rem;
+    padding-bottom: 1.5rem;
 }
