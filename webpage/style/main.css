@@ -162,12 +162,14 @@ table {
     table-layout: fixed;
 }
 table a {
-    color: #CCCCCC !important;
-    text-decoration: none;
+    color: inherit !important;
+    font-weight:400 !important ;
+    text-decoration: underline;
+    text-decoration-color: #007BFF;
 }
 table a:hover {
     text-decoration: underline !important;
-    text-decoration-color: #333 !important;
+    text-decoration-color: #0056b3 !important;
 }
 td,th {
     border: 0.0625em solid #D3D3D3;
@@ -200,4 +202,11 @@ caption {
     font-size: 1rem;
     color: #555
 
+}
+
+/*Images in matmod */
+img.matmod{
+    size: 500px;
+    height: 400px;
+    padding-top: 2rem;
 }
