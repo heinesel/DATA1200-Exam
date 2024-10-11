@@ -1,6 +1,7 @@
 /*Applies to everything, be careful about what you put here*/
 :root {
     font-family: Helvetica, Arial, sans-serif;
+    font-size: 1.2rem;
 }
 
 /* Header */
@@ -24,7 +25,6 @@ margin: 0 15px;
 .menu a{
     color: #004080 !important; /*!imporant so the color does not change according to other link changes*/
     text-decoration: none;
-    font-size: 1.2rem;
 }
 
 .menu a:hover {
@@ -43,8 +43,17 @@ footer {
 
 /* General */
 /* CSS that applies to all pages only */
-h1{
+h1, h2, h3,h4 ,h5 ,h6{
+    text-align: center;
+    padding: 1rem;
+}
+h1 {
     font-size: 2rem;
+}
+h2 {
+    font-size: 1.6rem;
+}
+body{
     text-align: center;
     padding: 1rem;
 }
@@ -63,11 +72,6 @@ a:visited {
 
 /* Templates */
 /* Styling that can be used on multiple pages or elements */
-p.big-centered{
-    font-size: 1.3em;
-    text-align: center;
-}
-
 section.grid-container {
     display: grid;
     grid-template-columns: auto auto auto auto;
@@ -83,19 +87,15 @@ div.grid-item{
     padding: 1rem;
 }
 
-section.left {}
-
-section.right {}
-
 /* Page/Element Specific */
 /* Styling that applies to only one page or element */
 
-/* matmod info closing boxes*/
+
+/* matmod info closing boxes */
 /*                          */
 section.matmodinfo {
     width: 65%;
     max-width: 100%;
-    padding-top: 1rem;
     padding-bottom: 1rem;
     margin-left: auto;
     margin-right: auto;
@@ -118,14 +118,24 @@ details.matmod:last-child {
     border-bottom: 0.1rem solid;
 }
 
-details[open].matmod p, ul, h2 {
+details[open].matmod > p{
     text-align: left;
     line-height: 2rem;
     font-size: 1rem;
 }
-
+details[open].matmod > ul{
+    text-align: left;
+    line-height: 2rem;
+    font-size: 1rem;
+}
+details[open].matmod > h2 {
+    text-align: left;
+    line-height: 2rem;
+    font-size: 1em;
+    padding: 0;
+}
 summary {
-    font-size: 1.2rem;
+    font-size: 1.2em;
     font-weight: bold;
     padding: 0.8rem;
     cursor: pointer;
