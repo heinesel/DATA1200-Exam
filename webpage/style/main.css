@@ -134,18 +134,18 @@ summary.smalltext { /*Makes summary text normal where needed*/
 /* Styling of tables in matmod*/
 table {
     border-collapse: collapse;
-    border: 2px solid #CCCCCC;
-    border-radius: 5px;
+    border: 0.125em solid #CCCCCC;
+    border-radius: 0.3125em;
     width: 100%;
-    letter-spacing: 1px;
+    letter-spacing: 0.0625em;
     font-size: 0.9rem;
-    margin: 20px 0;
+    margin: 1.25em 0;
     table-layout: fixed;
 }
 
 td,th {
-    border: 1px solid #D3D3D3;
-    padding: 12px 20px;
+    border: 0.0625em solid #D3D3D3;
+    padding: 0.75em 1.25em;
     line-height: 1.5;
 }
 
@@ -169,7 +169,7 @@ tr:nth-child(odd) td {
 
 caption {
     text-align: left;
-    padding: 12px;
+    padding: 0.75em;
     font-weight: bold;
     font-size: 1rem;
     color: #555
