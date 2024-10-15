@@ -1,11 +1,22 @@
+/*  CONTENT: 
+    ROOT
+    HEADER
+    FOOTER
+    GENERAL
+    TEMPLATES
+    SPECIFIC PAGES
+    MEDIA QUERIES */
+
+
+/* START ROOT /*
 /*Applies to everything, be careful about what you put here*/
 :root {
     font-family: Helvetica, Arial, sans-serif;
     font-size: 1.2rem;
 }
+/* END ROOT /*
 
-/* Header */
-/* Everything to do with Header, should be same for all pages */
+/ *START HEADER */
 header {
     background-color: #E0E8F0;
     padding: 2rem;
@@ -30,18 +41,17 @@ header {
 .menu a:hover {
     text-decoration: underline;
 }
+/* END HEADER /*
 
-/* Footer */
-/* Everything to do with footer, should be same on all pages */
+/* START FOOTER */
 footer {
 
 }
+/* END FOOTER */
 
-/* General */
+/* START GENERAL */
 /* CSS that applies to all pages only */
 
-/*I need the text uncentered while coding Github.html*/
-/* Make a seperate h1 or p class for GitHub for now*/
 h1, h2, h3,h4 ,h5 ,h6{
     text-align: center;
     padding: 0rem;
@@ -69,9 +79,9 @@ a:hover {
 a:visited {
     color: purple;
 }
+/* END GENERAL */
 
-
-/* Templates */
+/* START TEMPLATES */
 /* Styling that can be used on multiple pages or elements */
 p.sixty-width{
     max-width:60%;
@@ -82,24 +92,20 @@ p.sixty-width{
 section.grid-container-shortinfo{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr)); /*auto-resizing grid layout: https://blog.stackademic.com/auto-resizing-grid-layout-with-html-css-3ec0e3b56c52 */
-    gap: 0em 2em ;
+    gap: 0em 2rem ;
     margin-right: 15%;
     margin-left: 15%;
    
 }
 div.grid-item-shortinfo{
-    font-size: 1em;
+    font-size: 1rem;
     text-align: center;
     border-top: solid 0.1rem;
     padding: 1rem;
 }
+/* END TEMPLATES */
 
-/* Page/Element Specific */
-/* Styling that applies to only one page or element */
-
-
-/* matmod info closing boxes */
-/*                          */
+/* START MATMOD */
 section.matmodinfo {
     width: 65%;
     max-width: 100%;
@@ -108,12 +114,10 @@ section.matmodinfo {
     margin-right: auto;
 
 }
-
 details.matmod {
     border-top: 0.1rem solid;
     padding: 1rem;
 }
-
 /*makes borders not overlap*/
 details.matmod:last-child {
     border-bottom: 0.1rem solid;
@@ -127,16 +131,16 @@ details[open].matmod p{
 details[open].matmod ul{
     text-align: left;
     line-height: 2rem;
-    font-size: 1em;
+    font-size: 1rem;
 }
 details[open].matmod h2 {
     text-align: left;
     line-height: 2rem;
-    font-size: 1em;
+    font-size: 1rem;
     padding: 0;
 }
 summary {
-    font-size: 1.2em;
+    font-size: 1.2rem;
     font-weight: bold;
     padding: 0.8rem;
     cursor: pointer;
@@ -144,17 +148,17 @@ summary {
 }
 
 summary.smalltext { /*Makes summary text normal where needed*/
-    font-size: 1em;
+    font-size: 1rem;
     font-weight: normal;
 }
 
 /* Styling of tables in matmod*/
 table {
     border-collapse: collapse;
-    border: 0.125em solid #CCCCCC;
-    border-radius: 0.3125em;
+    border: 0.125rem solid #CCCCCC;
+    border-radius: 0.3125rem;
     width: 100%;
-    letter-spacing: 0.0625em;
+    letter-spacing: 0.0625rem;
     font-size: 0.9rem;
     margin: 1.25em 0;
     table-layout: fixed;
@@ -170,9 +174,9 @@ table a:hover {
     text-decoration-color: #0056b3 !important;
 }
 td,th {
-    border: 0.0625em solid #D3D3D3;
-    padding: 0.75em 1.25em;
-    line-height: 1.5;
+    border: 0.0625rem solid #D3D3D3;
+    padding: 0.75rem 1.25rem;
+    line-height: 1.5rem;
     white-space: normal;
     word-break: break-word;
 }
@@ -197,9 +201,9 @@ tr:nth-child(odd) td {
 
 caption {
     text-align: left;
-    padding: 0.75em;
+    padding: 0.75rem;
     font-weight: bold;
-    font-size: 1em;
+    font-size: 1rem;
     color: #555
 
 }
@@ -211,17 +215,18 @@ img.matmodtop{
     width: auto;
     padding-bottom: 1rem;
 }
+/* END MATMOD */
 
-/*Changes for small screen devices*/
-/*                                */
-@media (max-width: 768px) {
+/*START MEDIA QUERIES*/
+@media (max-width: 758px) {
     section.matmodinfo {
         width: 100%;
     }
     section.grid-container-shortinfo{
-    grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr)); 
-    gap: 0 2em ;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr)); 
+    gap: 0 2rem ;
     margin-right: auto;
     margin-left: auto;
     }
 }
+/* END MEDIA QUERIES */
