@@ -173,6 +173,8 @@ td,th {
     border: 0.0625em solid #D3D3D3;
     padding: 0.75em 1.25em;
     line-height: 1.5;
+    white-space: normal;
+    word-break: break-word;
 }
 
 th {
