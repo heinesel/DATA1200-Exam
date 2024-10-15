@@ -230,3 +230,20 @@ img.matmodtop{
     }
 }
 /* END MEDIA QUERIES */
+
+
+
+
+/*START GITHUB*/
+.GridContainer{
+    display: grid;
+   /* display: inline-grid;*/
+}
+.paragraf1_tekst, .paragraf2_tekst, .paragraf3_tekst {
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+/*END GITHUB*/
