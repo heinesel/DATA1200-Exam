@@ -191,6 +191,12 @@ td {
     text-align: left;
 }
 
+td a::after {
+    content: '☆'; /* Legger til stjerne etter emnet */
+    color: #FF6347; /* Valgfri farge for stjernen */
+    font-weight: bold;
+}
+
 tr:nth-child(even) td {
     background-color: #F9F9F9;
 }
