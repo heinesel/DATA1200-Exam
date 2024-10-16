@@ -173,6 +173,16 @@ table a:hover {
     text-decoration: underline !important;
     text-decoration-color: #0056b3 !important;
 }
+/* Endrer på tabell med klassen valgfri-emne */
+.valgfri-emne {
+    background-color: #FFF0D9;
+    font-weight: none; 
+}
+/* changes color for the border around valgfri*/
+.valgfri-emne td {
+    border: 0.075rem solid #FFD2A6;
+}
+
 td,th {
     border: 0.0500rem solid #D3D3D3;
     padding: 0.5rem 1rem;
