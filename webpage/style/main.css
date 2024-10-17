@@ -12,8 +12,10 @@
 /*Applies to everything, be careful about what you put here*/
 :root {
     font-family: Helvetica, Arial, sans-serif;
-    font-size: clamp(1rem, 1.4vw, 2rem)
+    font-size: clamp(1rem, 1.4vw, 2rem);
+    /*Font size scale with screen size, with a max and min size*/
 }
+
 /* END ROOT /*
 
 / *START HEADER */
@@ -22,51 +24,58 @@ header {
     padding: 2rem;
     text-align: center;
 }
+
 .menu {
     list-style: none;
     display: flex;
     justify-content: center;
-    padding:0;
+    padding: 0;
     margin: 0;
 }
+
 .menu li {
     margin: 0 1rem;
 }
 
-.menu a{
-    color: #004080 !important; /*!imporant so the color does not change according to other link changes*/
+.menu a {
+    color: #004080 !important;
+    /*!imporant so the color does not change according to other link changes*/
     text-decoration: none;
 }
 
 .menu a:hover {
     text-decoration: underline;
 }
+
 /* END HEADER /*
 
 /* START FOOTER */
-footer {
+footer {}
 
-}
 /* END FOOTER */
 
 /* START GENERAL */
 /* CSS that applies to all pages only */
 
-h1, h2, h3,h4 ,h5 ,h6{
+h1,h2,h3,h4,h5,h6 {
     text-align: center;
     padding: 0rem;
 }
+
 h1 {
     font-size: 2rem;
 }
+
 h2 {
     font-size: 1.6rem;
 }
-body{
+
+body {
     text-align: center;
-    padding:0;
-    margin:0;
+    padding: 0;
+    margin: 0;
 }
+
 a:link {
     color: blue;
     font-weight: bold;
@@ -79,30 +88,34 @@ a:hover {
 a:visited {
     color: purple;
 }
+
 /* END GENERAL */
 
 /* START TEMPLATES */
 /* Styling that can be used on multiple pages or elements */
-p.sixty-width{
-    max-width:60%;
-    margin:auto;
+p.sixty-width {
+    max-width: 60%;
+    margin: auto;
     padding: 1rem;
 }
 
-section.grid-container-shortinfo{
+section.grid-container-shortinfo {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr)); /*auto-resizing grid layout: https://blog.stackademic.com/auto-resizing-grid-layout-with-html-css-3ec0e3b56c52 */
-    gap: 0em 2rem ;
+    grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+    /*auto-resizing grid layout: https://blog.stackademic.com/auto-resizing-grid-layout-with-html-css-3ec0e3b56c52 */
+    gap: 0em 2rem;
     margin-right: 15%;
     margin-left: 15%;
-   
+
 }
-div.grid-item-shortinfo{
+
+div.grid-item-shortinfo {
     font-size: 1rem;
     text-align: center;
     border-top: solid 0.1rem;
     padding: 1rem;
 }
+
 /* END TEMPLATES */
 
 /* START MATMOD */
@@ -112,33 +125,37 @@ section.matmodinfo {
     padding-bottom: 1rem;
     margin-left: auto;
     margin-right: auto;
-
 }
+
 details.matmod {
     border-top: 0.1rem solid;
     padding: 1rem;
 }
+
 /*makes borders not overlap*/
 details.matmod:last-child {
     border-bottom: 0.1rem solid;
 }
 
-details[open].matmod p{
+details[open].matmod p {
     text-align: left;
     line-height: 2rem;
     font-size: 1rem;
 }
-details[open].matmod ul{
+
+details[open].matmod ul {
     text-align: left;
     line-height: 2rem;
     font-size: 1rem;
 }
+
 details[open].matmod h2 {
     text-align: left;
     line-height: 2rem;
     font-size: 1rem;
     padding: 0;
 }
+
 summary {
     font-size: 1.05rem;
     font-weight: bold;
@@ -147,7 +164,8 @@ summary {
     text-align: left;
 }
 
-summary.smalltext { /*Makes summary text normal where needed*/
+summary.smalltext {
+    /*Makes summary text normal where needed*/
     font-size: 1rem;
     font-weight: normal;
 }
@@ -155,7 +173,7 @@ summary.smalltext { /*Makes summary text normal where needed*/
 /* Styling of tables in matmod*/
 table {
     border-collapse: collapse;
-    border: 0.0625rem solid #CCCCCC;
+    border: 0.125rem solid #CCCCCC;
     border-radius: 0.3125rem;
     width: 100%;
     letter-spacing: 0.0625rem;
@@ -163,28 +181,35 @@ table {
     margin: 1.25em 0;
     table-layout: fixed;
 }
+
 table a {
     color: inherit !important;
-    font-weight:400 !important ;
+    font-weight: 400 !important;
     text-decoration: underline;
     text-decoration-color: #007BFF;
 }
+
 table a:hover {
     text-decoration: underline !important;
     text-decoration-color: #0056b3 !important;
 }
-/* adds and makes changes to the icon of choice */
-.valgfri-emne td::after {
-    content: ' •';
-    color: #7a92ac; 
-    font-weight: normal; 
-    font-size: 1.5rem; 
+
+/* Endrer på tabell med klassen valgfri-emne */
+.valgfri-emne {
+    background-color: #FFF0D9;
+    font-weight: none;
 }
 
-td,th {
-    border: 0.0500rem solid #D3D3D3;
-    padding: 0.5rem 1rem;
-    line-height: 1.4rem;
+/* changes color for the border around valgfri*/
+.valgfri-emne td {
+    border: 0.075rem solid #FFD2A6;
+}
+
+td,
+th {
+    border: 0.0625rem solid #D3D3D3;
+    padding: 0.75rem 1.25rem;
+    line-height: 1.5rem;
     white-space: normal;
     word-break: break-word;
 }
@@ -213,47 +238,70 @@ caption {
     font-weight: bold;
     font-size: 1rem;
     color: #555
-
 }
 
 /*Images in matmod */
-img.matmodtop{
+img.matmodtop {
     max-width: 70%;
     height: auto;
     width: auto;
     padding-bottom: 1rem;
 }
+
 /* END MATMOD */
-
-/*START MEDIA QUERIES*/
-@media (max-width: 758px) {
-    section.matmodinfo {
-        width: 100%;
-    }
-    section.grid-container-shortinfo{
-    grid-template-columns: repeat(auto-fill, minmax(20rem, 100rem)); 
-    gap: 0 2rem ;
-    margin-right: auto;
-    margin-left: auto;
-    }
-}
-/* END MEDIA QUERIES */
-
-
-
 
 /*START GITHUB*/
 
 /*.paragraf1_tekst, .paragraf2_tekst, .paragraf3_tekst*/
-.GridContainer{
+.GridContainer {
     display: grid;
-    
-   /* display: inline-grid;*/
+
+    /* display: inline-grid;*/
 }
+
 /*.alle_paragrafer, .paragraf1_tekst, .paragraf2_tekst, .paragraf3_tekst*/
-.alle_paragrafer{
+.alle_paragrafer {
     grid-area: 1 / 2 / 5 / 6;
 }
 
-
 /*END GITHUB*/
+
+/*START MEDIA QUERIES*/
+@media (max-width: 758px) {
+
+    /*For smaller devices*/
+    section.matmodinfo {
+        width: 100%;
+    }
+
+    section.grid-container-shortinfo {
+        grid-template-columns: repeat(auto-fill, minmax(20rem, 100rem));
+        gap: 0 2rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-width: 1600px) {
+
+    /*For Ultrawide devices */
+    section.matmodinfo {
+        max-width: 1600px;
+
+    }
+
+    section.grid-container-shortinfo {
+        max-width: 1600px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    p.sixty-width {
+        max-width: 1600px;
+    }
+    img.matmodtop {
+        max-width: 1600px;
+    }
+}
+
+/* END MEDIA QUERIES */
