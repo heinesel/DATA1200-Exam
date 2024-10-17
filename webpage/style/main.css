@@ -282,8 +282,9 @@ section.image-grid-container img {
 }
 
 /* Includes all three subheadings*/
-article.github_textcontent_container { 
-    display: flex;
+article.github_textcontent_container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr); 
 }
 
 /*.paragraf1_tekst, .paragraf2_tekst, .paragraf3_tekst*/
