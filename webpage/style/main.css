@@ -20,7 +20,8 @@
 
 / *START HEADER */
 header {
-    background-color: gray;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
     padding: 2rem;
     text-align: center;
 }
@@ -28,7 +29,6 @@ nav{
     display: flex;
     width: 100%;
     height: auto;
-    background-color: gray;
     justify-content: center;
 }
 
@@ -43,11 +43,11 @@ nav menu{
 nav li{
     width: 10rem;
     height: 1rem;
-    margin: 10px;
+    margin: 0.2rem;
 }
 
 nav a{
-    color: #004080 !important;
+    color: yellow !important;
     /*!imporant so the color does not change according to other link changes*/
     text-decoration: none;
 }
