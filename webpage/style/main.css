@@ -264,6 +264,28 @@ img.matmodtop {
 
 /*START GITHUB*/
 
+
+/* Grid for images*/
+section.image-grid-container {
+    display: grid;
+    grid-template-columns: repeat(2,1fr); /* two images placed side by side*/
+    padding: 1vw;
+    gap: 1vw; /* Distance between the images */
+    align-items: stretch; 
+    
+}
+
+
+section.image-grid-container img {
+    height: auto;
+    width: 100%;
+}
+
+/* Includes all three subheadings*/
+article.github_textcontent_container { 
+    display: flex;
+}
+
 /*.paragraf1_tekst, .paragraf2_tekst, .paragraf3_tekst*/
 .GridContainer {
     display: grid;
