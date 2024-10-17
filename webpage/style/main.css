@@ -173,14 +173,12 @@ table a:hover {
     text-decoration: underline !important;
     text-decoration-color: #0056b3 !important;
 }
-/* Endrer på tabell med klassen valgfri-emne */
-.valgfri-emne {
-    background-color: #FFF0D9;
-    font-weight: none; 
-}
-/* changes color for the border around valgfri*/
-.valgfri-emne td {
-    border: 0.075rem solid #FFD2A6;
+/* adds and makes changes to the icon of choice */
+.valgfri-emne td::after {
+    content: ' •';
+    color: #7a92ac; 
+    font-weight: normal; 
+    font-size: 1.5rem; 
 }
 
 td,th {
