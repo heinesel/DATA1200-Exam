@@ -99,7 +99,7 @@ p.sixty-width {
 
 section.grid-container-shortinfo {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr)); 
     /*auto-resizing grid layout: https://blog.stackademic.com/auto-resizing-grid-layout-with-html-css-3ec0e3b56c52 */
     gap: 0em 2rem;
     margin-right: 15%;
@@ -162,8 +162,8 @@ summary {
     text-align: left;
 }
 
+   /*Makes summary text normal where needed*/
 summary.smalltext {
-    /*Makes summary text normal where needed*/
     font-size: 1rem;
     font-weight: normal;
 }
