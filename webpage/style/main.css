@@ -194,19 +194,15 @@ table a:hover {
     text-decoration-color: #0056b3 !important;
 }
 
-/* Endrer på tabell med klassen valgfri-emne */
-.valgfri-emne {
-    background-color: #FFF0D9;
-    font-weight: none;
+/* adds and makes changes to the icon of choice */
+.valgfri-emne td::after {
+    content: ' •';
+    color: #7a92ac; 
+    font-weight: none; 
+    font-size: 1.5rem; 
 }
 
-/* changes color for the border around valgfri*/
-.valgfri-emne td {
-    border: 0.075rem solid #FFD2A6;
-}
-
-td,
-th {
+td,th {
     border: 0.0625rem solid #D3D3D3;
     padding: 0.75rem 1.25rem;
     line-height: 1.5rem;
