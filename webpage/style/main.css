@@ -24,15 +24,26 @@ header {
     padding: 2rem;
     text-align: center;
 }
+nav{
+    display: flex;
+    width: 100%;
+    height: auto;
+    background-color: gray;
+    justify-content: center;
+}
 
 nav menu{
     list-style: none;
     display: flex;
     justify-content: center;
+    flex-direction: row;
+    flex-flow: row wrap;
 }
 
 nav li{
-    margin: 0 1rem;
+    width: 10rem;
+    height: 1rem;
+    margin: 10px;
 }
 
 nav a{
@@ -41,7 +52,7 @@ nav a{
     text-decoration: none;
 }
 
-.menu a:hover {
+nav a:hover {
     text-decoration: underline;
 }
 
