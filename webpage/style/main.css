@@ -204,9 +204,9 @@ table a:hover {
 }
 
 /* adds and makes changes to the icon of choice */
-.valgfri-emne td::after {
-    content: ' •';
-    color: #7a92ac; 
+.valgfri-emne td:nth-child(3)::after{
+    content: '•';
+    color: #48b862; 
     font-weight: none; 
     font-size: 1.5rem; 
 }
