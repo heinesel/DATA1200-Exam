@@ -12,7 +12,7 @@
 /*Applies to everything, be careful about what you put here*/
 :root {
     font-family: Helvetica, Arial, sans-serif;
-    font-size: clamp(1rem, 1.4vw, 2rem);
+    font-size: clamp(0.9rem, 2vw, 1.5rem);
     /*Font size scale with screen size, with a max and min size*/
 }
 
@@ -22,7 +22,7 @@
 header {
     background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
-    padding: 2rem;
+    padding: 0.5rem;
     text-align: center;
 }
 nav{
@@ -30,6 +30,9 @@ nav{
     width: 100%;
     height: auto;
     justify-content: center;
+     position: sticky;
+    top: 0;
+    overflow: hidden;
 }
 
 nav menu{
@@ -38,12 +41,16 @@ nav menu{
     justify-content: center;
     flex-direction: row;
     flex-flow: row wrap;
+    padding:0;
+    padding-bottom: 0.5rem;
 }
 
 nav li{
     width: 10rem;
     height: 1rem;
     margin: 0.2rem;
+    padding: 1rem;
+    font-size: clamp(1.1rem, 3vw, 1.5rem);
 }
 
 nav a{
@@ -110,7 +117,7 @@ p.sixty-width {
 
 section.grid-container-shortinfo {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr)); 
+    grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr)); 
     /*auto-resizing grid layout: https://blog.stackademic.com/auto-resizing-grid-layout-with-html-css-3ec0e3b56c52 */
     gap: 0em 2rem;
     margin-right: 15%;
@@ -272,9 +279,11 @@ img.matmodtop {
 /*END GITHUB*/
 
 /*START MEDIA QUERIES*/
+
+/*For smaller devices*/
 @media (max-width: 758px) {
 
-    /*For smaller devices*/
+    
     section.matmodinfo {
         width: 100%;
     }
@@ -286,10 +295,9 @@ img.matmodtop {
         margin-right: auto;
     }
 }
-
+/*For Ultrawide devices */
 @media (min-width: 1600px) {
 
-    /*For Ultrawide devices */
     section.matmodinfo {
         max-width: 1600px;
 
