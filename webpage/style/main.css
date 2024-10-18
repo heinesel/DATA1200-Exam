@@ -364,3 +364,11 @@ dd{
 }
 
 /* END MEDIA QUERIES */
+
+/*START ACCESSIBILITY*/
+.img_tests img{
+    width: 50%;
+    height: 50%;
+}
+
+/*END ACCESSIBILITY*/
