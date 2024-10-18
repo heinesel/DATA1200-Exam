@@ -232,8 +232,8 @@ th:last-child, td:last-child {
     border-bottom-right-radius: 0.625rem; 
 }
 th {
-    background-color: #E8E8E8;
-    color: #333;
+    background-color: #6c6c6c;
+    color: #fff;
     font-weight: bold;
 }
 
@@ -249,17 +249,17 @@ td.studiepoeng {
 tr:hover td {
     color: none;
     cursor: pointer;
-    background-color: #ece0e0 !important;
+    background-color: #dccdcd !important;
  }
 /* Even rows background color */
 tr:nth-child(even) td {
-    background-color: #F9F9F9;
+    background-color: #eeecec;
     
 }
 
 /* Odd rows background color */
 tr:nth-child(odd) td {
-    background-color: #FFFFFF;
+    background-color: #f9f7f7;
 }
 
 caption {
