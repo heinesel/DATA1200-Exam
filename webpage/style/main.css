@@ -42,6 +42,7 @@ nav li{
     margin: 0.2rem;
     padding: 1rem;
     font-size: clamp(1.1rem, 3vw, 1.5rem);
+    
 }
 
 nav a{
