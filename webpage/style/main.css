@@ -212,7 +212,7 @@ table a:hover {
 /* Adds and styles a bullet point symbol */
 .valgfri-emne td:nth-child(3)::after{
     content: '•';
-    color: #48b862; 
+    color: #599f69; 
     font-weight: none; 
     font-size: 1.5rem; 
     text-align: right !important;
@@ -224,45 +224,42 @@ td,th {
     padding: 0.75rem 1.25rem;
     word-break: break-word;
 }
-/* makes circle corners */
+/* Adds rounded corners to the first cell in each row */
 th:first-child, td:first-child {
     border-top-left-radius: 0.625rem; 
     border-bottom-left-radius: 0.625rem;
 }
-/* makes circle corners */
+/* Adds rounded corners to the last cell in each row  */
 th:last-child, td:last-child {
     border-top-right-radius: 0.625rem; 
     border-bottom-right-radius: 0.625rem; 
 }
 th {
-    background-color: #E8E8E8;
-    color: #333;
+    background-color: #6c6c6c;
+    color: #fff;
     font-weight: bold;
 }
 
+/* Aligns text in table cells*/
 td {
     text-align: left;
-}
-
-td.studiepoeng {
-    text-align: right;
 }
 
 /* Changes color when hover over tables */
 tr:hover td {
     color: none;
     cursor: pointer;
-    background-color: #ece0e0 !important;
+    background-color: #dccdcd !important;
  }
 /* Even rows background color */
 tr:nth-child(even) td {
-    background-color: #F9F9F9;
+    background-color: #eeecec;
     
 }
 
 /* Odd rows background color */
 tr:nth-child(odd) td {
-    background-color: #FFFFFF;
+    background-color: #f9f7f7;
 }
 
 caption {
