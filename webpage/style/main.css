@@ -265,7 +265,7 @@ caption {
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    max-width: 70%;
+    max-width: 80%;
     margin: auto;
     margin: auto;
     gap: 1rem 1rem;
@@ -384,7 +384,6 @@ dd.temp{
 /*For smaller devices*/
 @media (max-width: 758px) {
 
-    
     section.matmodinfo {
         width: 100%;
     }
@@ -394,6 +393,13 @@ dd.temp{
         gap: 0 2rem;
         margin-left: auto;
         margin-right: auto;
+    }
+    .matmodflex{
+        max-width: 95%;
+        gap: 1.5rem 1.5rem;
+    }
+    .matmodflex-item{
+        width: 100%;
     }
 }
 /*For Ultrawide devices */
