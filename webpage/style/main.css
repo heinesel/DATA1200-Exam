@@ -12,7 +12,7 @@
 /*Applies to everything, be careful about what you put here*/
 :root {
     font-family: Helvetica, Arial, sans-serif;
-    font-size: clamp(0.9rem, 2vw, 1.5rem);
+    font-size: clamp(0.9rem, 1.6vw, 1.5rem);
     /*Font size scale with screen size, with a max and min size*/
 }
 
@@ -24,15 +24,6 @@ header {
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
     padding: 0.5rem;
     text-align: center;
-}
-nav{
-    display: flex;
-    width: 100%;
-    height: auto;
-    justify-content: center;
-     position: sticky;
-    top: 0;
-    overflow: hidden;
 }
 
 nav menu{
@@ -115,16 +106,20 @@ p.sixty-width {
     padding: 1rem;
 }
 
+
+/* END TEMPLATES */
+
+/* START MATMOD */
+
+/*Grid for the short info boxes on top of matmod page */
 section.grid-container-shortinfo {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr)); 
+    grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr)); 
     /*auto-resizing grid layout: https://blog.stackademic.com/auto-resizing-grid-layout-with-html-css-3ec0e3b56c52 */
     gap: 0em 2rem;
     margin-right: 15%;
     margin-left: 15%;
-
 }
-
 div.grid-item-shortinfo {
     font-size: 1rem;
     text-align: center;
@@ -132,9 +127,7 @@ div.grid-item-shortinfo {
     padding: 1rem;
 }
 
-/* END TEMPLATES */
-
-/* START MATMOD */
+/*Styling for matmod "Om Studie" section*/
 section.matmodinfo {
     width: 65%;
     max-width: 100%;
@@ -143,6 +136,7 @@ section.matmodinfo {
     margin-right: auto;
 }
 
+/*Styling for collapsable info boxes */
 details.matmod {
     border-top: 0.1rem solid;
     padding: 1rem;
@@ -152,7 +146,6 @@ details.matmod {
 details.matmod:last-child {
     border-bottom: 0.1rem solid;
 }
-
 details[open].matmod p {
     text-align: left;
     line-height: 2rem;
@@ -180,7 +173,7 @@ summary {
     text-align: left;
 }
 
-   /*Makes summary text normal where needed*/
+/*Makes summary text normal were needed*/
 summary.smalltext {
     font-size: 1rem;
     font-weight: normal;
@@ -274,7 +267,6 @@ section.image-grid-container {
     align-items: stretch; 
     
 }
-
 
 section.image-grid-container img {
     height: auto;
