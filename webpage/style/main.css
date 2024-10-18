@@ -309,9 +309,11 @@ article.github_textcontent_container {
 }
 
 #listeramme{
+    margin-left: 25%;
  border:  solid #007BFF;  
  max-width: 50%;
     max-height: 50%;
+    padding: 5%;
 }
 
 ol{
