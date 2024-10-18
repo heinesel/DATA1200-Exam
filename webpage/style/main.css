@@ -308,8 +308,8 @@ article.github_textcontent_container {
     
 }
 
-#listeramme{
-    margin-left: 25%;
+.listeramme{
+    margin-left: 20%;
  border:  solid #007BFF;  
  max-width: 50%;
     max-height: 50%;
@@ -344,7 +344,7 @@ dd{
     width: 50%;
     height: 50%;
 }
-#testarticle{
+.testarticle{
     padding: 5%;
 }
 
