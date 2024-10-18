@@ -304,13 +304,14 @@ article.github_textcontent_container {
     grid-area: 1 / 2 / 5 / 6;
 }
 
+
 #listeramme{
-    border: solid #007BFF
-    
+ border:  solid #007BFF  
 }
 
 ol{
    /* border: #555;*/
+   
 }
 
 li {
