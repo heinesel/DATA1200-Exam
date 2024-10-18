@@ -285,6 +285,8 @@ section.image-grid-container img {
 article.github_textcontent_container {
     display: grid;
     grid-template-columns: repeat(3,1fr); 
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 /*.paragraf1_tekst, .paragraf2_tekst, .paragraf3_tekst*/
@@ -299,8 +301,21 @@ article.github_textcontent_container {
     grid-area: 1 / 2 / 5 / 6;
 }
 
+#listeramme{
+    border: solid #007BFF
+    
+}
+
+ol{
+   /* border: #555;*/
+}
+
 li {
     padding: 5%;
+    font-weight: bold; 
+}
+dd{
+ 
 }
 
 /*END GITHUB*/
