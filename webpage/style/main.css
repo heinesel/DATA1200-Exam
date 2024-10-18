@@ -342,16 +342,16 @@ article.github_textcontent_container {
     padding: 5%;
 }
 
-ol{
+ol.temp{
    /* border: #555;*/
    
 }
 
-li {
+li.temp {
     padding: 5%;
     font-weight: bold; 
 }
-dd{
+dd.temp{
  
 }
 
