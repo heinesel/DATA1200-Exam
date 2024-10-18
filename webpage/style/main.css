@@ -149,22 +149,15 @@ details.matmod {
 details.matmod:last-child {
     border-bottom: 0.1rem solid;
 }
-details[open].matmod p {
-    text-align: left;
-    line-height: 2rem;
-    font-size: 1rem;
-}
-
-details[open].matmod ul {
+details[open].matmod p,
+details[open].matmod ul,
+details[open].matmod h2  {
     text-align: left;
     line-height: 2rem;
     font-size: 1rem;
 }
 
 details[open].matmod h2 {
-    text-align: left;
-    line-height: 2rem;
-    font-size: 1rem;
     padding: 0;
 }
 
@@ -282,7 +275,7 @@ caption {
     gap: 1rem 1rem;
 }
 .matmodflex-item{
-    background:rgb(0, 212, 255) 100%;
+    background:rgb(0, 212, 255);
     padding: 1rem;
     text-align: center;
     width: 31vw;
@@ -423,7 +416,13 @@ dd.temp{
     .matmodflex-item{
         width: 100%;
     }
+    .matmodflex-item div{
+        margin-right: auto;
+        margin-left: auto;
+        width: 97%;
+    }
 }
+
 /*For Ultrawide devices */
 @media (min-width: 1600px) {
 
