@@ -209,7 +209,7 @@ table a:hover {
 /* Adds and styles a bullet point symbol */
 .valgfri-emne td:nth-child(3)::after{
     content: '•';
-    color: #48b862; 
+    color: #599f69; 
     font-weight: none; 
     font-size: 1.5rem; 
     text-align: right !important;
@@ -221,12 +221,12 @@ td,th {
     padding: 0.75rem 1.25rem;
     word-break: break-word;
 }
-/* makes circle corners */
+/* Adds rounded corners to the first cell in each row */
 th:first-child, td:first-child {
     border-top-left-radius: 0.625rem; 
     border-bottom-left-radius: 0.625rem;
 }
-/* makes circle corners */
+/* Adds rounded corners to the last cell in each row  */
 th:last-child, td:last-child {
     border-top-right-radius: 0.625rem; 
     border-bottom-right-radius: 0.625rem; 
@@ -237,12 +237,9 @@ th {
     font-weight: bold;
 }
 
+/* Aligns text in table cells*/
 td {
     text-align: left;
-}
-
-td.studiepoeng {
-    text-align: right;
 }
 
 /* Changes color when hover over tables */
