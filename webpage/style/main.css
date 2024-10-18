@@ -324,6 +324,23 @@ dd{
 
 /*END GITHUB*/
 
+
+
+
+/*START ACCESSIBILITY*/
+.img_tests img{
+    width: 50%;
+    height: 50%;
+}
+#testarticle{
+    padding: 5%;
+}
+
+/*END ACCESSIBILITY*/
+
+
+
+
 /*START MEDIA QUERIES*/
 
 /*For smaller devices*/
@@ -365,10 +382,3 @@ dd{
 
 /* END MEDIA QUERIES */
 
-/*START ACCESSIBILITY*/
-.img_tests img{
-    width: 50%;
-    height: 50%;
-}
-
-/*END ACCESSIBILITY*/
