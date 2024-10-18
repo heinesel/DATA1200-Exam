@@ -290,6 +290,9 @@ div.fagleder{
     border-width: 0.1rem;
     float: left;
     padding: 0.5rem;
+    margin-right: auto;
+    margin-left: auto;
+    width: 97%;
 }
 
 
@@ -416,11 +419,6 @@ dd.temp{
     .matmodflex-item{
         width: 100%;
     }
-    .matmodflex-item div{
-        margin-right: auto;
-        margin-left: auto;
-        width: 97%;
-    }
 }
 
 /*For Ultrawide devices */
@@ -430,7 +428,6 @@ dd.temp{
         max-width: 1600px;
 
     }
-
     section.grid-container-shortinfo {
         max-width: 1600px;
         margin-right: auto;
@@ -440,10 +437,17 @@ dd.temp{
     p.sixty-width {
         max-width: 1600px;
     }
+    
     img.matmodtop {
         max-width: 1600px;
     }
+    .matmodflex{
+        max-width: 1800px;
+        padding: 0;
+    }
+    .matmodflex-item{
+        max-width: 740px;
+    }
 }
-
 /* END SECTION */
 
