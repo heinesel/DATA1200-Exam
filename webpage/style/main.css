@@ -147,7 +147,6 @@ details.matmod {
     border-top: 0.1rem solid;
     padding: 1rem;
 }
-
 /*makes borders not overlap*/
 details.matmod:last-child {
     border-bottom: 0.1rem solid;
@@ -237,6 +236,14 @@ td {
     text-align: left;
 }
 
+td.studiepoeng {
+    text-align: right;
+}
+/* Changes color when hover over tables */
+tr:hover {
+    color: #a06262;
+ }
+
 /* Even rows background color */
 tr:nth-child(even) td {
     background-color: #F9F9F9;
@@ -300,10 +307,6 @@ article.github_textcontent_container {
 /*.alle_paragrafer, .paragraf1_tekst, .paragraf2_tekst, .paragraf3_tekst*/
 .alle_paragrafer {
     grid-area: 1 / 2 / 5 / 6;
-}
-
-li {
-    padding: 5%;
 }
 
 /*END GITHUB*/
