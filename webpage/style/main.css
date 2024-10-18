@@ -197,20 +197,20 @@ table {
     margin: 1.25em 0;
     table-layout: fixed;
 }
-
+/* Link styling in tables */
 table a {
     color: inherit !important;
     font-weight: 400 !important;
     text-decoration: underline;
     text-decoration-color: #007BFF;
 }
-
+/* Link hover effect */
 table a:hover {
     text-decoration: underline !important;
     text-decoration-color: #0056b3 !important;
 }
 
-/* adds and makes changes to the icon of choice */
+/* Adds and styles a bullet point symbol */
 .valgfri-emne td:nth-child(3)::after{
     content: '•';
     color: #48b862; 
@@ -218,6 +218,7 @@ table a:hover {
     font-size: 1.5rem; 
 }
 
+/* General styling for table cells */
 td,th {
     border: 0.0625rem solid #D3D3D3;
     padding: 0.75rem 1.25rem;
@@ -236,10 +237,12 @@ td {
     text-align: left;
 }
 
+/* Even rows background color */
 tr:nth-child(even) td {
     background-color: #F9F9F9;
 }
 
+/* Odd rows background color */
 tr:nth-child(odd) td {
     background-color: #FFFFFF;
 }
