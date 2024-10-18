@@ -1,4 +1,4 @@
-/*  CONTENT: 
+/*  SECTIONS: 
     ROOT
     HEADER
     FOOTER
@@ -8,7 +8,7 @@
     MEDIA QUERIES */
 
 
-/* START ROOT /*
+/* START ROOT */
 /*Applies to everything, be careful about what you put here*/
 :root {
     font-family: Helvetica, Arial, sans-serif;
@@ -16,9 +16,9 @@
     /*Font size scale with screen size, with a max and min size*/
 }
 
-/* END ROOT /*
+/* END SECTION */
 
-/ *START HEADER */
+/* START HEADER */
 header {
     background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
@@ -55,12 +55,12 @@ nav a:hover {
     text-decoration: underline;
 }
 
-/* END HEADER /*
+/* END SECTION /*
 
 /* START FOOTER */
 footer {}
 
-/* END FOOTER */
+/* END SECTION */
 
 /* START GENERAL */
 /* CSS that applies to all pages only */
@@ -97,7 +97,7 @@ a:visited {
     color: purple;
 }
 
-/* END GENERAL */
+/* SECTION*/
 
 /* START TEMPLATES */
 /* Styling that can be used on multiple pages or elements */
@@ -107,8 +107,7 @@ p.sixty-width {
     padding: 1rem;
 }
 
-
-/* END TEMPLATES */
+/* END SECTION */
 
 /* START MATMOD */
 
@@ -201,7 +200,7 @@ table a {
 /* Link hover effect */
 table a:hover {
     text-decoration: underline !important;
-    text-decoration-color: #0056b3 !important;
+    text-decoration-color: #0056b3;
 }
 
 /* Adds and styles a bullet point symbol */
@@ -290,7 +289,7 @@ img.fagleder{
     float: left;
 }
 
-/* END MATMOD */
+/* END SECTION */
 
 /*START GITHUB*/
 
@@ -358,7 +357,7 @@ dd{
     padding-left: 50%;
     padding-right: 50%;
 }
-/*END GITHUB*/
+/*END SECTION*/
 
 
 
@@ -372,7 +371,7 @@ dd{
     padding: 5%;
 }
 
-/*END ACCESSIBILITY*/
+/*END SECTION*/
 
 
 
@@ -416,5 +415,5 @@ dd{
     }
 }
 
-/* END MEDIA QUERIES */
+/* END SECTION */
 
