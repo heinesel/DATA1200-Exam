@@ -299,6 +299,10 @@ article.github_textcontent_container {
     grid-area: 1 / 2 / 5 / 6;
 }
 
+li {
+    padding: 5%;
+}
+
 /*END GITHUB*/
 
 /*START MEDIA QUERIES*/
