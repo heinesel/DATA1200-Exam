@@ -190,20 +190,20 @@ table {
     margin: 1.25em 0;
     table-layout: fixed;
 }
-
+/* Link styling in tables */
 table a {
     color: inherit !important;
     font-weight: 400 !important;
     text-decoration: underline;
     text-decoration-color: #007BFF;
 }
-
+/* Link hover effect */
 table a:hover {
     text-decoration: underline !important;
     text-decoration-color: #0056b3 !important;
 }
 
-/* adds and makes changes to the icon of choice */
+/* Adds and styles a bullet point symbol */
 .valgfri-emne td:nth-child(3)::after{
     content: '•';
     color: #48b862; 
@@ -211,6 +211,7 @@ table a:hover {
     font-size: 1.5rem; 
 }
 
+/* General styling for table cells */
 td,th {
     border: 0.0625rem solid #D3D3D3;
     padding: 0.75rem 1.25rem;
@@ -229,10 +230,12 @@ td {
     text-align: left;
 }
 
+/* Even rows background color */
 tr:nth-child(even) td {
     background-color: #F9F9F9;
 }
 
+/* Odd rows background color */
 tr:nth-child(odd) td {
     background-color: #FFFFFF;
 }
@@ -277,6 +280,8 @@ section.image-grid-container img {
 article.github_textcontent_container {
     display: grid;
     grid-template-columns: repeat(3,1fr); 
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 /*.paragraf1_tekst, .paragraf2_tekst, .paragraf3_tekst*/
@@ -291,7 +296,42 @@ article.github_textcontent_container {
     grid-area: 1 / 2 / 5 / 6;
 }
 
+
+#listeramme{
+ border:  solid #007BFF  
+}
+
+ol{
+   /* border: #555;*/
+   
+}
+
+li {
+    padding: 5%;
+    font-weight: bold; 
+}
+dd{
+ 
+}
+
 /*END GITHUB*/
+
+
+
+
+/*START ACCESSIBILITY*/
+.img_tests img{
+    width: 50%;
+    height: 50%;
+}
+#testarticle{
+    padding: 5%;
+}
+
+/*END ACCESSIBILITY*/
+
+
+
 
 /*START MEDIA QUERIES*/
 
@@ -333,3 +373,4 @@ article.github_textcontent_container {
 }
 
 /* END MEDIA QUERIES */
+
