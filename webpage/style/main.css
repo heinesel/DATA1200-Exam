@@ -42,6 +42,7 @@ nav li{
     margin: 0.2rem;
     padding: 1rem;
     font-size: clamp(1.1rem, 3vw, 1.5rem);
+    
 }
 
 nav a{
@@ -142,7 +143,6 @@ details.matmod {
     border-top: 0.1rem solid;
     padding: 1rem;
 }
-
 /*makes borders not overlap*/
 details.matmod:last-child {
     border-bottom: 0.1rem solid;
@@ -231,6 +231,14 @@ td {
     text-align: left;
 }
 
+td.studiepoeng {
+    text-align: right;
+}
+/* Changes color when hover over tables */
+tr:hover {
+    color: #a06262;
+ }
+
 /* Even rows background color */
 tr:nth-child(even) td {
     background-color: #F9F9F9;
@@ -305,7 +313,7 @@ section.image-grid-container img {
 /* Includes all three subheadings*/
 article.github_textcontent_container {
     display: grid;
-    grid-template-columns: repeat(3,1fr); 
+    grid-template-columns: repeat(2,1fr); 
     padding-left: 5%;
     padding-right: 5%;
 }
@@ -322,9 +330,16 @@ article.github_textcontent_container {
     grid-area: 1 / 2 / 5 / 6;
 }
 
+.listeramme{
+    
+}
 
 #listeramme{
- border:  solid #007BFF  
+    margin-left: 25%;
+ border:  solid #007BFF;  
+ max-width: 50%;
+    max-height: 50%;
+    padding: 5%;
 }
 
 ol{
@@ -340,6 +355,11 @@ dd{
  
 }
 
+.imgcomment {
+
+    padding-left: 50%;
+    padding-right: 50%;
+}
 /*END GITHUB*/
 
 
