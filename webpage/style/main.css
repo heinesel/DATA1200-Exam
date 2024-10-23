@@ -20,14 +20,14 @@
 /* END SECTION */
 
 /* START HEADER */
+
+/* Sets the gradient background for the menu */
 header { 
-    /* Sets the gradient background for the menu */
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgb(0, 212, 255) 100%);
     padding: 0.5rem;
 }
-
+ /* Sets menu as a flex box */
 nav menu{
-    /* Sets menu as a flex box */
     list-style: none;
     display: flex;
     justify-content: center;
@@ -37,8 +37,8 @@ nav menu{
     padding-bottom: 0.5rem;
 }
 
+/* Sets size of the menu items */
 nav li{
-    /* Sets size of the menu items */
     width: 10rem;
     height: 1rem;
     margin: 0.2rem;
@@ -46,16 +46,15 @@ nav li{
     font-size: clamp(1.1rem, 3vw, 1.5rem);
     
 }
-
+ /* Style of links in menu */
 nav a{
-    /* Style of links in menu */
-    color: yellow !important;
     /*!imporant so the color does not change according to other link changes*/
+    color: yellow !important;
     text-decoration: none;
 }
 
+ /* Makes it clearer that you are hovering over a menu item */
 nav a:hover {
-    /* Makes it clearer that you are hovering over a menu item */
     text-decoration: underline;
 }
 
@@ -83,23 +82,21 @@ h2 {
     font-size: 1.6rem;
 }
 
+ /* Centers all text within body */
 body {
-    /* Centers all text within body */
     text-align: center;
     padding: 0;
     margin: 0;
 }
 
-/* Next three changes default link style */
+/* Sets default link style */
 a:link {
     color: blue;
     font-weight: bold;
 }
-
 a:hover {
     color: red;
 }
-
 a:visited {
     color: purple;
 }
@@ -108,14 +105,15 @@ a:visited {
 
 /* START TEMPLATES */
 /* Styling that can be used on multiple pages or elements */
+
+/* Used to limit width of paragraph so it doesnt become wider than everything else, use where needed */
 p.sixty-width {
-    /* Used to limit width of paragraph so it doesnt become wider than everything else, use where needed */
     max-width: 60%;
     margin: auto;
     padding: 1rem;
 }
+/* Small paragraph font, use where needed */
 p.tiny{
-    /* Small paragraph font, use where needed */
     font-size: clamp(0.7rem, 1.1vw, 1.1rem);
 }
 
@@ -130,20 +128,22 @@ section.grid-container-shortinfo {
     grid-template-columns: repeat(auto-fill, minmax(9rem, 1fr));
     grid-auto-flow: row;
     gap: 0em 2rem;
-    margin-right: 15%;
-    margin-left: 15%;
+    max-width: 70%;
+    margin-right: auto;
+    margin-left: auto;
 }
+/* style of short info boxes */
 div.grid-item-shortinfo {
-    /* style of short info boxes */
     font-size: 1rem;
     text-align: center;
     border-top: solid 0.1rem;
     padding: 1rem;
 }
 
-/*Styling for matmod "Om Studie" section*/
-section.matmodinfo {
-    /* Limits width and centers section */
+/* Styling for matmod "Om Studie" section */
+
+/* Limits width and centers section */
+section.matmodinfo { 
     width: 65%;
     max-width: 100%;
     padding-bottom: 1rem;
@@ -160,7 +160,7 @@ details.matmod {
 details.matmod:last-child {
     border-bottom: 0.1rem solid;
 }
-/* Makes the open detail boxes  */
+/* Styles text in info boxes  */
 details[open].matmod p,
 details[open].matmod ul,
 details[open].matmod h2  {
@@ -169,8 +169,8 @@ details[open].matmod h2  {
     font-size: 1rem;
 }
 
+ /* Styles the summary style of the collapsable boxes */
 summary {
-    /* Styles the summary style of the collapsable boxes */
     font-size: 1.05rem;
     font-weight: bold;
     padding: 0.8rem;
@@ -178,7 +178,7 @@ summary {
     text-align: left;
 }
 
-/*Makes summary text normal were needed*/
+/* Makes summary text normal were needed, ex: nested tables under "studiets oppbygging */
 summary.smalltext {
     font-size: 1rem;
     font-weight: normal;
@@ -236,6 +236,7 @@ th:last-child, td:last-child {
     border-top-right-radius: 0.625rem; 
     border-bottom-right-radius: 0.625rem; 
 }
+/* Styles table head */
 th {
     background-color: #6c6c6c;
     color: #fff;
@@ -263,7 +264,7 @@ tr:nth-child(even) td {
 tr:nth-child(odd) td {
     background-color: #f9f7f7;
 }
-
+/* Styles the caption over each table */
 caption {
     text-align: left;
     padding: 0.75rem;
@@ -283,6 +284,7 @@ caption {
     margin: auto;
     gap: 1rem 1rem;
 }
+/* Styles the flex boxes in aside */
 .matmodflex-item{
     background:rgb(0, 140, 255);
     padding: 1rem;
@@ -290,9 +292,11 @@ caption {
     width: 31vw;
     color: #F9F9F9;
 }
+/* Makes link color yellow in flex boxes */
 .matmodflex-item a{
         color: yellow;
 }
+/* Styles the nested div box containing info about fagleder in matmod */
 div.fagleder,div.tre_termin_ingeniør{
     border-top: solid;
     border-bottom: solid;
@@ -307,6 +311,8 @@ div.fagleder,div.tre_termin_ingeniør{
 
 
 /*Images in matmod */
+
+/* Sizing of decorative image in matmod */
 img.matmodtop {
     max-width: 70%;
     height: auto;
@@ -315,8 +321,13 @@ img.matmodtop {
 }
 img.fagleder,img.tre_termin_ingenior{
     max-width: 20%;
+
+/* Sizing of fagleder image in matmod */
+img.fagleder{
+    max-width: 30%;
     height: auto;
     width: auto;
+    /* Makes image sit to the left of */
     float: left;
 }
 
@@ -412,26 +423,39 @@ dd.temp{
 /*For smaller devices*/
 @media (max-width: 758px) {
 
+    /* Collapsable info boxes take up whole width on smaller devices */
     section.matmodinfo {
         width: 100%;
     }
 
+    /* short info boxes take up whole width on smaller devices */
     section.grid-container-shortinfo {
         grid-template-columns: 1fr;
-        margin-left: auto;
-        margin-right: auto;
+        max-width: 100%;
     }
+
+    /* BOTH OF THE BELOW ARE NECESSARY TO MAKE MATMOD FLEXBOX TAKE UP WHOLE WIDTH */
+    /* Flex container take up whole width on smaller devices */
     .matmodflex{
-        max-width: 95%;
+        max-width: 100%;
+        /* Makes gap between boxes slightly larger on small devices*/
         gap: 1.5rem 1.5rem;
 
     }
+    /* Makes flex boxes take up whole width on smaller devices */
     .matmodflex-item{
         width: 100%;
+    
+    }
+    /* Fagleder image goes above text on smaller devices */
+    img.fagleder{
+        float: none;
+        /* reduce width due to image having more overall width when above text */
+        max-width: 15%;
     }
 }
 
-/*For Ultrawide devices */
+/* Everything below sets a max width for larger devices */
 @media (min-width: 1600px) {
 
     section.matmodinfo {
@@ -440,8 +464,6 @@ dd.temp{
     }
     section.grid-container-shortinfo {
         max-width: 1600px;
-        margin-right: auto;
-        margin-left: auto;
     }
 
     p.sixty-width {
