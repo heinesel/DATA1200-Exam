@@ -444,7 +444,7 @@ dd.temp{
     
     }
     /* Fagleder image goes above text on smaller devices */
-    img.fagleder{
+    img.fagleder,img.tre_termin_ingenior{
         float: none;
         /* reduce width due to image having more overall width when above text */
         max-width: 15%;
