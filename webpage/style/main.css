@@ -293,7 +293,7 @@ caption {
 .matmodflex-item a{
         color: yellow;
 }
-div.fagleder{
+div.fagleder,div.tre_termin_ingeniør{
     border-top: solid;
     border-bottom: solid;
     border-width: 0.1rem;
@@ -314,6 +314,12 @@ img.matmodtop {
 }
 img.fagleder{
     max-width: 20%;
+    height: auto;
+    width: auto;
+    float: left;
+}
+img.tre_termin_ingenior{
+    max-width: 30%;
     height: auto;
     width: auto;
     float: left;
