@@ -305,6 +305,7 @@ div.fagleder,div.tre_termin_ingeniør{
 }
 
 
+
 /*Images in matmod */
 img.matmodtop {
     max-width: 70%;
@@ -312,14 +313,8 @@ img.matmodtop {
     width: auto;
     padding-bottom: 1rem;
 }
-img.fagleder{
+img.fagleder,img.tre_termin_ingenior{
     max-width: 20%;
-    height: auto;
-    width: auto;
-    float: left;
-}
-img.tre_termin_ingenior{
-    max-width: 30%;
     height: auto;
     width: auto;
     float: left;
