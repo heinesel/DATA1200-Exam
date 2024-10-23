@@ -323,7 +323,7 @@ img.fagleder{
     max-width: 30%;
     height: auto;
     width: auto;
-    /* Makes image sit to the left of */
+    /* Makes image sit to the left of text */
     float: left;
 }
 img.tre_termin_ingenior{
@@ -336,7 +336,6 @@ img.tre_termin_ingenior{
 /* END SECTION */
 
 /*START GITHUB*/
-
 
 /* Grid for images*/
 section.image-grid-container {
