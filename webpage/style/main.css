@@ -308,6 +308,8 @@ div.fagleder,div.tre_termin_ingeniør{
     width: 97%;
 }
 
+
+
 /*Images in matmod */
 
 /* Sizing of decorative image in matmod */
@@ -317,6 +319,8 @@ img.matmodtop {
     width: auto;
     padding-bottom: 1rem;
 }
+img.fagleder,img.tre_termin_ingenior{
+    max-width: 20%;
 
 /* Sizing of fagleder image in matmod */
 img.fagleder{
@@ -324,12 +328,6 @@ img.fagleder{
     height: auto;
     width: auto;
     /* Makes image sit to the left of text */
-    float: left;
-}
-img.tre_termin_ingenior{
-    max-width: 30%;
-    height: auto;
-    width: auto;
     float: left;
 }
 
