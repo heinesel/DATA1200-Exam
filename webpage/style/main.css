@@ -297,7 +297,7 @@ caption {
         color: yellow;
 }
 /* Styles the nested div box containing info about fagleder in matmod */
-div.fagleder{
+div.fagleder,div.tre_termin_ingeniør{
     border-top: solid;
     border-bottom: solid;
     border-width: 0.1rem;
@@ -324,6 +324,12 @@ img.fagleder{
     height: auto;
     width: auto;
     /* Makes image sit to the left of */
+    float: left;
+}
+img.tre_termin_ingenior{
+    max-width: 30%;
+    height: auto;
+    width: auto;
     float: left;
 }
 
