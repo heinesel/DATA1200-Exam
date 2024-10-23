@@ -324,14 +324,13 @@ img.fagleder,img.tre_termin_ingenior{
     max-width: 30%;
     height: auto;
     width: auto;
-    /* Makes image sit to the left of */
+    /* Makes image sit to the left of text */
     float: left;
 }
 
 /* END SECTION */
 
 /*START GITHUB*/
-
 
 /* Grid for images*/
 section.image-grid-container {
