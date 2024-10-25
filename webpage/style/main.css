@@ -304,8 +304,9 @@ caption {
     color: #F9F9F9;
 }
 /* Makes link color yellow in flex boxes */
-.matmodflex-item a, .matmodflex-item-long a{
+.matmodflex-item a, .matmodflex-item-long a p{
         color: yellow;
+        text-decoration: underline;
 }
 /* Styles the nested div box containing info about fagleder in matmod */
 div.fagleder, div.utdanninger{
@@ -328,7 +329,6 @@ div.left{
 div.right{
    float: right;
    width: 45%;
-   text-align: center;
    margin-right: 3%;
    }
 
