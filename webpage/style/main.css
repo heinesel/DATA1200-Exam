@@ -432,6 +432,8 @@ ol.temp{
     height: 50%;
 }
 .testarticle{
+    min-width: 100%;
+    max-width: 70%;
     padding: 5%;
     margin: 5%;
 }
@@ -477,11 +479,11 @@ ol.temp{
 /* Everything below sets a max width for larger devices */
 @media (min-width: 1600px) {
 
-    .articletest,
+    
     section.matmodinfo,  
     section.grid-container-shortinfo, 
     p.sixty-width, 
-    img.matmodtop {
+    img.matmodtop, .articletest {
         max-width: 1600px;
     } 
     .matmodflex{
@@ -494,6 +496,11 @@ ol.temp{
     .matmodflex-item-long{
         max-width: 1555px;
     }
+    .articletest {
+          max-width: 1600px;
+          
+        }
+      
     
 
     
