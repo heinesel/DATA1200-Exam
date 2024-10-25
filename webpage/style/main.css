@@ -307,8 +307,8 @@ caption {
 .matmodflex-item a{
         color: yellow;
 }
-/* Styles the nested div box containing info about fagleder and other study programs in matmod */
-div.fagleder, div.tre_termin_ingenior{
+/* Styles the nested div box containing info about fagleder in matmod */
+div.fagleder, div.utdanninger{
     border-top: solid;
     border-bottom: solid;
     border-width: 0.1rem;
@@ -341,7 +341,7 @@ img.matmodtop {
     width: auto;
     padding-bottom: 1rem;
 }
-/* Sizing of fagleder and other study program images in matmod */
+/* Sizing of fagleder image in matmod */
 img.fagleder, img.tre_termin_ingenior{
     max-width: 30%;
     height: auto;
