@@ -411,7 +411,7 @@ ol.temp{
 }
 
 .listeramme li{
-    font-size: medium;
+    
     padding: 5%;
     font-weight: bold; 
 }
@@ -453,7 +453,7 @@ ol.temp{
 @media (max-width: 758px) {
 
     /* Sections take up whole width on smaller devices */
-    .articletest,
+    .articletest, .listeramme
     section.matmodinfo,
     section.grid-container-shortinfo,
     .matmodflex,
@@ -488,7 +488,7 @@ ol.temp{
     section.matmodinfo,  
     section.grid-container-shortinfo, 
     p.sixty-width, 
-    img.matmodtop, .articletest {
+    img.matmodtop, .articletest, .listeramme{
         max-width: 1600px;
     } 
     .matmodflex{
