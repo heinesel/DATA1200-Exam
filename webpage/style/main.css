@@ -445,58 +445,43 @@ dd.temp{
 /*For smaller devices*/
 @media (max-width: 758px) {
 
-    /* Collapsable info boxes take up whole width on smaller devices */
-    section.matmodinfo {
+    /* Sections tkae up whole width on smaller devices */
+    section.matmodinfo,
+    section.grid-container-shortinfo,
+    .matmodflex,
+    .matmodflex-item,
+    .matmodflex-item-long {
         width: 100%;
+        max-width: 100%;
     }
 
     /* short info boxes take up whole width on smaller devices */
     section.grid-container-shortinfo {
         grid-template-columns: 1fr;
-        max-width: 100%;
     }
 
-    /* BOTH OF THE BELOW ARE NECESSARY TO MAKE MATMOD FLEXBOX TAKE UP WHOLE WIDTH */
-    /* Flex container take up whole width on smaller devices */
     .matmodflex{
-        max-width: 100%;
         /* Makes gap between boxes slightly larger on small devices*/
         gap: 1.5rem 1.5rem;
+    }
 
-    }
-    /* Makes flex boxes take up whole width on smaller devices */
-    .matmodflex-item{
-        width: 100%;
-    
-    }
     /* Fagleder image goes above text on smaller devices */
     img.fagleder{
         float: none;
         /* reduce width due to image having more overall width when above text */
         max-width: 15%;
     }
-
-
 }
 
 /* Everything below sets a max width for larger devices */
 @media (min-width: 1600px) {
 
-    section.matmodinfo {
-        max-width: 1600px;
-
-    }
-    section.grid-container-shortinfo {
-        max-width: 1600px;
-    }
-
-    p.sixty-width {
-        max-width: 1600px;
-    }
-    
+    section.matmodinfo,  
+    section.grid-container-shortinfo, 
+    p.sixty-width, 
     img.matmodtop {
         max-width: 1600px;
-    }
+    } 
     .matmodflex{
         max-width: 1800px;
         padding: 0;
@@ -504,14 +489,9 @@ dd.temp{
     .matmodflex-item{
         max-width: 740px;
     }
-    .madmodflex-item-long{
-        max-width: 740px;
-        margin-right: auto;
+    .matmodflex-item-long{
+        max-width: 1555px;
     }
-    div.right, div.left{
-        max-width: 740px;
-        margin-left: auto;
-    }
-
+    
 }
 /* END SECTION */
