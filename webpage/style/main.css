@@ -62,7 +62,7 @@ nav a:hover {
 
 /* START FOOTER */
 footer {
-    
+
 }
 
 /* END SECTION */
@@ -118,6 +118,7 @@ p.sixty-width {
 p.tiny{
     font-size: clamp(0.7rem, 1.1vw, 1.1rem);
 }
+
 
 /* END SECTION */
 
@@ -294,6 +295,14 @@ caption {
     width: 31vw;
     color: #F9F9F9;
 }
+/* longer flex box for "spå fremtiden" */
+.matmodflex-item-long{
+    background:rgb(0, 140, 255);
+    padding: 1rem;
+    text-align: center;
+    width: 66.9vw;
+    color: #F9F9F9;
+}
 /* Makes link color yellow in flex boxes */
 .matmodflex-item a{
         color: yellow;
@@ -309,8 +318,19 @@ div.fagleder, div.utdanninger{
     margin-left: auto;
     width: 97%;
 }
-
-
+/* Styling for "spå fremtiden" box */
+div.left{
+    float:left;
+    width: 45%;
+    text-align: right;
+    margin-left: 3%;
+}
+div.right{
+   float: right;
+   width: 45%;
+   text-align: center;
+   margin-right: 3%;
+   }
 
 /*Images in matmod */
 
@@ -328,6 +348,10 @@ img.fagleder,img.utdannings_bilder{
     width: auto;
     /* Makes image sit to the left of text */
     float: left;
+}
+/* Sizing of decorative image in "spå fremtiden" box */
+img.twoguyslaptop{
+    max-width: 100%;
 }
 
 /* END SECTION */
@@ -451,6 +475,8 @@ dd.temp{
         /* reduce width due to image having more overall width when above text */
         max-width: 15%;
     }
+
+
 }
 
 /* Everything below sets a max width for larger devices */
@@ -478,6 +504,14 @@ dd.temp{
     .matmodflex-item{
         max-width: 740px;
     }
+    .madmodflex-item-long{
+        max-width: 740px;
+        margin-right: auto;
+    }
+    div.right, div.left{
+        max-width: 740px;
+        margin-left: auto;
+    }
+
 }
 /* END SECTION */
-
