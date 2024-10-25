@@ -341,14 +341,15 @@ img.matmodtop {
     width: auto;
     padding-bottom: 1rem;
 }
-/* Sizing of fagleder image in matmod */
+/* Sizing of fagleder/utdannings image in matmod */
 img.fagleder, img.utdannings_bilder{
-    max-width: 30%;
+    max-width: 35%;
     height: auto;
     width: auto;
     /* Makes image sit to the left of text */
     float: left;
 }
+
 /* Sizing of decorative image in "spå fremtiden" box */
 img.twoguyslaptop{
     max-width: 100%;
