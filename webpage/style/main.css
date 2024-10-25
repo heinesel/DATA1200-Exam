@@ -181,11 +181,30 @@ summary {
     text-align: left;
 }
 
-/* Makes summary text normal were needed, ex: nested tables under "studiets oppbygging */
+/* Styles the summary style of the collapsable boxes ex: nested tables under "studiets oppbygging */
+summary.smalltext {
+    font-size: 1.05rem;
+    font-weight: bold;
+    padding: 0.8rem;
+    cursor: pointer;
+    text-align: left;
+    border-radius: 0.5rem;
+    background-color: #fcfcfc;
+    border: 1px solid #d1d1d1; 
+}
+
+/* Makes summary text normal where needed, ex: nested tables under "studiets oppbygging" */
 summary.smalltext {
     font-size: 1rem;
     font-weight: normal;
+    border-radius: 0.5rem;
 }
+/* Hover effect for summary "studiets oppbygging" */
+summary.smalltext:hover {
+    background-color: #e0e0e0;
+    color: #333;
+} 
+
 
 /* Styling of tables in matmod*/
 /* changes the border */
@@ -254,7 +273,6 @@ td {
 /* Changes color when hover over tables */
 tr:hover td {
     color: none;
-    cursor: pointer;
     background-color: #dccdcd !important;
  }
 /* Even rows background color */
