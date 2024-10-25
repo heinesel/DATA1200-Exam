@@ -391,8 +391,8 @@ article.github_textcontent_container {
 /*.alle_paragrafer, .paragraf1_tekst, .paragraf2_tekst, .paragraf3_tekst*/
 .alle_paragrafer {
     grid-area: 1 / 2 / 5 / 6;
+    
 }
-
 
 
 .listeramme{
@@ -410,14 +410,9 @@ ol.temp{
 }
 
 .listeramme li{
+    font-size: medium;
     padding: 5%;
     font-weight: bold; 
-    
-    
-}
-.listeramme dd{
-
- 
 }
 
 .imgcomment {
