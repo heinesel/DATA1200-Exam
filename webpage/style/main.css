@@ -322,7 +322,7 @@ img.matmodtop {
     padding-bottom: 1rem;
 }
 /* Sizing of fagleder image in matmod */
-img.fagleder, img.utdannings_bilder{
+img.fagleder,img.utdannings_bilder{
     max-width: 30%;
     height: auto;
     width: auto;
