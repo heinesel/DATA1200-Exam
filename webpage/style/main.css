@@ -62,7 +62,7 @@ nav a:hover {
 
 /* START FOOTER */
 footer {
-    
+
 }
 
 /* END SECTION */
@@ -118,6 +118,7 @@ p.sixty-width {
 p.tiny{
     font-size: clamp(0.7rem, 1.1vw, 1.1rem);
 }
+
 
 /* END SECTION */
 
@@ -294,6 +295,14 @@ caption {
     width: 31vw;
     color: #F9F9F9;
 }
+/* longer flex box for "spå fremtiden" */
+.matmodflex-item-long{
+    background:rgb(0, 140, 255);
+    padding: 1rem;
+    text-align: center;
+    width: 66.9vw;
+    color: #F9F9F9;
+}
 /* Makes link color yellow in flex boxes */
 .matmodflex-item a{
         color: yellow;
@@ -309,8 +318,19 @@ div.fagleder, div.utdanninger{
     margin-left: auto;
     width: 97%;
 }
-
-
+/* Styling for "spå fremtiden" box */
+div.left{
+    float:left;
+    width: 45%;
+    text-align: right;
+    margin-left: 3%;
+}
+div.right{
+   float: right;
+   width: 45%;
+   text-align: center;
+   margin-right: 3%;
+   }
 
 /*Images in matmod */
 
@@ -328,6 +348,10 @@ img.fagleder, img.utdannings_bilder{
     width: auto;
     /* Makes image sit to the left of text */
     float: left;
+}
+/* Sizing of decorative image in "spå fremtiden" box */
+img.twoguyslaptop{
+    max-width: 100%;
 }
 
 /* END SECTION */
@@ -421,30 +445,26 @@ dd.temp{
 /*For smaller devices*/
 @media (max-width: 758px) {
 
-    /* Collapsable info boxes take up whole width on smaller devices */
-    section.matmodinfo {
+    /* Sections tkae up whole width on smaller devices */
+    section.matmodinfo,
+    section.grid-container-shortinfo,
+    .matmodflex,
+    .matmodflex-item,
+    .matmodflex-item-long {
         width: 100%;
+        max-width: 100%;
     }
 
     /* short info boxes take up whole width on smaller devices */
     section.grid-container-shortinfo {
         grid-template-columns: 1fr;
-        max-width: 100%;
     }
 
-    /* BOTH OF THE BELOW ARE NECESSARY TO MAKE MATMOD FLEXBOX TAKE UP WHOLE WIDTH */
-    /* Flex container take up whole width on smaller devices */
     .matmodflex{
-        max-width: 100%;
         /* Makes gap between boxes slightly larger on small devices*/
         gap: 1.5rem 1.5rem;
+    }
 
-    }
-    /* Makes flex boxes take up whole width on smaller devices */
-    .matmodflex-item{
-        width: 100%;
-    
-    }
     /* Fagleder image goes above text on smaller devices */
     img.fagleder{
         float: none;
@@ -456,21 +476,12 @@ dd.temp{
 /* Everything below sets a max width for larger devices */
 @media (min-width: 1600px) {
 
-    section.matmodinfo {
-        max-width: 1600px;
-
-    }
-    section.grid-container-shortinfo {
-        max-width: 1600px;
-    }
-
-    p.sixty-width {
-        max-width: 1600px;
-    }
-    
+    section.matmodinfo,  
+    section.grid-container-shortinfo, 
+    p.sixty-width, 
     img.matmodtop {
         max-width: 1600px;
-    }
+    } 
     .matmodflex{
         max-width: 1800px;
         padding: 0;
@@ -478,6 +489,9 @@ dd.temp{
     .matmodflex-item{
         max-width: 740px;
     }
+    .matmodflex-item-long{
+        max-width: 1555px;
+    }
+    
 }
 /* END SECTION */
-
