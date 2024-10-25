@@ -377,6 +377,7 @@ article.github_textcontent_container {
  max-width: 50%;
     max-height: 50%;
     padding: 5%;
+    line-height: 2em;
 }
 
 ol.temp{
@@ -384,11 +385,14 @@ ol.temp{
    
 }
 
-li.temp {
+.listeramme li{
     padding: 5%;
     font-weight: bold; 
+    
+    
 }
-dd.temp{
+.listeramme dd{
+
  
 }
 
