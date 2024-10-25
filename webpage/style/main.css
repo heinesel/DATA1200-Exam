@@ -304,7 +304,7 @@ caption {
     color: #F9F9F9;
 }
 /* Makes link color yellow in flex boxes */
-.matmodflex-item a{
+.matmodflex-item a, .matmodflex-item-long a{
         color: yellow;
 }
 /* Styles the nested div box containing info about fagleder in matmod */
@@ -446,7 +446,7 @@ ol.temp{
 /*For smaller devices*/
 @media (max-width: 758px) {
 
-    /* Sections tkae up whole width on smaller devices */
+    /* Sections take up whole width on smaller devices */
     section.matmodinfo,
     section.grid-container-shortinfo,
     .matmodflex,
