@@ -435,7 +435,7 @@ ol.temp{
     padding: 5%;
     margin: 5%;
 }
-/*media q ultrawide max width 1600*/
+/*add media query ultrawide max width 1600*/
 /*END SECTION*/
 
 
@@ -477,6 +477,7 @@ ol.temp{
 /* Everything below sets a max width for larger devices */
 @media (min-width: 1600px) {
 
+    .articletest,
     section.matmodinfo,  
     section.grid-container-shortinfo, 
     p.sixty-width, 
@@ -494,5 +495,10 @@ ol.temp{
         max-width: 1555px;
     }
     
+
+    
+      
 }
+
+
 /* END SECTION */
