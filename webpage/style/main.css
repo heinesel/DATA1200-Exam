@@ -193,18 +193,11 @@ summary.smalltext {
     border: 1px solid #d1d1d1; 
 }
 
-/* Makes summary text normal where needed, ex: nested tables under "studiets oppbygging" */
-summary.smalltext {
-    font-size: 1rem;
-    font-weight: normal;
-    border-radius: 0.5rem;
-}
 /* Hover effect for summary "studiets oppbygging" */
 summary.smalltext:hover {
     background-color: #e0e0e0;
     color: #333;
 } 
-
 
 /* Styling of tables in matmod*/
 /* changes the border */
