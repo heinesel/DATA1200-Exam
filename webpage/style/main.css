@@ -333,9 +333,7 @@ div.fagleder, div.utdanninger{
 /*Adds a hover effect for the "utdanninger" */
 div.utdanninger:hover, div.utdanninger:visited:hover  {
     /* enlarges the div for emphasis */
-    transform: scale(1.05);
-    /* adds a shadow effect */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transform: scale(1.0);
     text-decoration: underline;
 }
 /* Styling for "spå fremtiden" box */
