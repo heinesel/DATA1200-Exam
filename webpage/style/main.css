@@ -341,14 +341,15 @@ img.matmodtop {
     width: auto;
     padding-bottom: 1rem;
 }
-/* Sizing of fagleder image in matmod */
+/* Sizing of fagleder/utdannings image in matmod */
 img.fagleder, img.utdannings_bilder{
-    max-width: 30%;
+    max-width: 35%;
     height: auto;
     width: auto;
     /* Makes image sit to the left of text */
     float: left;
 }
+
 /* Sizing of decorative image in "spå fremtiden" box */
 img.twoguyslaptop{
     max-width: 100%;
@@ -391,8 +392,8 @@ article.github_textcontent_container {
 /*.alle_paragrafer, .paragraf1_tekst, .paragraf2_tekst, .paragraf3_tekst*/
 .alle_paragrafer {
     grid-area: 1 / 2 / 5 / 6;
+    
 }
-
 
 
 .listeramme{
@@ -401,6 +402,7 @@ article.github_textcontent_container {
  max-width: 50%;
     max-height: 50%;
     padding: 5%;
+    line-height: 2em;
 }
 
 ol.temp{
@@ -408,12 +410,10 @@ ol.temp{
    
 }
 
-li.temp {
+.listeramme li{
+    font-size: medium;
     padding: 5%;
     font-weight: bold; 
-}
-dd.temp{
- 
 }
 
 .imgcomment {
@@ -433,8 +433,9 @@ dd.temp{
 }
 .testarticle{
     padding: 5%;
+    margin: 5%;
 }
-
+/*media q ultrawide max width 1600*/
 /*END SECTION*/
 
 
