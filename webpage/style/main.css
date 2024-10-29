@@ -585,7 +585,7 @@ main {
 }
 
 .main-image img {
-    width: 100%; /* Fyller bredden av sin beholder */
+    width: 80%; /* Fyller bredden 80% av sin beholder */
     height: auto; /* Automatisk høyde for proporsjoner */
     max-height: 400px; /* Maks høyde for hovedbildet */
     object-fit: cover; /* Sørger for at bildet dekker området uten å bli deformert */
@@ -608,8 +608,8 @@ main {
 }
 
 .image-container {
-    flex: 1 1 calc(50% - 20px); /* To bilder per rad med avstand */
-    margin: 10px; /* Økt margin mellom bildene */
+    flex: 1 1 calc(40% - 20px); /* To bilder per rad med avstand */
+    margin: 50px; /* Økt margin mellom bildene */
     max-width: calc(50% - 20px); /* Maks bredde for containeren */
     text-align: center;
     position: relative; /* For posisjonering av pseudo-elementer */
@@ -635,36 +635,11 @@ main {
 
 /* Hover-effekt på galleribilder */
 .image-container:hover img {
-    opacity: 0.3; /* Demp bildet */
     transform: scale(1.05); /* Forstørrer bildet litt når musen er over */
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6); /* Svart skygge ved hover */
 }
 
-/* Overlappende bildetekst */
-.image-caption {
-    position: absolute; /* Plassere teksten over bildet */
-    bottom: 10px; /* Plassering fra bunnen av containeren */
-    left: 50%; /* Sentrer teksten horisontalt */
-    transform: translateX(-50%); /* Sentrer teksten */
-    color: #fff; /* Hvit tekstfarge */
-    background-color: rgba(0, 0, 0, 0.7); /* Dempet bakgrunn for teksten */
-    padding: 5px 10px; /* Innvendig avstand */
-    border-radius: 5px; /* Runde kanter for bakgrunnen */
-    opacity: 0; /* Skjul teksten som standard */
-    transition: opacity 0.4s ease; /* Overgangseffekt for synlighet */
-}
 
-/* Vis teksten ved hover */
-.image-container:hover .image-caption {
-    opacity: 1; /* Gjør teksten synlig ved hover */
-}
-
-/* Bildetekst */
-.image-caption {
-    margin-top: 5px; /* Avstand over bildeteksten */
-    color: #555; /* Farge på bildeteksten */
-    font-size: 14px; /* Størrelse på bildeteksten */
-}
 
 /* Kart seksjon */
 .maps {
@@ -673,7 +648,7 @@ main {
 }
 
 .maps img {
-    width: 100%; /* Fyller bredden av sin beholder */
+    width: 80%; /* Fyller bredden av sin beholder */
     height: auto; /* Automatisk høyde for proporsjoner */
     max-height: 400px; /* Maks høyde for kartbildet */
     object-fit: cover; /* Sørger for at bildet dekker området uten å bli deformert */
