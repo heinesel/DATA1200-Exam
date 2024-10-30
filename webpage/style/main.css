@@ -330,10 +330,11 @@ div.fagleder, div.utdanninger{
     margin-left: auto;
     width: 97%;
 }
-/*Adds a hover effect for the "utdanninger" */
-div.utdanninger:hover, div.utdanninger:visited:hover  {
+/*Adds a hover effect for classes with links */
+.utdanninger:hover,.matmodflex-item-long:hover,
+.fagleder:hover, .tiny:hover,.hover_effect:hover {
     /* enlarges the div for emphasis */
-    transform: scale(1.0);
+    transform: scale(1.05); /* Slight zoom effect */
     text-decoration: underline;
 }
 /* Styling for "spå fremtiden" box */
