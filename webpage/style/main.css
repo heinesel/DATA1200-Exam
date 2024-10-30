@@ -66,23 +66,13 @@ footer {
     display: flex;
     justify-content: center;
     padding: 1rem;
-    gap: 15rem;
+    gap: 1rem 10rem;
     flex-wrap: wrap;
 }
 
-.footerleft{
+.footerleft, .footerright, .footermiddle{
     color: yellow;
 }
-.footermiddle{
-    color: yellow;
-}
-
-.footerright{
-    color: yellow;
-}
-
-
-
 /* Social media icon style */
 img.smicon{    
     max-width: 4vw;
