@@ -182,7 +182,7 @@ summary {
 }
 
 /* Styles the summary style of the collapsable boxes ex: nested tables under "studiets oppbygging */
-summary.smalltext {
+summary.tabletext {
     font-size: 1.05rem;
     font-weight: bold;
     padding: 0.8rem;
@@ -194,7 +194,7 @@ summary.smalltext {
 }
 
 /* Hover effect for summary "studiets oppbygging" */
-summary.smalltext:hover {
+summary.tabletext:hover {
     background-color: #e0e0e0;
     color: #333;
 } 
