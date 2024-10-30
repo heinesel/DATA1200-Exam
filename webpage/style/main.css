@@ -68,17 +68,18 @@ footer {
     padding: 1rem;
     gap: 1rem 10rem;
     flex-wrap: wrap;
+    padding-left: 0;
 }
 
 .footerleft, .footerright, .footermiddle{
     color: yellow;
+    padding-left: 0;
 }
 
 /* Social media icon style */
 img.smicon{    
     width: 4.5vw;   
-    padding-right: 0.5rem;
-    padding-left: 0.5rem;
+    padding-right:1rem;
 }
 img.smicon:hover{
     transform: scale(1.05);
