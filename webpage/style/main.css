@@ -74,13 +74,13 @@ footer {
 }
 .footerleft, .footerright, .footermiddle{
     color: yellow;
-    max-width: 22%;
     padding: 0;
 }
 
 .footermiddle{
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 .footermiddle a{
