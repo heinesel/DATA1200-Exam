@@ -73,9 +73,15 @@ footer {
 .footerleft, .footerright, .footermiddle{
     color: yellow;
 }
+
 /* Social media icon style */
 img.smicon{    
-    max-width: 4vw;
+    width: 4.5vw;   
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+}
+img.smicon:hover{
+    transform: scale(1.05);
 }
 /* END SECTION */
 
