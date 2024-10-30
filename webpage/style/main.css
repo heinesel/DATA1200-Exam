@@ -62,9 +62,31 @@ nav a:hover {
 
 /* START FOOTER */
 footer {
-
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgb(0, 212, 255) 100%);
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    gap: 15rem;
+    flex-wrap: wrap;
 }
 
+.footerleft{
+    color: yellow;
+}
+.footermiddle{
+    color: yellow;
+}
+
+.footerright{
+    color: yellow;
+}
+
+
+
+/* Social media icon style */
+img.smicon{    
+    max-width: 4vw;
+}
 /* END SECTION */
 
 /* START GENERAL */
@@ -297,6 +319,7 @@ caption {
     margin: auto;
     margin: auto;
     gap: 1rem 1rem;
+    padding-bottom: 2rem;
 }
 /* Styles the flex boxes in aside */
 .matmodflex-item{
@@ -541,18 +564,11 @@ ol.temp{
     article.github_textcontent_container p{
         max-width: 400px;
     }
-    
-    
 
-    
-      
 }
 
 
 /* END SECTION */
-
-
-
 
 
 /* START ACTIVITY */
