@@ -563,7 +563,7 @@ ol.temp{
     section.matmodinfo,  
     section.grid-container-shortinfo, 
     p.sixty-width, 
-    img.matmodtop, .articletest, .listeramme{
+    img.matmodtop, .articletest{
         max-width: 1600px;
     } 
     .matmodflex{
