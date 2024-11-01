@@ -388,7 +388,7 @@ section.image-grid-container img {
 
 
 
-/* Includes two main subheadings*/
+/* Includes two main subheadings */
 article.github_textcontent_container {
     display: grid;
     grid-template-columns: repeat(2,1fr); /*https://developer.mozilla.org/en-US/docs/Web/CSS/repeat*/ 
