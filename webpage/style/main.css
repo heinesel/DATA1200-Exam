@@ -457,7 +457,7 @@ article.github_textcontent_container p{ /* p elements inside grid*/
     text-align: center; 
 }
 
-/*.paragraf1_tekst, .paragraf2_tekst, .paragraf3_tekst*/
+/*.paragraf1_tekst, .paragraf2_tekst, .paragraf3_tekst */
 .GridContainer {
     display: grid;
 
