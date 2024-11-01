@@ -222,23 +222,11 @@ summary {
     text-align: left;
 }
 
-/* Styles the summary style of the collapsable boxes ex: nested tables under "studiets oppbygging */
-summary.tabletext {
-    font-size: 1.05rem;
-    font-weight: bold;
-    padding: 0.8rem;
-    cursor: pointer;
-    text-align: left;
-    border-radius: 0.5rem;
-    background-color: #fcfcfc;
-    border: 1px solid #d1d1d1; 
+/* Makes summary text normal were needed, ex: nested tables under "studiets oppbygging */
+summary.smalltext {
+    font-size: 1rem;
+    font-weight: normal;
 }
-
-/* Hover effect for summary "studiets oppbygging" */
-summary.tabletext:hover {
-    background-color: #e0e0e0;
-    color: #333;
-} 
 
 /* Styling of tables in matmod*/
 /* changes the border */
@@ -307,6 +295,7 @@ td {
 /* Changes color when hover over tables */
 tr:hover td {
     color: none;
+    cursor: pointer;
     background-color: #dccdcd !important;
  }
 /* Even rows background color */
@@ -338,7 +327,6 @@ caption {
     margin: auto;
     margin: auto;
     gap: 1rem 1rem;
-    padding-bottom: 2rem;
 }
 /* Styles the flex boxes in aside */
 .matmodflex-item{
@@ -409,21 +397,12 @@ img.matmodtop {
     padding-bottom: 1rem;
 }
 /* Sizing of fagleder/utdannings image in matmod */
-img.fagleder{
-    max-width: 30%;
+img.fagleder, img.utdannings_bilder{
+    max-width: 35%;
     height: auto;
     width: auto;
     /* Makes image sit to the left of text */
     float: left;
-}
-/* Sizing of utdannings image in matmod */
-img.utdannings_bilder {
-    width: 40%;
-    height: auto;
-    border-radius: 0.25rem;
-    margin-bottom: 0.5rem;
-        /* Makes image sit to the left of text */
-    float:left;
 }
 
 /* Sizing of decorative image in "spå fremtiden" box */
@@ -438,7 +417,7 @@ img.twoguyslaptop{
 /* Grid for images*/
 section.image-grid-container {
     display: grid;
-    grid-template-columns: repeat(2,1fr); /* two images placed side by side*/ 
+    grid-template-columns: repeat(2,1fr); /* two images placed side by side*/
     padding: 1vw;
     gap: 1vw; /* Distance between the images */
     align-items: stretch; 
@@ -450,18 +429,12 @@ section.image-grid-container img {
     width: 100%;
 }
 
-/* Includes two main subheadings*/
+/* Includes all three subheadings*/
 article.github_textcontent_container {
     display: grid;
-    grid-template-columns: repeat(2,1fr); /*https://developer.mozilla.org/en-US/docs/Web/CSS/repeat*/ 
+    grid-template-columns: repeat(2,1fr); 
     padding-left: 5%;
     padding-right: 5%;
-    justify-items: center;
-}
-
-article.github_textcontent_container p{ /* p elements inside grid*/
-    max-width: 330px;
-    text-align: center; 
 }
 
 /*.paragraf1_tekst, .paragraf2_tekst, .paragraf3_tekst*/
@@ -587,146 +560,12 @@ ol.temp{
           max-width: 1600px;
           
         }
+      
+    
 
-    article.github_textcontent_container p{
-        max-width: 400px;
-    }
-
+    
+      
 }
 
-
-/* END SECTION */
-
-
-/* START ACTIVITY */
-
-/* Generelle stiler */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4; /* Bakgrunnsfarge for siden */
-}
-
-header {
-    background-color: #333; /* Mørk bakgrunn for header */
-    color: #fff; /* Hvit tekstfarge */
-    padding: 1rem;
-    text-align: center;
-}
-
-main {
-    max-width: 1200px; /* Maks bredde for innholdet */
-    margin: 20px auto;
-    padding: 20px;
-}
-
-/* Hovedbilde seksjon */
-.main-image {
-    text-align: center;
-    margin-bottom: 20px; /* Avstand under hovedbilde */
-}
-
-.main-image img {
-    width: 80%; /* Fyller bredden 80% av sin beholder */
-    height: auto; /* Automatisk høyde for proporsjoner */
-    max-height: 400px; /* Maks høyde for hovedbildet */
-    object-fit: cover; /* Sørger for at bildet dekker området uten å bli deformert */
-    border-radius: 8px; /* Runde kanter på hovedbildet */
-    transition: transform 0.4s ease, box-shadow 0.4s ease; /* Overganger for effekter */
-}
-
-/* Hover-effekt på hovedbildet */
-.main-image img:hover {
-    transform: scale(1.05); /* Forstørrer bildet litt når musen er over */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6); /* Svart skygge ved hover */
-}
-
-/* Bildegalleri */
-.image-gallery {
-    display: flex;
-    flex-wrap: wrap; /* Lar elementene bryte til neste linje */
-    justify-content: space-between; /* Plasserer elementene med lik avstand */
-    margin: 20px 0;
-}
-
-.image-container {
-    flex: 1 1 calc(40% - 20px); /* To bilder per rad med avstand */
-    margin: 50px; /* Økt margin mellom bildene */
-    max-width: calc(50% - 20px); /* Maks bredde for containeren */
-    text-align: center;
-    position: relative; /* For posisjonering av pseudo-elementer */
-}
-
-/* Oppretter 16:9 forhold for bilder */
-.image-container::before {
-    content: '';
-    display: block;
-    padding-bottom: 56.25%; /* 16:9 forhold (9 / 16 * 100) */
-}
-
-.image-container img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%; /* Fyller bredden av sin beholder */
-    height: 100%; /* Fyller høyden av sin beholder */
-    object-fit: cover; /* Sørger for at bildet dekker området uten å bli deformert */
-    border-radius: 8px; /* Runde kanter for galleribilder */
-    transition: transform 0.4s ease, box-shadow 0.4s ease; /* Overganger for effekter */
-}
-
-/* Hover-effekt på galleribilder */
-.image-container:hover img {
-    transform: scale(1.05); /* Forstørrer bildet litt når musen er over */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6); /* Svart skygge ved hover */
-}
-
-
-
-/* Kart seksjon */
-.maps {
-    text-align: center;
-    margin: 20px 0; /* Avstand under kartseksjon */
-}
-
-.maps img {
-    width: 80%; /* Fyller bredden av sin beholder */
-    height: auto; /* Automatisk høyde for proporsjoner */
-    max-height: 400px; /* Maks høyde for kartbildet */
-    object-fit: cover; /* Sørger for at bildet dekker området uten å bli deformert */
-    border-radius: 8px; /* Runde kanter på kartbildet */
-    transition: transform 0.4s ease, box-shadow 0.4s ease; /* Overganger for effekter */
-}
-
-/* Hover-effekt på kartbildet */
-.maps img:hover {
-    transform: scale(1.05); /* Forstørrer bildet litt når musen er over */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6); /* Svart skygge ved hover */
-}
-
-/* FAQ seksjon */
-.faq {
-    margin-top: 20px;
-}
-
-.faq ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.faq li {
-    margin: 10px 0;
-}
-
-.faq a {
-    text-decoration: none;
-    color: #007BFF;
-}
-
-.faq p {
-    margin-left: 15px;
-    color: #555;
-}
 
 /* END SECTION */
