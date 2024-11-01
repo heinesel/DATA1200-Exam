@@ -501,19 +501,21 @@ ol.temp{
 
 
 
-/*START ACCESSIBILITY */
+/*START ACCESSIBILITY  */
 .img_tests img{
     min-width: 50%;
     max-width: 30%;
 
     min-height: 50%;
     max-height: 30%;
+    
 }
 .testarticle{
     min-width: 90%;
     max-width: 70%;
     padding: 5%;
     justify-items: center;
+    
 }
 
 article.testarticle section.test_a, section.test_b{ 
