@@ -182,10 +182,21 @@ summary {
 }
 
 /* Makes summary text normal were needed, ex: nested tables under "studiets oppbygging */
-summary.smalltext {
-    font-size: 1rem;
-    font-weight: normal;
+summary.tabletext {
+    font-size: 1.05rem;
+    font-weight: bold;
+    padding: 0.8rem;
+    cursor: pointer;
+    text-align: left;
+    border-radius: 0.5rem;
+    background-color: #fcfcfc;
+    border: 1px solid #d1d1d1; 
 }
+/* Hover effect for summary "studiets oppbygging" tables */
+summary.tabletext:hover {
+    background-color: #e0e0e0;
+    color: #333;
+} 
 
 /* Styling of tables in matmod*/
 /* changes the border */
@@ -286,6 +297,7 @@ caption {
     margin: auto;
     margin: auto;
     gap: 1rem 1rem;
+    padding-bottom: 1rem;
 }
 /* Styles the flex boxes in aside */
 .matmodflex-item{
@@ -374,12 +386,20 @@ section.image-grid-container img {
     width: 100%;
 }
 
-/* Includes all three subheadings*/
+
+
+/* Includes two main subheadings*/
 article.github_textcontent_container {
     display: grid;
-    grid-template-columns: repeat(2,1fr); 
+    grid-template-columns: repeat(2,1fr); /*https://developer.mozilla.org/en-US/docs/Web/CSS/repeat*/ 
     padding-left: 5%;
     padding-right: 5%;
+    justify-items: center;
+}
+
+article.github_textcontent_container p{ /* p elements inside grid*/
+    max-width: 330px;
+    text-align: center; 
 }
 
 /*.paragraf1_tekst, .paragraf2_tekst, .paragraf3_tekst*/
@@ -505,6 +525,10 @@ ol.temp{
           max-width: 1600px;
           
         }
+
+    article.github_textcontent_container p{
+        max-width: 400px;
+    }
       
     
 
