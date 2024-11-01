@@ -513,9 +513,15 @@ ol.temp{
     min-width: 90%;
     max-width: 70%;
     padding: 5%;
-
+    justify-items: center;
 }
-/*add media query ultrawide max width 1600 */
+
+article.testarticle section.test_a, section.test_b{ 
+    max-width: 800px;
+    text-align: center; 
+}
+
+/*add media query ultrawide max width 1600*/
 /*END SECTION*/
 
 
