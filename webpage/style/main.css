@@ -499,8 +499,6 @@ ol.temp{
 /*END SECTION*/
 
 
-
-
 /*START ACCESSIBILITY */
 .img_tests img{
     min-width: 50%;
@@ -508,18 +506,15 @@ ol.temp{
 
     min-height: 50%;
     max-height: 30%;
-}
-.testarticle{
-    min-width: 90%;
-    max-width: 70%;
-    padding: 5%;
-    justify-items: center;
+    
 }
 
-article.testarticle section.test_a, section.test_b{ 
-    max-width: 800px;
-    text-align: center; 
+.testarticle{
+    max-width: 65%;
+    margin-right: auto;
+    margin-left: auto;
 }
+
 
 /*add media query ultrawide max width 1600*/ 
 /*END SECTION*/
@@ -527,21 +522,21 @@ article.testarticle section.test_a, section.test_b{
 /* START ACTIVITY */
 
 /* Generelle stiler */
-body {
+body.apex {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4; /* Bakgrunnsfarge for siden */
 }
 
-header {
+header.apex {
     background-color: #333; /* Mørk bakgrunn for header */
     color: #fff; /* Hvit tekstfarge */
     padding: 1rem;
     text-align: center;
 }
 
-main {
+main.apex {
     max-width: 1200px; /* Maks bredde for innholdet */
     margin: 20px auto;
     padding: 20px;
@@ -698,7 +693,8 @@ main {
     section.matmodinfo,  
     section.grid-container-shortinfo, 
     p.sixty-width, 
-    img.matmodtop, .articletest{
+    img.matmodtop, 
+    .articletest{
         max-width: 1600px;
     } 
     .matmodflex{
@@ -711,11 +707,6 @@ main {
     .matmodflex-item-long{
         max-width: 1555px;
     }
-    .articletest {
-          max-width: 1600px;
-          
-        }
-
     article.github_textcontent_container p{
         max-width: 400px;
     }
