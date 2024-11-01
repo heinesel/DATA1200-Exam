@@ -338,6 +338,7 @@ caption {
     margin: auto;
     margin: auto;
     gap: 1rem 1rem;
+    padding-bottom: 1rem;
 }
 /* Styles the flex boxes in aside */
 .matmodflex-item{
