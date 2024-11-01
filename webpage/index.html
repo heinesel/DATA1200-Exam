@@ -25,7 +25,7 @@
 <body>
     <article> <!--Basic info about study-->
         <h1>Matematisk modellering og datavitenskap - ingeniør</h1>
-        <img class="matmodtop" src="images/matematisk-modellering.jpg" alt="decorative image"> 
+        <img class="matmodtop" src="images/matematisk-modellering.jpg"> <!--Decorative image, no need for alt text-->
         <section class="grid-container-shortinfo"> <!--Grid for the basic information-->
             <div class="grid-item-shortinfo">
                 <p>Type:<br>Bachelorprogram</p>
@@ -89,7 +89,7 @@
                     studierelatert arbeid gjennom hele semesteret.</p>
                 <h2>Tabeller med fag etter emnegruppe:</h2>
                 <details> <!--Nested collapsable box for table group 1-->
-                    <summary class="smalltext">Emnegruppe: Matematikk og fysikk</summary>
+                    <summary class="tabletext">Emnegruppe: Matematikk og fysikk</summary>
                     <table class="forste-studiear-forste-semester">
                         <caption>1. Studieår - 1. semester</caption>
                         <thead>
@@ -303,7 +303,7 @@
                     </table>
                 </details>
                 <details> <!--Nested collapsable box for table group 2-->
-                    <summary class="smalltext">Emnegruppe: Statistiske og datadrevne metoder</summary>
+                    <summary class="tabletext">Emnegruppe: Statistiske og datadrevne metoder</summary>
                     <table class="forste-studiear-forste-semester">
                         <caption>1. Studieår - 1. semester</caption>
                         <thead>
@@ -527,7 +527,7 @@
                     </table>
                 </details>
                 <details> <!--Nested collapsable box for table group 3-->
-                    <summary class="smalltext">Emnegruppe: Vitenskapelige beregninger</summary>
+                    <summary class="tabletext">Emnegruppe: Vitenskapelige beregninger</summary>
                     <table class="forste-studiear-forste-semester">
                         <caption>1. Studieår - 1. semester</caption>
                         <thead>
@@ -817,13 +817,13 @@
     <aside class="matmodflex"> <!--Info boxes at bottom of page, not as important-->
         <section class="matmodflex-item"> 
             <h2>Har du spørsmål om utdanningen?</h2>
-            <a href="https://www.oslomet.no/kontaktskjema#For%20utdanningss%C3%B8kere?faculty=Fakultet%20for%20teknologi,%20kunst%20og%20design">
+            <a href="https://www.oslomet.no/kontaktskjema#For%20utdanningss%C3%B8kere?faculty=Fakultet%20for%20teknologi,%20kunst%20og%20design"class="hover_link">
                 Har du spørsmål om utdanningen, kontakt oss gjennom vårt kontaktskjema.
             </a>
             <h3>Faglig leder</h3>
                 <a href="https://www.oslomet.no/om/ansatt/krhel3944/"><div class="fagleder">
                     <img class="fagleder" src="images/fagleder.jpg" alt="Faglig leder for matematisk modellering og datavitenskap.">
-                    <p class="fagleder">Kristoffer Herland Hellton</p>
+                    <p>Kristoffer Herland Hellton</p>
                     <p class="tiny">+47 672 37 240 | kristoffer.hellton@oslomet.no</p>
                 </div>
                 </a>
@@ -871,7 +871,25 @@
     </aside>
 </body>
 <footer>
-    <!--Should be identical for all pages-->
+    <div class="footerleft">
+        <h2>Oslo Metropolitan University<h2>
+            <p>Postboks 4, St. Olavs plass</p>
+            <p>0130 Oslo</p>
+            <p>Tlf.: 67 23 50 00</p>
+    </div>
+    <div class="footermiddle">
+        <h2>Nyttige lenker</h2>
+        <a href="https://www.oslomet.no/om/ansatteoversikt">Ansatteoversikt</a>
+        <a href="https://www.oslomet.no/om/for-ansatte">For ansatte</a>
+        <a href="https://www.oslomet.no/om/for-studenter">For studenter</a>
+        <a href="https://www.oslomet.no/om/ledige-stillinger">Ledige stillinger</a>
+    </div>
+    <div class="footerright">
+        <h2>Sosiale Medier</h2>
+        <a href="https://www.instagram.com/oslomet/?hl=en" target="_blank" class="fa fa-instagram"><img src="images/ig_icon.png" class="smicon" alt="OsloMet instagram profil"></a>
+        <a href="https://www.facebook.com/oslomet/" target="_blank"><img src="images/fb_icon.png" class="smicon" alt="OsloMet facebook side"></a>
+    </div>
+   
 </footer>
 
 </html>
