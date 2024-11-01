@@ -101,9 +101,10 @@ img.smicon{
     width: 4.5vw;   
     padding-right:1rem;
     padding-left: 1rem;
+    transition: transform 0.3s;
 }
 img.smicon:hover{
-    transform: scale(1.05);
+    transform: scale(1.2);
 }
 /* END SECTION */
 
@@ -375,6 +376,8 @@ div.fagleder, div.utdanninger{
 .utdanninger:hover,div.fagleder:hover{
     /* enlarges the div for emphasis */
     transform: scale(1.05); /* Slight zoom effect */
+    /* Smooth transition for both applying and removing the zoom effect */
+    transition: transform 0.3s ease, transform 0.2s ease-out 0.1s; 
     text-decoration: underline;
 }
 .hover-link {
