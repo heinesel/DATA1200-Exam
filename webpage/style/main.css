@@ -62,9 +62,50 @@ nav a:hover {
 
 /* START FOOTER */
 footer {
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgb(0, 212, 255) 100%);
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    gap: 1rem 7rem;
+    flex-wrap: wrap;
+    padding-right: 0;
+    padding-left: 0;
 
 }
+.footerleft, .footerright, .footermiddle{
+    color: yellow;
+    padding: 0;
+}
 
+.footermiddle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footermiddle a{
+    color: yellow !important;
+    line-height: 2;
+}
+
+.footerleft h2, .footermiddle h2, .footerright h2{
+    font-size: 2vw;
+}
+
+.footerleft p{
+    font-size: 1.5vw;
+}
+
+/* Social media icon style */
+img.smicon{    
+    width: 4.5vw;   
+    padding-right:1rem;
+    padding-left: 1rem;
+    transition: transform 0.3s;
+}
+img.smicon:hover{
+    transform: scale(1.2);
+}
 /* END SECTION */
 
 /* START GENERAL */
@@ -331,6 +372,20 @@ div.fagleder, div.utdanninger{
     margin-left: auto;
     width: 97%;
 }
+/*Adds a hover effect for classes with links */
+.utdanninger:hover,div.fagleder:hover{
+    /* enlarges the div for emphasis */
+    transform: scale(1.05); /* Slight zoom effect */
+    /* Smooth transition for both applying and removing the zoom effect */
+    transition: transform 0.3s ease, transform 0.2s ease-out 0.1s; 
+    text-decoration: underline;
+}
+.hover-link {
+    color: blue; /* Original farge */
+    text-decoration: none; /* Ingen understrekning som standard */
+    transition: color 0.3s ease; /* Jevn overgang for fargeendring */
+}
+
 /* Styling for "spå fremtiden" box */
 div.left{
     float:left;
@@ -388,7 +443,7 @@ section.image-grid-container img {
 
 
 
-/* Includes two main subheadings */
+/* Includes two main subheadings*/
 article.github_textcontent_container {
     display: grid;
     grid-template-columns: repeat(2,1fr); /*https://developer.mozilla.org/en-US/docs/Web/CSS/repeat*/ 
@@ -473,7 +528,7 @@ ol.temp{
 @media (max-width: 758px) {
 
     /* Sections take up whole width on smaller devices */
-    /*.articletest,*/ .test_a, .test_b, .listeramme
+    .articletest, .listeramme
     section.matmodinfo,
     section.grid-container-shortinfo,
     .matmodflex,
@@ -508,7 +563,7 @@ ol.temp{
     section.matmodinfo,  
     section.grid-container-shortinfo, 
     p.sixty-width, 
-    img.matmodtop, /*.articletest,*/ .test_a, .test_b, .listeramme{
+    img.matmodtop, .articletest, .listeramme{
         max-width: 1600px;
     } 
     .matmodflex{
@@ -521,7 +576,7 @@ ol.temp{
     .matmodflex-item-long{
         max-width: 1555px;
     }
-    /*.articletest,*/ .test_a, .test_b {
+    .articletest {
           max-width: 1600px;
           
         }
