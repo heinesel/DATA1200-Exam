@@ -528,7 +528,8 @@ ol.temp{
 @media (max-width: 758px) {
 
     /* Sections take up whole width on smaller devices */
-    .articletest, .listeramme
+    .articletest, 
+    .listeramme,
     section.matmodinfo,
     section.grid-container-shortinfo,
     .matmodflex,
