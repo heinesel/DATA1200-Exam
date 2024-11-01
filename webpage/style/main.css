@@ -223,10 +223,21 @@ summary {
 }
 
 /* Makes summary text normal were needed, ex: nested tables under "studiets oppbygging */
-summary.smalltext {
-    font-size: 1rem;
-    font-weight: normal;
+summary.tabletext {
+    font-size: 1.05rem;
+    font-weight: bold;
+    padding: 0.8rem;
+    cursor: pointer;
+    text-align: left;
+    border-radius: 0.5rem;
+    background-color: #fcfcfc;
+    border: 1px solid #d1d1d1; 
 }
+/* Hover effect for summary "studiets oppbygging" tables */
+summary.tabletext:hover {
+    background-color: #e0e0e0;
+    color: #333;
+} 
 
 /* Styling of tables in matmod*/
 /* changes the border */
