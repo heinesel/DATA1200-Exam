@@ -354,11 +354,15 @@ div.fagleder, div.utdanninger{
     width: 97%;
 }
 /*Adds a hover effect for classes with links */
-.utdanninger:hover,.fagleder:hover, .tiny:hover,
-.hover_effect:hover,hover_link:hover,.twoguyslaptop:hover {
+.utdanninger:hover,div.fagleder:hover{
     /* enlarges the div for emphasis */
     transform: scale(1.05); /* Slight zoom effect */
     text-decoration: underline;
+}
+.hover-link {
+    color: blue; /* Original farge */
+    text-decoration: none; /* Ingen understrekning som standard */
+    transition: color 0.3s ease; /* Jevn overgang for fargeendring */
 }
 
 /* Styling for "spå fremtiden" box */
