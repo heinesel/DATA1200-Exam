@@ -524,7 +524,136 @@ article.testarticle section.test_a, section.test_b{
 /*add media query ultrawide max width 1600*/ 
 /*END SECTION*/
 
+/* START ACTIVITY */
 
+/* Generelle stiler */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Bakgrunnsfarge for siden */
+}
+
+header {
+    background-color: #333; /* Mørk bakgrunn for header */
+    color: #fff; /* Hvit tekstfarge */
+    padding: 1rem;
+    text-align: center;
+}
+
+main {
+    max-width: 1200px; /* Maks bredde for innholdet */
+    margin: 20px auto;
+    padding: 20px;
+}
+
+/* Hovedbilde seksjon */
+.main-image {
+    text-align: center;
+    margin-bottom: 20px; /* Avstand under hovedbilde */
+}
+
+.main-image img {
+    width: 80%; /* Fyller bredden 80% av sin beholder */
+    height: auto; /* Automatisk høyde for proporsjoner */
+    max-height: 400px; /* Maks høyde for hovedbildet */
+    object-fit: cover; /* Sørger for at bildet dekker området uten å bli deformert */
+    border-radius: 8px; /* Runde kanter på hovedbildet */
+    transition: transform 0.4s ease, box-shadow 0.4s ease; /* Overganger for effekter */
+}
+
+/* Hover-effekt på hovedbildet */
+.main-image img:hover {
+    transform: scale(1.05); /* Forstørrer bildet litt når musen er over */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6); /* Svart skygge ved hover */
+}
+
+/* Bildegalleri */
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap; /* Lar elementene bryte til neste linje */
+    justify-content: space-between; /* Plasserer elementene med lik avstand */
+    margin: 20px 0;
+}
+
+.image-container {
+    flex: 1 1 calc(40% - 20px); /* To bilder per rad med avstand */
+    margin: 50px; /* Økt margin mellom bildene */
+    max-width: calc(50% - 20px); /* Maks bredde for containeren */
+    text-align: center;
+    position: relative; /* For posisjonering av pseudo-elementer */
+}
+
+/* Oppretter 16:9 forhold for bilder */
+.image-container::before {
+    content: '';
+    display: block;
+    padding-bottom: 56.25%; /* 16:9 forhold (9 / 16 * 100) */
+}
+
+.image-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Fyller bredden av sin beholder */
+    height: 100%; /* Fyller høyden av sin beholder */
+    object-fit: cover; /* Sørger for at bildet dekker området uten å bli deformert */
+    border-radius: 8px; /* Runde kanter for galleribilder */
+    transition: transform 0.4s ease, box-shadow 0.4s ease; /* Overganger for effekter */
+}
+
+/* Hover-effekt på galleribilder */
+.image-container:hover img {
+    transform: scale(1.05); /* Forstørrer bildet litt når musen er over */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6); /* Svart skygge ved hover */
+}
+
+/* Kart seksjon */
+.maps {
+    text-align: center;
+    margin: 20px 0; /* Avstand under kartseksjon */
+}
+
+.maps img {
+    width: 80%; /* Fyller bredden av sin beholder */
+    height: auto; /* Automatisk høyde for proporsjoner */
+    max-height: 400px; /* Maks høyde for kartbildet */
+    object-fit: cover; /* Sørger for at bildet dekker området uten å bli deformert */
+    border-radius: 8px; /* Runde kanter på kartbildet */
+    transition: transform 0.4s ease, box-shadow 0.4s ease; /* Overganger for effekter */
+}
+
+/* Hover-effekt på kartbildet */
+.maps img:hover {
+    transform: scale(1.05); /* Forstørrer bildet litt når musen er over */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6); /* Svart skygge ved hover */
+}
+
+/* FAQ seksjon */
+.faq {
+    margin-top: 20px;
+}
+
+.faq ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.faq li {
+    margin: 10px 0;
+}
+
+.faq a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+.faq p {
+    margin-left: 15px;
+    color: #555;
+}
+
+/* END SECTION */
 
 
 /*START MEDIA QUERIES*/
@@ -533,7 +662,8 @@ article.testarticle section.test_a, section.test_b{
 @media (max-width: 758px) {
 
     /* Sections take up whole width on smaller devices */
-    .articletest, .listeramme
+    .articletest, 
+    .listeramme,
     section.matmodinfo,
     section.grid-container-shortinfo,
     .matmodflex,
