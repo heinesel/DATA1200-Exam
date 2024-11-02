@@ -668,6 +668,12 @@ main.apex {
         max-width: 100%;
     }
 
+    /*Adjustment to 1 section per row on smaller devices*/
+    article.github_textcontent_container {
+        grid-template-columns: repeat(1,1fr);  
+
+    }
+
     /* short info boxes take up whole width on smaller devices */
     section.grid-container-shortinfo {
         grid-template-columns: 1fr;
