@@ -473,8 +473,9 @@ article.github_textcontent_container p{ /* p elements inside grid*/
 
 .listeramme{
     margin-left: 20%;
- border:  solid #007BFF;  
- max-width: 50%;
+    margin-bottom: 5%;
+    border:  solid #007BFF;  
+    max-width: 50%;
     max-height: 50%;
     padding: 5%;
     line-height: 2em;
