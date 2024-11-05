@@ -383,11 +383,13 @@ div.fagleder, div.utdanninger{
     transition: transform 0.3s ease, transform 0.2s ease-out 0.1s; 
     text-decoration: underline;
 }
+
 .hover-link {
-    color: blue; /* Original farge */
-    text-decoration: none; /* Ingen understrekning som standard */
-    transition: color 0.3s ease; /* Jevn overgang for fargeendring */
+    color: blue; /* Original color */
+    text-decoration: none; /* No underline by default */
+    transition: color 0.3s ease; /* Smooth transition for color change */
 }
+
 
 /* Styling for "spå fremtiden" box */
 div.left{
