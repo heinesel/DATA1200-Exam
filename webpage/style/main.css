@@ -312,7 +312,6 @@ td {
 /* Changes color when hover over tables */
 tr:hover td {
     color: none;
-    cursor: pointer;
     background-color: #dccdcd !important;
  }
 /* Even rows background color */
@@ -386,11 +385,13 @@ div.fagleder, div.utdanninger{
     transition: transform 0.3s ease, transform 0.2s ease-out 0.1s; 
     text-decoration: underline;
 }
+
 .hover-link {
-    color: blue; /* Original farge */
-    text-decoration: none; /* Ingen understrekning som standard */
-    transition: color 0.3s ease; /* Jevn overgang for fargeendring */
+    color: blue; /* Original color */
+    text-decoration: none; /* No underline by default */
+    transition: color 0.3s ease; /* Smooth transition for color change */
 }
+
 
 /* Styling for "spå fremtiden" box */
 div.left{
@@ -527,107 +528,109 @@ ol.temp{
 
 /* START ACTIVITY */
 
-/* Generelle stiler */
+/* General styles */
 body.apex {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4; /* Bakgrunnsfarge for siden */
+    background-color: #f4f4f4; /* Background color for the page */
 }
 
 header.apex {
-    background-color: #333; /* Mørk bakgrunn for header */
-    color: #fff; /* Hvit tekstfarge */
+    background-color: #333; /* Dark background for the header */
+    color: #fff; /* White text color */
     padding: 1rem;
     text-align: center;
 }
 
 main.apex {
-    max-width: 1200px; /* Maks bredde for innholdet */
+    max-width: 1200px; /* Maximum width for content */
     margin: 20px auto;
     padding: 20px;
 }
 
-/* Hovedbilde seksjon */
+/* Main image section */
 .main-image {
     text-align: center;
-    margin-bottom: 20px; /* Avstand under hovedbilde */
+    margin-bottom: 20px; /* Space below the main image */
 }
 
 .main-image img {
-    width: 80%; /* Fyller bredden 80% av sin beholder */
-    height: auto; /* Automatisk høyde for proporsjoner */
-    max-height: 400px; /* Maks høyde for hovedbildet */
-    object-fit: cover; /* Sørger for at bildet dekker området uten å bli deformert */
-    border-radius: 8px; /* Runde kanter på hovedbildet */
-    transition: transform 0.4s ease, box-shadow 0.4s ease; /* Overganger for effekter */
+    width: 80%; /* Fills 80% of the container width */
+    height: auto; /* Automatic height to maintain proportions */
+    max-height: 400px; /* Maximum height for the main image */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    border-radius: 8px; /* Rounded corners for the main image */
+    transition: transform 0.4s ease, box-shadow 0.4s ease; /* Smooth transitions for effects */
 }
 
-/* Hover-effekt på hovedbildet */
+/* Hover effect on the main image */
 .main-image img:hover {
-    transform: scale(1.05); /* Forstørrer bildet litt når musen er over */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6); /* Svart skygge ved hover */
+    transform: scale(1.05); /* Slightly enlarges the image on hover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6); /* Black shadow on hover */
 }
 
-/* Bildegalleri */
+/* Image gallery */
 .image-gallery {
     display: flex;
-    flex-wrap: wrap; /* Lar elementene bryte til neste linje */
-    justify-content: space-between; /* Plasserer elementene med lik avstand */
+    flex-wrap: wrap; /* Allows items to wrap to the next line */
+    justify-content: space-between; /* Even spacing between items */
     margin: 20px 0;
 }
 
 .image-container {
-    flex: 1 1 calc(40% - 20px); /* To bilder per rad med avstand */
-    margin: 50px; /* Økt margin mellom bildene */
-    max-width: calc(50% - 20px); /* Maks bredde for containeren */
+    flex: 1 1 calc(40% - 20px); /* Two images per row with spacing */
+    margin: 50px; /* Increased margin between images */
+    max-width: calc(50% - 20px); /* Maximum width for each container */
     text-align: center;
-    position: relative; /* For posisjonering av pseudo-elementer */
+    position: relative; /* For positioning pseudo-elements */
 }
 
-/* Oppretter 16:9 forhold for bilder */
+/* Creates a 16:9 aspect ratio for images */
 .image-container::before {
     content: '';
     display: block;
-    padding-bottom: 56.25%; /* 16:9 forhold (9 / 16 * 100) */
+    padding-bottom: 56.25%; /* 16:9 aspect ratio (9 / 16 * 100) */
 }
 
 .image-container img {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%; /* Fyller bredden av sin beholder */
-    height: 100%; /* Fyller høyden av sin beholder */
-    object-fit: cover; /* Sørger for at bildet dekker området uten å bli deformert */
-    border-radius: 8px; /* Runde kanter for galleribilder */
-    transition: transform 0.4s ease, box-shadow 0.4s ease; /* Overganger for effekter */
+    width: 100%; /* Fills the width of its container */
+    height: 100%; /* Fills the height of its container */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    border-radius: 8px; /* Rounded corners for gallery images */
+    transition: transform 0.4s ease, box-shadow 0.4s ease; /* Smooth transitions for effects */
 }
 
-/* Hover-effekt på galleribilder */
+/* Hover effect on gallery images */
 .image-container:hover img {
-    transform: scale(1.05); /* Forstørrer bildet litt når musen er over */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6); /* Svart skygge ved hover */
+    transform: scale(1.05); /* Slightly enlarges the image on hover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6); /* Black shadow on hover */
 }
 
-/* Kart seksjon */
+/* Map section */
 .maps {
     text-align: center;
-    margin: 20px 0; /* Avstand under kartseksjon */
+    margin: 20px 0; /* Space below the map section */
 }
 
+/* FIX THE IMAGE NAME */
 .maps img {
-    width: 80%; /* Fyller bredden av sin beholder */
-    height: auto; /* Automatisk høyde for proporsjoner */
-    max-height: 400px; /* Maks høyde for kartbildet */
-    object-fit: cover; /* Sørger for at bildet dekker området uten å bli deformert */
-    border-radius: 8px; /* Runde kanter på kartbildet */
-    transition: transform 0.4s ease, box-shadow 0.4s ease; /* Overganger for effekter */
+    width: 80%; /* Fills the width of its container */
+    height: auto; /* Automatic height to maintain proportions */
+    max-height: 400px; /* Maximum height for the map image */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    border-radius: 8px; /* Rounded corners on the map image */
+    transition: transform 0.4s ease, box-shadow 0.4s ease; /* Smooth transitions for effects */
 }
 
-/* Hover-effekt på kartbildet */
+/* FIX THE IMAGE NAME */
+/* Hover effect on the map image */
 .maps img:hover {
-    transform: scale(1.05); /* Forstørrer bildet litt når musen er over */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6); /* Svart skygge ved hover */
+    transform: scale(1.05); /* Enlarges the image slightly when the mouse hovers over it */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6); /* Adds a black shadow on hover */
 }
 
 /* FAQ seksjon */
