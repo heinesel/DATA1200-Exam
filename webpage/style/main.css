@@ -93,7 +93,8 @@ footer {
 .footerleft h2, .footermiddle h2, .footerright h2{
     font-size: 2vw;
 }
-.footerleft p{
+
+.footerleft p,.footerbottom{
     font-size: 1.5vw;
 }
 
