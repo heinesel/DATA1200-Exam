@@ -158,6 +158,7 @@ p.sixty-width {
 /* Small paragraph font, use where needed */
 p.tiny{
     font-size: clamp(0.7rem, 1.1vw, 1.1rem);
+    padding-bottom: 0.5rem;
 }
 
 
@@ -406,7 +407,6 @@ img.matmodtop {
     max-width: 70%;
     height: auto;
     width: auto;
-    padding-bottom: 1rem;
 }
 /* Sizing of fagleder/utdannings image in matmod */
 img.fagleder, img.utdannings_bilder{
