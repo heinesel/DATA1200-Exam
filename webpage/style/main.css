@@ -63,6 +63,9 @@ nav a:hover {
 /* START FOOTER */
 footer {
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgb(0, 212, 255) 100%);
+    
+}
+.footercontainer{
     display: flex;
     justify-content: center;
     padding: 1rem;
@@ -70,11 +73,15 @@ footer {
     flex-wrap: wrap;
     padding-right: 0;
     padding-left: 0;
-
+    margin-right: auto;
+    margin-left: auto;
 }
+
+
 .footerleft, .footerright, .footermiddle,.footerbottom{
     color: yellow;
     padding: 0;
+    text-align: center;
 }
 
 .footermiddle, .footerbottom{
@@ -86,17 +93,11 @@ footer {
 .footermiddle a{
     color: yellow !important;
     line-height: 2;
-    font-size: 1.5vw;
+    font-size: clamp(0.9rem, 1.6vw, 1.5rem);
     
 }
 
-.footerleft h2, .footermiddle h2, .footerright h2{
-    font-size: 2vw;
-}
 
-.footerleft p,.footerbottom{
-    font-size: 1.5vw;
-}
 
 /* Social media icon style */
 img.smicon{    
@@ -692,6 +693,10 @@ main.apex {
         /* reduce width due to image having more overall width when above text */
         max-width: 15%;
     }
+    /* Makes the footer become a column instead of row on smaller devices */
+   .footercontainer{
+    flex-direction: column;
+   }
 }
 
 /* Everything below sets a max width for larger devices */
@@ -707,7 +712,7 @@ main.apex {
     } 
     .matmodflex{
         max-width: 1800px;
-        padding: 0;
+
     }
     .matmodflex-item{
         max-width: 740px;
@@ -718,11 +723,12 @@ main.apex {
     article.github_textcontent_container p{
         max-width: 400px;
     }
-      
-    
-
-    
-      
+    .footercontainer{
+        max-width: 1600px;
+    }
+    img.smicon{
+        max-width: 120px;
+    }
 }
 
 
