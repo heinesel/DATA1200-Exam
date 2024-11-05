@@ -309,7 +309,6 @@ td {
 /* Changes color when hover over tables */
 tr:hover td {
     color: none;
-    cursor: pointer;
     background-color: #dccdcd !important;
  }
 /* Even rows background color */
