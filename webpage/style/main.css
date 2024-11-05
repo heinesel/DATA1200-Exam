@@ -85,7 +85,9 @@ footer {
 
 .footermiddle a{
     color: yellow !important;
-    line-height: 2;
+    line-height: 2.1;
+    font-size: 1.5vw;
+    
 }
 
 .footerleft h2, .footermiddle h2, .footerright h2{
