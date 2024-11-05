@@ -77,7 +77,7 @@ footer {
     padding: 0;
 }
 
-.footermiddle{
+.footermiddle, .footerbottom{
     display: flex;
     flex-direction: column;
     justify-content: center;
