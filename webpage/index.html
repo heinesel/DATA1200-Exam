@@ -10,10 +10,9 @@
 </head>
 
 <header>
-    <nav aria-label="Main Navigation">
-        <!--Matmod, GIT, Accessibility, Activity. Should be identical on all pages-->
+    <nav aria-label="navigasjon" role="navigation">
         <menu>
-            <li><a href="index.html">Matmod</a></li>
+            <li><a href="index.html" aria-current="page">Matmod</a></li>
             <li><a href="html/github.html">GIT</a></li>
             <li><a href="html/accsessibility.html">Accessibility</a></li>
             <li><a href="html/activity.html">Activity</a></li>
@@ -55,11 +54,11 @@
         <p class="sixty-width">Få innsikt i matematiske modeller og datadrevne metoder som kan løse mange praktiske og
             samfunnsnyttige oppgaver. </p>
     </article>
-    <h2>Om Studiet</h2>
-    <main>
-        <section class="matmodinfo"> <!--information about study in collapsable boxes-->
-            <details class="matmod"> <!--Details creates collapsable boxes-->
-                <summary>Hva lærer du i studiet?</summary>
+    <main> <!-- "Om Studiet" section -->
+        <h2>Om Studiet</h2> 
+        <section class="matmodinfo"> <!--information about study in collapsable boxes--> <!--Details creates collapsable boxes-->
+            <details class="matmod"> <!--"Hva lærer du i studiet" section-->
+                <summary>Hva lærer du i studiet?</summary> 
                 <p>Bachelor i matematisk modellering og datavitenskap kobler sammen matematikk, informatikk, fysikk og
                     statistikk.</p>
                 <p>Du får innsikt i matematiske modeller som brukes i praktisk problemløsning blant annet i medisinsk
@@ -70,7 +69,7 @@
                     arbeidslivet.
                     Første året velger du hvilken av disse spesialiseringene du vil ta.</p>
             </details>
-            <details class="matmod">
+            <details class="matmod"> <!--"Studiets oppbygging" section, with nested details + tables-->
                 <summary>Studiets oppbygging</summary>
                 <h2>Hvordan foregår undervisningen?</h2>
                 <p>Undervisningen er en kombinasjon av: </p>
@@ -751,7 +750,7 @@
                     </table>
                 </details>
             </details>
-            <details class="matmod">
+            <details class="matmod"> <!-- "Opptakskrav, søknad og kostnad" section-->
                 <summary>Opptakskrav, søknad og kostnad</summary>
                 <h2>Opptakskrav:</h2>
                 <p>For å søke på dette programmet må du ha</p>
@@ -779,8 +778,8 @@
                 <p>Det er ikke studieavgift på dette studiet. <a href="https://student.oslomet.no/semesteravgift">
                         Du betaler en semesteravgift hvert semester (student.oslomet.no)</a></p>
             </details>
-            <details class="matmod">
-                <summary>Studiestart</summary>
+            <details class="matmod"> <!-- "Studiestart section" -->
+                <summary>Studiestart</summary> 
                 <p>Informasjon om program, timeplaner, pensum, fadderuker og mye mer finner du på
                     <a href="https://student.oslomet.no/bachelor-matematisk-modellering-datavitenskap">
                         studiestartsiden for matematisk modellering og datavitenskap - ingeniør
@@ -793,16 +792,16 @@
                     plassert i klasse/gruppe.
                     Dette skjer vanligvis uken før studiestart.</p>
             </details>
-            <details class="matmod">
+            <details class="matmod"> <!-- "Utveksling" section-->
                 <summary>Utveksling</summary>
                 <p>Du kan dra på utveksling i femte semester.</p>
             </details>
-            <details class="matmod">
+            <details class="matmod"> <!--"Videre muligheter ved oslomet" section-->
                 <summary>Videre muligheter ved OsloMet</summary>
-                <p><a href="https://www.oslomet.no/studier/tkd/anvendt-data-informasjonsteknologi">
+                <p>Etter fullført bachelor kan du ta master i <a href="https://www.oslomet.no/studier/tkd/anvendt-data-informasjonsteknologi">
                         Anvendt data- og informasjonsteknologi (ACIT)</a></p>
             </details>
-            <details class="matmod">
+            <details class="matmod"> <!--"Hva kan du jobbe som" section-->
                 <summary>Hva kan du jobbe som?</summary>
                 <p>Med dette studiet får du IT-kompetanse som er etterspurt i arbeidslivet, særlig om du velger
                     spesialiseringene vitenskapelige beregninger eller statistiske og datadrevne metoder.</p>

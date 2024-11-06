@@ -454,14 +454,16 @@ section.image-grid-container img {
 article.github_textcontent_container {
     display: grid;
     grid-template-columns: repeat(2,1fr); /*https://developer.mozilla.org/en-US/docs/Web/CSS/repeat*/ 
-    padding-left: 5%;
-    padding-right: 5%;
     justify-items: center;
+    gap: 1rem 4rem;
+    max-width: 85%;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 article.github_textcontent_container p{ /* p elements inside grid*/
-    max-width: 330px;
     text-align: center; 
+    padding: 0.5rem;
 }
 
 /*.paragraf1_tekst, .paragraf2_tekst, .paragraf3_tekst */
@@ -487,21 +489,13 @@ article.github_textcontent_container p{ /* p elements inside grid*/
     line-height: 2em;
 }
 
-ol.temp{
-   /* border: #555;*/
-   
-}
-
 .listeramme li{
-    
-    padding: 5%;
+    padding: 0.5rem;
     font-weight: bold; 
 }
 
 .imgcomment {
-
-    padding-left: 50%;
-    padding-right: 50%;
+   text-align: center;
 }
 /*END SECTION*/
 

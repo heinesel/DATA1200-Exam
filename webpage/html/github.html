@@ -9,11 +9,10 @@
 </head>
 
 <header>
-    <nav>
-        <!--Matmod, GIT, Accessibility, Activity. Should be identical on all pages-->
+    <nav aria-label="navigasjon" role="navigation">
         <menu>
             <li><a href="../index.html">Matmod</a></li>
-            <li><a href="github.html">GIT</a></li>
+            <li><a href="github.html" aria-current="page">GIT</a></li>
             <li><a href="accsessibility.html">Accessibility</a></li>
             <li><a href="activity.html">Activity</a></li>
         </menu>
@@ -21,16 +20,10 @@
 </header>
 
 <body>
-
-    
-
     <main class="AllGit">
-<h1>Samarbeid i Github</h1>
+        <h1>Samarbeid i Github</h1>
         <article>
-
             <section class="image-grid-container">
-
-
                 <img src="../images/commit_history_one.png" alt="Commit history example 1">
                 <img src="../images/commit_history_two.png" alt="Commit history example 2">
                 <img src="../images/specific_change_one.png" alt="Specific change example 1">
@@ -40,14 +33,9 @@
             </section>
             <p id="imgcomment">Bilder av commithistorier
                  og endringer i skrift-estetikk.
-    </p>
+             </p>
         </article>
-
-
-
         <article class="github_textcontent_container">  <!--Container for the first two paragraphs--> 
-
-            
             <section class="paragraf1_tekst"> <!--paragraf 1--->
 
                 <!--Paragraph -->
@@ -59,58 +47,42 @@
                     <p>Github er en skybasert samarbeidsplattform hvor utviklere kan lage, lagre, operere og dele kode. (GitHub Docs, 2024)
                         Den plattformen er muliggjort igjennom verktøyet Git som er koblet til Github.</p>
             </section> <!--paragraf 1--->
-
-
-
-
-
             <section class="paragraf2_tekst">   <!--paragraf 2--->
 
                 <!--Avsnitt på 150-->
 
                 <h2>Samarbeid </h2>
-<p>Hver av gruppemedlemmene commitet til hovedgrenen flere ganger, og hver endring ble lagt til i commithistorien
-    hvor vi hadde kontroll over hvilke endringer som hadde blitt gjennomført, og av hvem. 
-    Det er lettere å se endringer ved å sammenligne ulikhetene mellom forrige og nyere versjoner av koden.
-    Eksempler på dette kan sees på bildene om commithistorien lenger opp på siden. 
-</p>
-<p>Ved å se enda nøyere på dette kan man se etter spesifikke endringer.
-    Eksempler på disse endringene kan være endringer i fontstørrelse, element-styling
-    og ved å legge til html-kommentarer for klarere kode. Dette bidrar til å unngå
-    kodefeil forårsaket av misforståelser.
-</p>
-
-
+                    <p>Hver av gruppemedlemmene commitet til hovedgrenen flere ganger, og hver endring ble lagt til i commithistorien
+                        hvor vi hadde kontroll over hvilke endringer som hadde blitt gjennomført, og av hvem. 
+                        Det er lettere å se endringer ved å sammenligne ulikhetene mellom forrige og nyere versjoner av koden.
+                        Eksempler på dette kan sees på bildene om commithistorien lenger opp på siden. 
+                    </p>
+                    <p>Ved å se enda nøyere på dette kan man se etter spesifikke endringer.
+                        Eksempler på disse endringene kan være endringer i fontstørrelse, element-styling
+                        og ved å legge til html-kommentarer for klarere kode. Dette bidrar til å unngå
+                        kodefeil forårsaket av misforståelser.
+                    </p>
             </section>
         </section>
-
         </article>
-
         <section class="gitlist">
 
             <!--Benefits list-->
 
             <h2>Fordeler</h2>    
             <p>Det er flere fordeler med å benytte Github i VSCode:</p>
-
             <section class ="listeramme">
-            <ul>
-                <li>Integrert git:</li>
-                <dd>Gjør at man kan stage, commit, push, og pull inni samme IDE.</dd>
-                
-                <li>Live share:</li>
-                <dd>Gjør at flere utviklere kan programmere samtidig, og se endringer i sanntid.</dd>
-                
-                <li>Direktetilgang til Github repositories:</li>
-                <dd>Gjør at man enkelt kan klone og bruke andre repositories uten å forlate VScode.</dd>
-                
-            </ul>
-        </section><!--listeramme-->
-
-    </section><!--gitlist-->
-
+                <ul>
+                    <li>Integrert git:</li>
+                    <dd>Gjør at man kan stage, commit, push, og pull inni samme IDE.</dd>
+                    <li>Live share:</li>
+                    <dd>Gjør at flere utviklere kan programmere samtidig, og se endringer i sanntid.</dd>
+                    <li>Direktetilgang til Github repositories:</li>
+                    <dd>Gjør at man enkelt kan klone og bruke andre repositories uten å forlate VScode.</dd>
+                </ul>
+            </section><!--listeramme-->
+        </section><!--gitlist-->
     </main>
-
 </body>
 <footer>
     <section class="footercontainer">
