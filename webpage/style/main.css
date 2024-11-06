@@ -489,21 +489,13 @@ article.github_textcontent_container p{ /* p elements inside grid*/
     line-height: 2em;
 }
 
-ol.temp{
-   /* border: #555;*/
-   
-}
-
 .listeramme li{
-    
-    padding: 5%;
+    padding: 0.5rem;
     font-weight: bold; 
 }
 
 .imgcomment {
-
-    padding-left: 50%;
-    padding-right: 50%;
+   text-align: center;
 }
 /*END SECTION*/
 
