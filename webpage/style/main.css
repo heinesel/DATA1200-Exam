@@ -99,7 +99,7 @@ footer {
 /* Sets line height and color for the links in footer */
 .footermiddle a{
     color: yellow !important;
-    line-height: 2;
+    line-height: 2.5;
 }
 
 /* Social media icon style */
@@ -664,9 +664,12 @@ main.apex {
     section.grid-container-shortinfo,
     .matmodflex,
     .matmodflex-item,
-    .matmodflex-item-long {
+    .matmodflex-item-long, 
+    div.right, 
+    div.left {
         width: 100%;
         max-width: 100%;
+        
     }
 
     /*Adjustment to 1 section per row on smaller devices*/
@@ -689,8 +692,19 @@ main.apex {
     img.fagleder{
         float: none;
         /* reduce width due to image having more overall width when above text */
-        max-width: 15%;
+        max-width: 25%;
     }
+    /* "Spå fremtiden content goes on top of each other on smaller devices*/
+    div.right, div.left{
+        float:none;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    /* Social media icons in footer gets more width to scale from on smaller devices */
+    img.smicon{ 
+        width: 10vw;
+    } 
     /* Makes the footer become a column instead of row on smaller devices */
    .footercontainer{
     flex-direction: column;
