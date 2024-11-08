@@ -14,7 +14,7 @@
     /* Sets the font for everything */
     font-family: Helvetica, Arial, sans-serif;
     /*Font size scale with screen size, with a max size and min size for readability and accessibility*/
-    font-size: clamp(0.9rem, 1.6vw, 1.5rem); 
+    font-size: clamp(1rem, 1.6vw, 1.5rem); 
 }
 
 /* END SECTION */
@@ -429,7 +429,7 @@ img.twoguyslaptop{
 /* Grid for images*/
 section.image-grid-container {
     display: grid;
-    grid-template-columns: repeat(2,1fr); /* two images placed side by side*/
+    grid-template-columns: 2fr 2fr; /* two images placed side by side*/
     gap: 1rem;
     align-items: stretch; 
     margin-right: auto;
