@@ -164,7 +164,7 @@ p.sixty-width {
 
 /* Small paragraph font, mostly used for images */
 p.tiny{
-    font-size: clamp(0.7rem, 1.1vw, 1.1rem);
+    font-size: clamp(0.7rem, 1.1vw, 0.9rem);
     padding-bottom: 0.5rem;
 }
 
@@ -430,21 +430,18 @@ img.twoguyslaptop{
 section.image-grid-container {
     display: grid;
     grid-template-columns: repeat(2,1fr); /* two images placed side by side*/
-    padding: 1vw;
-    gap: 1vw;
+    gap: 1rem;
     align-items: stretch; 
     margin-right: auto;
     margin-left: auto;
-   
 }
 
 section.image-grid-container img {
-    height: auto;
     width: 100%;
 }
 
 /* Includes two main subheadings*/
-article.github_textcontent_container {
+article.github-textcontent-container {
     display: grid;
     grid-template-columns: repeat(2,1fr); /*https://developer.mozilla.org/en-US/docs/Web/CSS/repeat*/ 
     justify-items: center;
@@ -454,23 +451,10 @@ article.github_textcontent_container {
     margin-left: auto;
 }
 
-article.github_textcontent_container p{ /* p elements inside grid*/
+article.github-textcontent-container p{ /* p elements inside grid*/
     text-align: left; 
     padding: 0.5rem;
     line-height: 1.5;
-}
-
-/*.paragraf1_tekst, .paragraf2_tekst, .paragraf3_tekst */
-.GridContainer {
-    display: grid;
-
-    /* display: inline-grid;*/
-}
-
-/*.alle_paragrafer, .paragraf1_tekst, .paragraf2_tekst, .paragraf3_tekst*/
-.alle_paragrafer {
-    grid-area: 1 / 2 / 5 / 6;
-    
 }
 
 .listeramme{
@@ -480,7 +464,6 @@ article.github_textcontent_container p{ /* p elements inside grid*/
     border: solid rgba(9,9,121,1); /*Frame around the list*/
     max-width: 40%;
     padding: 1rem;
-   
     
 }
 
@@ -669,14 +652,10 @@ main.apex {
     }
 
     /*Adjustment to 1 section per row on smaller devices*/
-    article.github_textcontent_container {
-        grid-template-columns: repeat(1,1fr);  
+    section.grid-container-shortinfo,
+    article.github-textcontent-container {
+        grid-template-columns: 1fr;  
 
-    }
-
-    /* short info boxes take up whole width on smaller devices */
-    section.grid-container-shortinfo {
-        grid-template-columns: 1fr;
     }
 
     .matmodflex{
@@ -697,12 +676,17 @@ main.apex {
         margin-right: auto;
         text-align: center;
     }
+
+    section.image-grid-container{
+        grid-template-columns: 1fr;
+    }
     /* Social media icons in footer gets more width to scale from on smaller devices */
     img.smicon{ 
         width: 10vw;
     } 
     /* Makes the footer become a column instead of row on smaller devices */
    .footercontainer{
+        
         flex-direction: column;
    }
 }
@@ -714,7 +698,7 @@ main.apex {
     p.sixty-width, 
     img.matmodtop, 
     .articletest,
-    article.github_textcontent_container,
+    article.github-textcontent-container,
     section.image-grid-container,
     .footercontainer{
         max-width: 1600px;
