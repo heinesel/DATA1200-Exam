@@ -417,7 +417,7 @@ img.matmodtop {
     height: auto;
     width: auto;
 }
-/* Sizing of fagleder/utdannings image in matmod */
+/* Sizing of "fagleder/utdannings" image in matmod */
 img.fagleder, img.utdannings_bilder{
     max-width: 35%;
     height: auto;
@@ -440,8 +440,9 @@ section.image-grid-container {
     display: grid;
     grid-template-columns: repeat(2,1fr); /* two images placed side by side*/
     padding: 1vw;
-    gap: 1vw; /* Distance between the images */
+    gap: 1vw;
     align-items: stretch; 
+   
     
 }
 
@@ -482,11 +483,11 @@ article.github_textcontent_container p{ /* p elements inside grid*/
 .listeramme{
     margin-left: 20%;
     margin-bottom: 5%;
-    border:  solid rgba(9,9,121,1);  
+    border:  solid rgba(9,9,121,1); /*Frame around the list*/
     max-width: 50%;
     max-height: 50%;
-    padding: 5%;
-    line-height: 2em;
+    padding: 0.5rem;
+    
 }
 
 .listeramme li{
