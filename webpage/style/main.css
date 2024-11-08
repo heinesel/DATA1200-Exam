@@ -65,7 +65,7 @@ footer {
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgb(0, 212, 255) 100%);
     
 }
-/* Makes the footer into a grid */
+/* Makes the footer into a flex boxes */
 .footercontainer{
     display: flex;
     justify-content: center;
@@ -84,7 +84,7 @@ footer {
     text-align: center;
 }
 
-/* Makes a grid inside the grid, to make middle and bottom footer flex in a column instead of row */
+/* Makes a flex box inside the flex container, to make middle and bottom footer content flex in a column instead of row */
 .footermiddle, .footerbottom{
     display: flex;
     flex-direction: column;
@@ -709,7 +709,7 @@ main.apex {
     } 
     /* Makes the footer become a column instead of row on smaller devices */
    .footercontainer{
-    flex-direction: column;
+        flex-direction: column;
    }
 }
 
@@ -718,9 +718,9 @@ main.apex {
     section.matmodinfo,  
     section.grid-container-shortinfo, 
     p.sixty-width, 
-
     img.matmodtop, 
-    .articletest{
+    .articletest,
+    .footercontainer{
         max-width: 1600px;
     } 
     .matmodflex{
@@ -735,9 +735,6 @@ main.apex {
     }
     article.github_textcontent_container p{
         max-width: 400px;
-    }
-    .footercontainer{
-        max-width: 1600px;
     }
     img.smicon{
         max-width: 120px;
