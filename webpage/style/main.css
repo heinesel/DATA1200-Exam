@@ -462,20 +462,15 @@ article.github-textcontent-container p{ /* p elements inside grid*/
     margin-right: auto;
     margin-bottom: 1rem;
     border: solid rgba(9,9,121,1); /*Frame around the list*/
-    max-width: 40%;
+    max-width: 50%;
     padding: 1rem;
     
 }
 
 .listeramme li{
-
     padding: 1rem;
     font-weight: bold; 
     line-height: 1rem;
-}
-
-.imgcomment {
-   text-align: center;
 }
 /*END SECTION*/
 
@@ -653,7 +648,8 @@ main.apex {
 
     /*Adjustment to 1 section per row on smaller devices*/
     section.grid-container-shortinfo,
-    article.github-textcontent-container {
+    article.github-textcontent-container,
+    section.image-grid-container {
         grid-template-columns: 1fr;  
 
     }
@@ -677,16 +673,17 @@ main.apex {
         text-align: center;
     }
 
-    section.image-grid-container{
-        grid-template-columns: 1fr;
+    .listeramme{
+        padding: 0.5rem;
+        max-width: 85%;
     }
+        
     /* Social media icons in footer gets more width to scale from on smaller devices */
     img.smicon{ 
         width: 10vw;
     } 
     /* Makes the footer become a column instead of row on smaller devices */
    .footercontainer{
-        
         flex-direction: column;
    }
 }
