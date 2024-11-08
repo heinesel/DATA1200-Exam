@@ -417,7 +417,7 @@ img.matmodtop {
     height: auto;
     width: auto;
 }
-/* Sizing of fagleder/utdannings image in matmod */
+/* Sizing of "fagleder/utdannings" image in matmod */
 img.fagleder, img.utdannings_bilder{
     max-width: 35%;
     height: auto;
@@ -440,8 +440,9 @@ section.image-grid-container {
     display: grid;
     grid-template-columns: repeat(2,1fr); /* two images placed side by side*/
     padding: 1vw;
-    gap: 1vw; /* Distance between the images */
+    gap: 1vw;
     align-items: stretch; 
+   
     
 }
 
