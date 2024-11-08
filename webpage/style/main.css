@@ -350,7 +350,7 @@ caption {
 }
 /* Styles the flex boxes in aside */
 .matmodflex-item{
-    background:rgb(0, 140, 255);
+    background:rgba(9,9,121,1);
     padding: 1rem;
     text-align: center;
     width: 31vw;
@@ -358,7 +358,7 @@ caption {
 }
 /* longer flex box for "spå fremtiden" */
 .matmodflex-item-long{
-    background:rgb(0, 140, 255);
+    background:rgba(9,9,121,1);
     padding: 1rem;
     text-align: center;
     width: 66.9vw;
