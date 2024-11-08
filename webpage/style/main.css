@@ -433,6 +433,8 @@ section.image-grid-container {
     padding: 1vw;
     gap: 1vw;
     align-items: stretch; 
+    margin-right: auto;
+    margin-left: auto;
    
 }
 
@@ -453,8 +455,9 @@ article.github_textcontent_container {
 }
 
 article.github_textcontent_container p{ /* p elements inside grid*/
-    text-align: center; 
+    text-align: left; 
     padding: 0.5rem;
+    line-height: 1.5;
 }
 
 /*.paragraf1_tekst, .paragraf2_tekst, .paragraf3_tekst */
@@ -471,19 +474,21 @@ article.github_textcontent_container p{ /* p elements inside grid*/
 }
 
 .listeramme{
-    margin-left: 20%;
-    margin-bottom: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
     border: solid rgba(9,9,121,1); /*Frame around the list*/
-    max-width: 50%;
-    max-height: auto;
-    padding: 2rem;
-    line-height: 1em;
+    max-width: 40%;
+    padding: 1rem;
+   
     
 }
 
 .listeramme li{
-    padding: 2rem;
+
+    padding: 1rem;
     font-weight: bold; 
+    line-height: 1rem;
 }
 
 .imgcomment {
@@ -501,7 +506,6 @@ article.github_textcontent_container p{ /* p elements inside grid*/
     max-height: 30%;
     
 }
-
 .testarticle{
     max-width: 65%;
     margin-right: auto;
@@ -710,6 +714,8 @@ main.apex {
     p.sixty-width, 
     img.matmodtop, 
     .articletest,
+    article.github_textcontent_container,
+    section.image-grid-container,
     .footercontainer{
         max-width: 1600px;
     } 
@@ -723,8 +729,8 @@ main.apex {
     .matmodflex-item-long{
         max-width: 1555px;
     }
-    article.github_textcontent_container p{
-        max-width: 400px;
+    article.github_textcontent_container p, .listeramme{
+        max-width: 600px;
     }
     img.smicon{
         max-width: 120px;
