@@ -119,10 +119,10 @@ img.smicon:hover{
 /* START GENERAL */
 /* CSS that applies to all pages only */
 
-h1,h2,h3,h4,h5,h6 {
-    /* Centers all headers, removes padding */
+h1,h2,h3,h4,h5,h6, body {
+    /* Centers all headers and text, removes padding */
     text-align: center;
-    padding: 0rem;
+    padding: 0;
 }
 
 h1 {
@@ -133,10 +133,8 @@ h2 {
     font-size: 1.6rem;
 }
 
- /* Centers all text within body */
+ /* Removes margin from body */
 body {
-    text-align: center;
-    padding: 0;
     margin: 0;
 }
 
@@ -163,16 +161,26 @@ p.sixty-width {
     margin: auto;
     padding: 1rem;
 }
-/* Small paragraph font, use where needed */
+
+/* Small paragraph font, mostly used for images */
 p.tiny{
     font-size: clamp(0.7rem, 1.1vw, 1.1rem);
     padding-bottom: 0.5rem;
 }
 
-
 /* END SECTION */
 
 /* START MATMOD */
+
+/* Centers content */
+section.grid-container-shortinfo, 
+section.matmodinfo,
+.matmodflex,
+div.fagleder, 
+div.utdanninger {
+    margin-right: auto;
+    margin-left: auto;
+}
 
 /*Grid for the short info boxes on top of matmod page */
 section.grid-container-shortinfo {
@@ -182,8 +190,6 @@ section.grid-container-shortinfo {
     grid-auto-flow: row;
     gap: 0em 2rem;
     max-width: 70%;
-    margin-right: auto;
-    margin-left: auto;
 }
 /* General style of short info boxes */
 div.grid-item-shortinfo {
@@ -200,8 +206,6 @@ section.matmodinfo {
     width: 65%;
     max-width: 100%;
     padding-bottom: 1rem;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 /*Styling for collapsable info boxes */
@@ -343,8 +347,6 @@ caption {
     justify-content: center;
     flex-wrap: wrap;
     max-width: 80%;
-    margin: auto;
-    margin: auto;
     gap: 1rem 1rem;
     padding-bottom: 1rem;
 }
@@ -366,8 +368,8 @@ caption {
 }
 /* Makes link color yellow in flex boxes */
 .matmodflex-item a, .matmodflex-item-long a p{
-        color: yellow;
-        text-decoration: underline;
+    color: yellow;
+    text-decoration: underline;
 }
 /* Styles the nested div box containing info about fagleder in matmod */
 div.fagleder, div.utdanninger{
@@ -376,12 +378,10 @@ div.fagleder, div.utdanninger{
     border-width: 0.1rem;
     float: left;
     padding: 0.5rem;
-    margin-right: auto;
-    margin-left: auto;
     width: 97%;
 }
 /*Adds a hover effect for classes with links */
-.utdanninger:hover,div.fagleder:hover{
+.utdanninger:hover, div.fagleder:hover{
     /* enlarges the div for emphasis */
     transform: scale(1.05); /* Slight zoom effect */
     /* Smooth transition for both applying and removing the zoom effect */
@@ -389,23 +389,18 @@ div.fagleder, div.utdanninger{
     text-decoration: underline;
 }
 
-.hover-link {
-    color: blue; /* Original color */
-    text-decoration: none; /* No underline by default */
-    transition: color 0.3s ease; /* Smooth transition for color change */
+/* Styling for "spå fremtiden" box */
+div.right, div.left{
+    width:45%
 }
 
-
-/* Styling for "spå fremtiden" box */
 div.left{
     float:left;
-    width: 45%;
     text-align: right;
     margin-left: 3%;
 }
 div.right{
    float: right;
-   width: 45%;
    margin-right: 3%;
    }
 
@@ -414,14 +409,10 @@ div.right{
 /* Sizing of decorative image in matmod */
 img.matmodtop {
     max-width: 70%;
-    height: auto;
-    width: auto;
 }
 /* Sizing of "fagleder/utdannings" image in matmod */
 img.fagleder, img.utdannings_bilder{
     max-width: 35%;
-    height: auto;
-    width: auto;
     /* Makes image sit to the left of text */
     float: left;
 }
@@ -443,7 +434,6 @@ section.image-grid-container {
     gap: 1vw;
     align-items: stretch; 
    
-    
 }
 
 section.image-grid-container img {
