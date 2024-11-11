@@ -590,31 +590,6 @@ header{
     transform: scale(1.05); /* Forstørrer bildet litt når musen er over */
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6); /* Svart skygge ved hover */
 }
-
-/* FAQ seksjon */
-.faq {
-    margin-top: 20px;
-}
-
-.faq ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.faq li {
-    margin: 10px 0;
-}
-
-.faq a {
-    text-decoration: none;
-    color: #007BFF;
-}
-
-.faq p {
-    margin-left: 15px;
-    color: #555;
-}
-
 /* END SECTION */
 
 
