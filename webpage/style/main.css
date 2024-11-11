@@ -495,52 +495,52 @@ article.github-textcontent-container p{ /* p elements inside grid*/
 
 /* START ACTIVITY */
 
-/* Generelle stiler */
+/* General styles */
 .activity-page {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4; /* Bakgrunnsfarge for siden */
+    background-color: #f4f4f4; /* Background color for the page */
 }
 
 header{
-    background-color: #333; /* Mørk bakgrunn for header */
-    color: #fff; /* Hvit tekstfarge */
+    background-color: #333; /* Dark background for header */
+    color: #fff; /* White text color */
     padding: 1rem;
     text-align: center;
 }
 
 .activity.main {
-    max-width: 1200px; /* Maks bredde for innholdet */
-    margin: 20px auto;
+    max-width: 1200px; /* Maximum width for content */
+    margin: 20px auto; /* Center content with auto margin */
     padding: 20px;
 }
 
-/* Hovedbilde seksjon */
+/* Main image section */
 .main-image {
     text-align: center;
-    margin-bottom: 20px; /* Avstand under hovedbilde */
+    margin-bottom: 20px; /* Spacing below main image */
 }
 
 .main-image img {
-    width: 60%; /* Fyller bredden 60% av sin beholder */
-    height: auto; /* Automatisk høyde for proporsjoner */
-    max-height: 400px; /* Maks høyde for hovedbildet */
-    object-fit: cover; /* Sørger for at bildet dekker området uten å bli deformert */
-    border-radius: 8px; /* Runde kanter på hovedbildet */
-    transition: transform 0.4s ease, box-shadow 0.4s ease; /* Overganger for effekter */
+    width: 60%; /* Image width fills 60% of its container */
+    height: auto; /* Automatic height to maintain aspect ratio */
+    max-height: 400px; /* Maximum height for main image */
+    object-fit: cover; /* Ensures image covers area without distortion */
+    border-radius: 8px; /* Rounded corners on main image */
+    transition: transform 0.4s ease, box-shadow 0.4s ease; /* Transitions for hover effects */
 }
 
-/* Hover-effekt på hovedbildet */
+/* Hover effect for main image */
 .main-image img:hover {
-    transform: scale(1.05); /* Forstørrer bildet litt når musen er over */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6); /* Svart skygge ved hover */
+    transform: scale(1.05); /* Slightly enlarges image on hover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6); /* Black shadow effect on hover */
 }
 
-/* Bildegalleri */
+/* Image gallery */
 .image-gallery {
     display: flex;
-    flex-direction: column; /* Lar elementene bryte til neste linje */
+    flex-direction: column; /* Stacks elements in a column */
     align-items: center; /* Centers images horizontally */
     margin: 20px 0;
 }
@@ -553,42 +553,42 @@ header{
     text-align: center;
 }
 
-/* Image Styling in Gallery */
+/* Styling for gallery images */
 .image-container img {
     width: 60%; /* Fills the full width of the container */
     height: auto; /* Maintains aspect ratio */
     max-height: 400px; /* Max height for gallery images */
     object-fit: cover; /* Ensures the image covers area without distortion */
     border-radius: 8px; /* Rounded corners for gallery images */
-    transition: transform 0.4s ease, box-shadow 0.4s ease; /* Smooth transition for effects */
+    transition: transform 0.4s ease, box-shadow 0.4s ease; /* Smooth transition for hover effects */
 }
 
-/* Hover-effekt på galleribilder */
+/* Hover effect on gallery images */
 .image-container:hover img {
-    transform: scale(1.05); /* Forstørrer bildet litt når musen er over */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6); /* Svart skygge ved hover */
+    transform: scale(1.05); /* Slightly enlarges image on hover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6); /* Black shadow effect on hover */
 }
 
-/* Kart seksjon */
+/* Map section */
 .maps {
-    max-width: 1600px; /* Sett ønsket bredde her */
-    margin: 0 auto; /* Sentrerer teksten */
-    text-align: center; /* Sentrerer tekstinnholdet */
+    max-width: 1600px; /* Sets desired width here */
+    margin: 0 auto; /* Centers the text */
+    text-align: center; /* Centers text content */
 }
 
 .maps img {
-    width: 60%; /* Fyller bredden av sin beholder */
-    height: auto; /* Automatisk høyde for proporsjoner */
-    max-height: 400px; /* Maks høyde for kartbildet */
-    object-fit: cover; /* Sørger for at bildet dekker området uten å bli deformert */
-    border-radius: 8px; /* Runde kanter på kartbildet */
-    transition: transform 0.4s ease, box-shadow 0.4s ease; /* Overganger for effekter */
+    width: 60%; /* Fills width of its container */
+    height: auto; /* Automatic height to maintain aspect ratio */
+    max-height: 400px; /* Maximum height for map image */
+    object-fit: cover; /* Ensures image covers area without distortion */
+    border-radius: 8px; /* Rounded corneres for map image */
+    transition: transform 0.4s ease, box-shadow 0.4s ease; /* Transitions for hover effects */
 }
 
-/* Hover-effekt på kartbildet */
+/* Hover effect on map image */
 .maps img:hover {
-    transform: scale(1.05); /* Forstørrer bildet litt når musen er over */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6); /* Svart skygge ved hover */
+    transform: scale(1.05); /* Slightly enlarges image on hover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6); /* Black shadow effect on hover */
 }
 /* END SECTION */
 
