@@ -463,7 +463,7 @@ div.accessibility-measures-img{
     border-radius: 8px; /* Rounded corners for gallery images */
     transition: transform 0.4s ease, box-shadow 0.4s ease; /* Smooth transition for hover effects */
 }
-/* Hover effect for main image */
+/* Hover effect for images */
 .wide-image img:hover, .image-gallery-item:hover img {
     transform: scale(1.05); /* Slightly enlarges image on hover */
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6); /* Black shadow effect on hover */
@@ -473,12 +473,11 @@ div.accessibility-measures-img{
     display: flex;
     flex-direction: column; /* Stacks elements in a column */
     align-items: center; /* Centers images horizontally */
-    margin: 20px 0;
 }
 /* Individual Image Container */
 .image-gallery-item {
-    width: 60%; /* Matches the width of wide image */
-    margin: 10px 0; /* Space around each gallery image */
+    width: 75%; /* Matches the width of wide image */
+    margin: 0.5rem; /* Space around each gallery image */
     position: relative; /* Allows for positioning adjustments */
 }
 
