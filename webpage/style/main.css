@@ -203,7 +203,6 @@ section.matmodinfo {
     max-width: 100%;
     padding-bottom: 1rem;
 }
-
 /*Styling for collapsable info boxes */
 details.matmod {
     border-top: 0.1rem solid;
@@ -430,7 +429,6 @@ article.github-textcontent-container p{
     border: solid rgba(9,9,121,1); /*Frame around the list*/
     max-width: 50%;
     padding: 1rem;
-    
 }
 .listeramme li{
     padding: 1rem;
