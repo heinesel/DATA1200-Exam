@@ -22,60 +22,56 @@
 </header>
 
 <body>
-    <main>
+    <article> <!-- Samarbeid i Github section -->
         <h1>Samarbeid i Github</h1>
-        <article>
+            <!-- Grid for images, two by two -->
             <section class="image-grid-container">
                 <img src="../images/commit-history-one.png" alt="Bilde 1 av 2 av commit historie i git">
                 <img src="../images/commit-history-two.png" alt="Bilde 2 av 2 av commit historie i git">
                 <img src="../images/specific-change-one.png" alt="Bilde 1 av 2 av spesefik endring i git">
                 <img src="../images/specific-change-two.png" alt="Bilde 2 av 2 av spesefik endring i git">                
             </section>
-            <p class="tiny" aria-hidden="true">Bilder av commithistorier
-                 og endringer i skrift-estetikk.
-             </p>
+            <p class="tiny" aria-hidden="true">Bilder av commithistorier og endringer i skrift-estetikk.</p>
         </article>
-        <article class="github-textcontent-container">  <!--Container for the first two paragraphs--> 
-            <section> 
+        <!-- Grid container for the first two paragraphs--> 
+        <article class="github-textcontent-container"> 
+            <section>  <!-- Paragraph 1 -->
                 <h2>Git og GitHub</h2>
-                <p> Gruppen vår benyttet Git og Github som verktøy under prosjektet vårt.
+                    <p> Gruppen vår benyttet Git og Github som verktøy under prosjektet vårt.
                     Git er en Open-source distribuert versjonskontrollsystem som muliggjør kontinuelig gruppesamarbeid
                     på tvers av rom på en måte som unngår at vært medlemms bidrag ikke forstyrrer andre medlemmers
-                    bidrag (Robert, 2023). Derav unngår man å merge sin egen kode med andre sin på en uhensiktsmessig måte.</p>
+                    bidrag (Robert, 2023). Derav unngår man å merge sin egen kode med andre sin på en uhensiktsmessig måte.
+                    </p>
                     <p>Github er en skybasert samarbeidsplattform hvor utviklere kan lage, lagre, operere og dele kode. (GitHub Docs, 2024)
-                        Den plattformen er muliggjort igjennom verktøyet Git som er koblet til Github.</p>
-            </section>
-            <section>   
-                <h2>Samarbeid </h2>
-                    <p>Hver av gruppemedlemmene commitet til hovedgrenen flere ganger, og hver endring ble lagt til i commithistorien
-                        hvor vi hadde kontroll over hvilke endringer som hadde blitt gjennomført, og av hvem. 
-                        Det er lettere å se endringer ved å sammenligne ulikhetene mellom forrige og nyere versjoner av koden.
-                        Eksempler på dette kan sees på bildene om commithistorien lenger opp på siden. 
+                    Den plattformen er muliggjort igjennom verktøyet Git som er koblet til Github.
                     </p>
-                    <p>Ved å se enda nøyere på dette kan man se etter spesifikke endringer.
-                        Eksempler på disse endringene kan være endringer i fontstørrelse, element-styling
-                        og ved å legge til html-kommentarer for klarere kode. Dette bidrar til å unngå
-                        kodefeil forårsaket av misforståelser.
-                    </p>
-            </section>
         </section>
-        </article>
-        <section class="gitlist">
-            <!--Benefits list-->
-            <h2>Fordeler</h2>    
+        <section> <!-- Paragraph 2: -->
+            <h2>Samarbeid </h2>
+                <p>Hver av gruppemedlemmene commitet til hovedgrenen flere ganger, og hver endring ble lagt til i commithistorien
+                hvor vi hadde kontroll over hvilke endringer som hadde blitt gjennomført, og av hvem. 
+                Det er lettere å se endringer ved å sammenligne ulikhetene mellom forrige og nyere versjoner av koden.
+                Eksempler på dette kan sees på bildene om commithistorien lenger opp på siden. 
+                </p>
+                <p>Ved å se enda nøyere på dette kan man se etter spesifikke endringer.
+                Eksempler på disse endringene kan være endringer i fontstørrelse, element-styling
+                og ved å legge til html-kommentarer for klarere kode. Dette bidrar til å unngå
+                kodefeil forårsaket av misforståelser.
+                </p>
+        </section>
+    </article>
+    <article> <!--Benefits list-->
+        <h2>Fordeler</h2>    
             <p>Det er flere fordeler med å benytte Github i VSCode:</p>
+        <!-- Border for list -->
             <section class ="listeramme">
                 <ul>
                     <li>Integrert git: <p>Gjør at man kan stage, commit, push, og pull inni samme IDE.</p></li>
-                    
                     <li>Live share: <p>Gjør at flere utviklere kan programmere samtidig, og se endringer i sanntid.</p></li>
-                  
                     <li>Direktetilgang til Github repositories: <p>Gjør at man enkelt kan klone og bruke andre repositories uten å forlate VScode.</p></li>
-                
                 </ul>
-            </section><!--listeramme-->
-        </section><!--gitlist-->
-    </main>
+            </section>
+    </article>
 </body>
 
 <!-- Same for all pages, only links to icons change -->
