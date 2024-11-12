@@ -22,84 +22,77 @@
 </header>
 
 <body>
-<!-- "Accsessibility test" section of page -->
-<article class="accessibility-measures">
-    <section>
-    <h1>Accessibility test</h1>
-    <p class="sixty-width"> For å teste accsessibility på vår nettside brukte vi verktøyene Wave og lighthouse. 
-        I lighthouse så fikk vi advarsel om at vi hadde for lav kontrast på flere av stedene på indeks siden,
-        dette løste vi ved å endre fargen på bakgrunnen til siden. Når vi kjørte testen på nytt fikk vi ikke lenger varsel om lav kontrast. 
-        I wave så fikk vi ingen varsler om Accessibility.
-    </p>
-    </section>
-    <section class="image-grid-container">
-        <img src="../images/lighthouse-test.png" alt="Test resultater fra lighthouse">
-        <img src="../images/lighthouse-contrast-warning.png" alt="Advarsel fra lighthouse om lav kontrast">
-    </section>
-    <div class="accessibility-measures-img"> 
-        <!-- Uses div class that is meant to center image at bottom, but here it centers image text -->
-        <p class="tiny" aria-hidden="true">Bilde av test resultater fra verktøyet lighthouse</p>
-    </div>
-</article>
-<!-- "Accsessibility tiltak utenom automatiske tester" section of page-->
-<article class="accessibility-measures">
-    <h2>Accsessibility tiltak utenom automatiske tester:</h2>
-        <p class="sixty-width"> For å sikre god tilgjengelighet på nettsidene våre, 
+    <!-- Class aligns text to left for readability -->
+    <article class="accessibility-measures"> <!-- "Accsessibility test" section of page -->
+        <section>
+            <h1>Accessibility test</h1>
+                <p class="sixty-width"> For å teste accsessibility på vår nettside brukte vi verktøyene Wave og lighthouse. 
+                I lighthouse så fikk vi advarsel om at vi hadde for lav kontrast på flere av stedene på indeks siden,
+                dette løste vi ved å endre fargen på bakgrunnen til siden. Når vi kjørte testen på nytt fikk vi ikke lenger varsel om lav kontrast. 
+                I wave så fikk vi ingen varsler om Accessibility.
+                </p>
+        </section>
+        <!-- Image grid, two by two -->
+        <section class="image-grid-container">
+            <img src="../images/lighthouse-test.png" alt="Test resultater fra lighthouse">
+            <img src="../images/lighthouse-contrast-warning.png" alt="Advarsel fra lighthouse om lav kontrast">
+        </section>
+        <div class="accessibility-measures-img"> 
+            <!-- Uses div class that is meant to center image at bottom, but here it centers image text -->
+            <p class="tiny" aria-hidden="true">Bilde av test resultater fra verktøyet lighthouse</p>
+        </div>
+    </article>
+    <article class="accessibility-measures"> <!-- "Accsessibility tiltak utenom automatiske tester" section of page-->
+        <h2>Accsessibility tiltak utenom automatiske tester:</h2>
+            <p class="sixty-width"> For å sikre god tilgjengelighet på nettsidene våre, 
             har vi implementert en rekke tiltak utover det som kan fanges opp av verktøy som Wave. 
             Dette er gjort for å møte behovene til personer med synshemminger, motoriske utfordringer og andre funksjonsvariasjoner, 
             slik at opplevelsen deres blir så sømløs og inkluderende som mulig.
-        </p>
-
+            </p>
         <h3>Minimum tekststørrelse:</h3>
             <p class="sixty-width"> En av de viktigste tiltakene vi har tatt er å sette en minimum tekststørrelse på alle sider. 
-                Ved å sikre at tekst ikke blir for liten, gjør vi det lettere for synshemmede brukere å lese innholdet uten å måtte bruke ekstra zoom. 
-                Dette kan også hjelpe andre brukere med å unngå anstrengelse og tretthet i øynene.
+            Ved å sikre at tekst ikke blir for liten, gjør vi det lettere for synshemmede brukere å lese innholdet uten å måtte bruke ekstra zoom. 
+            Dette kan også hjelpe andre brukere med å unngå anstrengelse og tretthet i øynene.
             </p>
-        
         <h3>Dekorative bilder med "role=presentation":</h3> 
             <p class="sixty-width">For å skape en bedre opplevelse for brukere av skjermlesere, 
-                har vi også sørget for å markere dekorative bilder med role="presentation". 
-                Dette forteller skjermleseren at disse bildene kun er til pynt og ikke inneholder informasjon som er viktig for forståelsen av innholdet. 
-                Dermed unngår vi at skjermleseren forstyrrer brukeren med unødvendig informasjon, noe som gir en mer effektiv og behagelig navigasjon på siden.
+            har vi også sørget for å markere dekorative bilder med role="presentation". 
+            Dette forteller skjermleseren at disse bildene kun er til pynt og ikke inneholder informasjon som er viktig for forståelsen av innholdet. 
+            Dermed unngår vi at skjermleseren forstyrrer brukeren med unødvendig informasjon, noe som gir en mer effektiv og behagelig navigasjon på siden.
             </p>
-
         <h3> Indikasjon på aktiv side:</h3> 
             <p class="sixty-width">Når en bruker befinner seg på en bestemt side i navigasjonsmenyen, er det viktig at de enkelt kan forstå hvor de er. 
-                For å oppnå dette har vi lagt til aria-current="page" på den aktive siden i navigasjonen. 
-                Dette gir skjermlesere beskjed om at denne siden er den brukeren ser på, og hjelper dem med å orientere seg bedre.
+            For å oppnå dette har vi lagt til aria-current="page" på den aktive siden i navigasjonen. 
+            Dette gir skjermlesere beskjed om at denne siden er den brukeren ser på, og hjelper dem med å orientere seg bedre.
             </p>
-
         <h3>Tilrettelegging av navigasjon med ARIA og HTML-roller:</h3>   
             <p class="sixty-width">Navigasjonsmenyen vår har fått både aria-label="navigasjon" og role="navigation", som hjelper skjermlesere å identifisere menyen som navigasjonsverktøy. 
-                Denne merkingen gjør det mulig for brukere av skjermlesere å forstå at dette er en meny for å navigere rundt på siden, noe som igjen gir en mer presis og responsiv opplevelse.
+            Denne merkingen gjør det mulig for brukere av skjermlesere å forstå at dette er en meny for å navigere rundt på siden, noe som igjen gir en mer presis og responsiv opplevelse.
             </p>
-
         <h3>Bruk av semantiske HTML-elementer:</h3>    
             <p class="sixty-width">For å optimalisere siden for skjermlesere, har vi også vært nøye med semantisk HTML. For eksempel har vi brukt riktige overskrifter som h1, h2 og så videre,
-                slik at hierarkiet i innholdet kommer klart frem. Dette gjør det enklere for skjermlesere å tolke strukturen på siden og gi brukeren en god oversikt.
+            slik at hierarkiet i innholdet kommer klart frem. Dette gjør det enklere for skjermlesere å tolke strukturen på siden og gi brukeren en god oversikt.
             </p>
-
         <h3>Klare ord og uttrykk:</h3>
             <p class="sixty-width">Vi har unngått forkortelser og brukt hele setninger der det er mulig, 
-                slik at skjermleserne kan lese opp teksten uten forvirring. 
-                 Dette hjelper brukere med å forstå teksten fullt ut, spesielt de som er nye til skjermlesere eller har språkutfordringer.
+            slik at skjermleserne kan lese opp teksten uten forvirring. 
+            Dette hjelper brukere med å forstå teksten fullt ut, spesielt de som er nye til skjermlesere eller har språkutfordringer.
             </p>
-
         <h3>Meningsfulle lenketekster:</h3>
             <p class="sixty-width">I lenker har vi også sørget for at teksten gir brukeren en idé om hvor lenken vil føre dem. 
-                For eksempel har vi unngått generiske lenketekster som "klikk her" og heller brukt forklarende tekst som "les mer om tilgjengelighet". 
-                Dette gir bedre kontekst for alle brukere, men spesielt for de som benytter skjermlesere.
+            For eksempel har vi unngått generiske lenketekster som "klikk her" og heller brukt forklarende tekst som "les mer om tilgjengelighet". 
+            Dette gir bedre kontekst for alle brukere, men spesielt for de som benytter skjermlesere.
             </p>
         <h3>Tilstrekkelig mellomrom mellom lenker:</h3>
             <p class="sixty-width">Vi har lagt til tilstrekkelig med mellomrom mellom lenker og ikoner for å gjøre det lettere å trykke på riktig lenke.
-                Dette kan bidre med at personer med motoriske problemer vil ha en bedre opplevelse på nettsiden.
+            Dette kan bidre med at personer med motoriske problemer vil ha en bedre opplevelse på nettsiden.
             </p>
+            <!-- Centers image and image text at bottom -->
             <div class="accessibility-measures-img">
-            <img src="../images/sm-icon-gap-accsessibility.png" alt="Bilde av kode som viser mellomrom mellom sosiale medie ikoner">
-            <p class="tiny" aria-hidden="true">Bilde av kode som viser mellomrom mellom sosiale medie ikoner</p>
+                <img src="../images/sm-icon-gap-accsessibility.png" alt="Bilde av kode som viser mellomrom mellom sosiale medie ikoner">
+                <p class="tiny" aria-hidden="true">Bilde av kode som viser mellomrom mellom sosiale medie ikoner</p>
             </div>
-            
-</article>
+    </article>
 </body>
 
 <!-- Same for all pages, only links to icons change -->
