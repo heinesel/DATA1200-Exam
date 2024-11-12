@@ -229,9 +229,7 @@ summary {
     cursor: pointer;
     text-align: left;
 }
-/* border around "Tabeller" under "studiets oppbygging" */
-
-/* Makes summary text normal were needed, ex: nested tables under "studiets oppbygging */
+/* border around "emnegrupper" under "studiets oppbygging" */
 summary.tabletext {
     border-radius: 0.5rem;
     background-color: #fcfcfc;
