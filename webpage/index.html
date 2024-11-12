@@ -1,17 +1,16 @@
 <!DOCTYPE html>
+<!-- Sets languague of page to norwegian -->
 <html lang="no">
 
 <!-- Same for all pages, only title and style link change -->
 <head>
-    <title>Matematisk Modellering</title>
+    <title>Matematisk Modellering</title> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="style/main.css">
-    
 </head>
 
 <!-- Nav menu, same for all pages, only links and aria-current change -->
-
 <header>
     <nav aria-label="navigasjon" role="navigation">
         <menu>
@@ -26,10 +25,13 @@
 <body>
     <article> <!--Basic info about study-->
         <h1>Matematisk modellering og datavitenskap - ingeniør</h1>
+        <!-- role="presentation" tells screen reader image is decorative -->
         <img class="matmodtop" src="images/matematisk-modellering.jpg" alt="" role="presentation"> <!--Decorative image, no need for alt text-->
+        <!-- tiny class, used mostly for small image text -->
         <p class="tiny">Foto: Benjamin Ward / OsloMet </p>
         <section class="grid-container-shortinfo"> <!--Grid for the basic information-->
-            <div class="grid-item-shortinfo">
+            <!-- Sets each div as a seperate grid item -->
+            <div class="grid-item-shortinfo">   
                 <p>Type:<br>Bachelorprogram</p>
             </div>
             <div class="grid-item-shortinfo">
@@ -54,13 +56,16 @@
                 <p>Studiepoeng:<br>180</p>
             </div>
         </section>
+        <!-- p with a max width of 60% -->
         <p class="sixty-width">Få innsikt i matematiske modeller og datadrevne metoder som kan løse mange praktiske og
             samfunnsnyttige oppgaver. </p>
     </article>
-    <main> <!-- "Om Studiet" section -->
+    <main> <!-- "Om Studiet" section, most important section-->
         <h2>Om Studiet</h2> 
-        <section class="matmodinfo"> <!--information about study in collapsable boxes--> <!--Details creates collapsable boxes-->
-            <details class="matmod"> <!--"Hva lærer du i studiet" section-->
+        <section class="matmodinfo"> <!--information about study in collapsable boxes--> 
+            <!--Details creates collapsable boxes-->
+            <!-- Summary creates a "heading" for each detail box -->
+            <details class="matmod"> <!--"Hva lærer du i studiet" section--> 
                 <summary>Hva lærer du i studiet?</summary> 
                 <p>Bachelor i matematisk modellering og datavitenskap kobler sammen matematikk, informatikk, fysikk og
                     statistikk.</p>
@@ -805,8 +810,10 @@
             </details>
         </section>
     </main>
+    <!-- Flex-box for aside items -->
     <aside class="matmodflex"> <!--Info boxes at bottom of page, not as important-->
-        <section class="matmodflex-item">  
+        <!-- Sets each section as seperate flex-item -->
+        <section class="matmodflex-item">  <!-- Spørsmål and fagleder section -->
             <h2>Har du spørsmål om utdanningen?</h2>
             <a href="https://www.oslomet.no/kontaktskjema#For%20utdanningss%C3%B8kere?faculty=Fakultet%20for%20teknologi,%20kunst%20og%20design" target="_blank">
                 Har du spørsmål om utdanningen, kontakt oss gjennom vårt kontaktskjema.
@@ -819,42 +826,44 @@
                 </div>
                 </a>
         </section>
-        <section class="matmodflex-item"> 
+        <section class="matmodflex-item"> <!-- Other interests section -->
             <h2>Du er kanskje interresert i disse?</h2>
             <a href="https://www.oslomet.no/studier/tkd/tre-termin-ingenior" title="Les mer om tre-terminsordning for ingeniørutdanning">
-                <div class="utdanninger"> <!-- Link to a specific "program" with an image and description -->
-                    <img class="utdannings_bilder" src="images/tre-termin-ingenior.jpg" alt="Tre-terminsordning til ingeniørutdanning">
+                <div class="utdanninger">
+                    <img class="utdannings-bilder" src="images/tre-termin-ingenior.jpg" alt="Tre-terminsordning til ingeniørutdanning">
                     <p>Tre-terminsordning til ingeniørutdanning</p>
                 </div>
             </a>
             <a href="https://www.oslomet.no/studier/tkd/bioteknologi-kjemiingenior" title="Les mer om Bioteknologi- og kjemiingeniør">
                 <div class="utdanninger">
-                    <img class="utdannings_bilder" src="images/bioteknologi-kjemi-ingenior.jpg" alt="Bioteknologi- og kjemiingeniør">
+                    <img class="utdannings-bilder" src="images/bioteknologi-kjemi-ingenior.jpg" alt="Bioteknologi- og kjemiingeniør">
                     <p>Bioteknologi- og kjemiingeniør</p>
                 </div>
             </a>
             <a href="https://www.oslomet.no/studier/tkd/dataingenior" title="Les mer om dataingenior bachelor">
                 <div class="utdanninger">
-                    <img class="utdannings_bilder" src="images/dataing-bachelor.jpg" alt="Dataingeniør bachelor">
+                    <img class="utdannings-bilder" src="images/dataing-bachelor.jpg" alt="Dataingeniør bachelor">
                     <p>Dataingeniør<br>bachelor</p>
                 </div>
             </a>
             <a href="https://www.oslomet.no/studier/tkd/anvendt-datateknologi" title="Les mer om Anvendt datateknologi bachelor">
                 <div class="utdanninger">
-                    <img class="utdannings_bilder" src="images/anvendt-datateknologi-bachelor.jpg" alt="Anvendt datateknologi bachelor">
+                    <img class="utdannings-bilder" src="images/anvendt-datateknologi-bachelor.jpg" alt="Anvendt datateknologi bachelor">
                     <p>Anvendt datateknologi bachelor</p>
                 </div>
             </a>
         </section> 
-        </section>
-        <section class="matmodflex-item-long"> 
+        <!-- Long-item takes up whole width instead of half -->
+        <section class="matmodflex-item-long"> <!-- Spå fremtiden section -->
             <h2>Spå fremtiden med matematikk og datavitenskap</h2> 
             <p class="tiny">Foto: Oda Hveem / OsloMet</p>
                 <a href="https://www.oslomet.no/studier/studenthistorier/spa-fremtiden-matematikk-datavitenskap">
+                <!-- Text float left -->
                 <div class="left">
                     <p>Har du lyst til å finne ut hva som vil skje i fremtiden?
-                       Lær å bruke verktøy for å forutsi alt fra været og strømprisene til utviklingen i boligmarkedet.</p>
+                       Lær å bruke verktøy for å forutsi alt fra været og strømprisene til utviklingeni boligmarkedet.</p>
                 </div>     
+                <!-- Image float right -->
                 <div class="right">
                     <img class="twoguyslaptop" src="images/twoguyslaptop.jpg" alt="Spå fremtiden med matematikk og datavitenskap">
                 </div>   
