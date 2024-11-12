@@ -544,7 +544,6 @@ div.accessibility-measures-img{
 
 /*For smaller devices*/
 @media (max-width: 758px) {
-
     /* Sections take up whole width on smaller devices */
     .articletest, 
     section.matmodinfo,
@@ -556,14 +555,12 @@ div.accessibility-measures-img{
     div.left {
         width: 100%;
         max-width: 100%;
-        
     }
     /*Adjustment to 1 section per row on smaller devices*/
     section.grid-container-shortinfo,
     article.github-textcontent-container,
     section.image-grid-container {
         grid-template-columns: 1fr;  
-
     }
     .matmodflex{
         /* Makes gap between boxes slightly larger on small devices*/
@@ -596,6 +593,7 @@ div.accessibility-measures-img{
    }
 }
 
+/* For larger devices */
 /* Everything below sets a max width for larger devices */
 @media (min-width: 1600px) {
     section.matmodinfo,  
@@ -610,7 +608,6 @@ div.accessibility-measures-img{
     } 
     .matmodflex{
         max-width: 1800px;
-
     }
     .matmodflex-item{
         max-width: 740px;
