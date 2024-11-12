@@ -248,13 +248,9 @@ summary {
     text-align: left;
 }
 
-/* Makes summary text normal were needed, ex: nested tables under "studiets oppbygging */
+
+/* border around "Tabeller" under "studiets oppbygging" */
 summary.tabletext {
-    font-size: 1.05rem;
-    font-weight: bold;
-    padding: 0.8rem;
-    cursor: pointer;
-    text-align: left;
     border-radius: 0.5rem;
     background-color: #fcfcfc;
     border: 1px solid #d1d1d1; 
@@ -266,6 +262,7 @@ summary.tabletext:hover {
 } 
 
 /* Styling of tables in matmod*/
+
 /* changes the border */
 table {
     border-collapse: separate; 
@@ -292,7 +289,7 @@ table a:hover {
     text-decoration-color: #0056b3;
 }
 
-/* Adds and styles a bullet point symbol */
+/* Adds and styles a bullet point symbol for some tables cells */
 .valgfri-emne td:nth-child(3)::after{
     content: '•';
     color: #599f69; 
