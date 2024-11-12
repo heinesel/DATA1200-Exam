@@ -451,52 +451,11 @@ div.accessibility-measures-img{
 
 /* START ACTIVITY */
 
-/* General styles */
-.activity-page {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4; /* Background color for the page */
-}
-.activity.main {
-    max-width: 1200px; /* Maximum width for content */
-    margin: 20px auto; /* Center content with auto margin */
-    padding: 20px;
-}
-/* Main image section */
-.main-image {
+.wide-image, .image-gallery-item, .maps{
     text-align: center;
-    margin-bottom: 20px; /* Spacing below main image */
-}
-.main-image img {
-    width: 60%; /* Image width fills 60% of its container */
-    height: auto; /* Automatic height to maintain aspect ratio */
-    max-height: 400px; /* Maximum height for main image */
-    object-fit: cover; /* Ensures image covers area without distortion */
-    border-radius: 8px; /* Rounded corners on main image */
-    transition: transform 0.4s ease, box-shadow 0.4s ease; /* Transitions for hover effects */
-}
-/* Hover effect for main image */
-.main-image img:hover {
-    transform: scale(1.05); /* Slightly enlarges image on hover */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6); /* Black shadow effect on hover */
-}
-/* Image gallery */
-.image-gallery {
-    display: flex;
-    flex-direction: column; /* Stacks elements in a column */
-    align-items: center; /* Centers images horizontally */
-    margin: 20px 0;
-}
-/* Individual Image Container */
-.image-container {
-    width: 60%; /* Matches the width of the main image */
-    margin: 10px 0; /* Space around each gallery image */
-    position: relative; /* Allows for positioning adjustments */
-    text-align: center;
-}
-/* Styling for gallery images */
-.image-container img {
+} 
+
+.wide-image img, .image-gallery-item img {
     width: 60%; /* Fills the full width of the container */
     height: auto; /* Maintains aspect ratio */
     max-height: 400px; /* Max height for gallery images */
@@ -504,30 +463,25 @@ div.accessibility-measures-img{
     border-radius: 8px; /* Rounded corners for gallery images */
     transition: transform 0.4s ease, box-shadow 0.4s ease; /* Smooth transition for hover effects */
 }
-/* Hover effect on gallery images */
-.image-container:hover img {
+/* Hover effect for main image */
+.wide-image img:hover, .image-gallery-item:hover img {
     transform: scale(1.05); /* Slightly enlarges image on hover */
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6); /* Black shadow effect on hover */
 }
-/* Map section */
-.maps {
-    max-width: 1600px; /* Sets desired width here */
-    margin: 0 auto; /* Centers the text */
-    text-align: center; /* Centers text content */
+/* Image gallery */
+.image-gallery-container {
+    display: flex;
+    flex-direction: column; /* Stacks elements in a column */
+    align-items: center; /* Centers images horizontally */
+    margin: 20px 0;
 }
-.maps img {
-    width: 60%; /* Fills width of its container */
-    height: auto; /* Automatic height to maintain aspect ratio */
-    max-height: 400px; /* Maximum height for map image */
-    object-fit: cover; /* Ensures image covers area without distortion */
-    border-radius: 8px; /* Rounded corneres for map image */
-    transition: transform 0.4s ease, box-shadow 0.4s ease; /* Transitions for hover effects */
+/* Individual Image Container */
+.image-gallery-item {
+    width: 60%; /* Matches the width of wide image */
+    margin: 10px 0; /* Space around each gallery image */
+    position: relative; /* Allows for positioning adjustments */
 }
-/* Hover effect on map image */
-.maps img:hover {
-    transform: scale(1.05); /* Slightly enlarges image on hover */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6); /* Black shadow effect on hover */
-}
+
 /* END SECTION */
 
 /*START MEDIA QUERIES*/
