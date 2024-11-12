@@ -401,7 +401,7 @@ img.matmodtop {
     max-width: 70%;
 }
 /* Sizing of "fagleder/utdannings" image in matmod */
-img.fagleder, img.utdannings_bilder{
+img.fagleder, img.utdannings-bilder{
     max-width: 35%;
     /* Makes image sit to the left of text */
     float: left;
