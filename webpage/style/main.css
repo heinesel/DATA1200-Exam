@@ -168,6 +168,19 @@ p.tiny{
     padding-bottom: 0.5rem;
 }
 
+section.image-grid-container {
+    display: grid;
+    grid-template-columns: 2fr 2fr; /* two images placed side by side*/
+    gap: 1rem;
+    align-items: stretch; 
+    margin-right: auto;
+    margin-left: auto;
+}
+
+section.image-grid-container img {
+    width: 100%;
+}
+
 /* END SECTION */
 
 /* START MATMOD */
@@ -426,21 +439,7 @@ img.twoguyslaptop{
 
 /*START GITHUB*/
 
-/* Grid for images*/
-section.image-grid-container {
-    display: grid;
-    grid-template-columns: 2fr 2fr; /* two images placed side by side*/
-    gap: 1rem;
-    align-items: stretch; 
-    margin-right: auto;
-    margin-left: auto;
-}
-
-section.image-grid-container img {
-    width: 100%;
-}
-
-/* Includes two main subheadings*/
+/* Grid, Includes two main subheadings*/
 article.github-textcontent-container {
     display: grid;
     grid-template-columns: repeat(2,1fr); /*https://developer.mozilla.org/en-US/docs/Web/CSS/repeat*/ 
@@ -451,12 +450,15 @@ article.github-textcontent-container {
     margin-left: auto;
 }
 
-article.github-textcontent-container p{ /* p elements inside grid*/
+/* p elements inside grid*/
+article.github-textcontent-container p{ 
     text-align: left; 
     padding: 0.5rem;
     line-height: 1.5;
+
 }
 
+/* Style of frame around list in github page */
 .listeramme{
     margin-left: auto;
     margin-right: auto;
@@ -474,25 +476,19 @@ article.github-textcontent-container p{ /* p elements inside grid*/
 }
 /*END SECTION*/
 
-
-/*START ACCESSIBILITY */
-.img_tests img{
-    min-width: 50%;
-    max-width: 30%;
-
-    min-height: 50%;
-    max-height: 30%;
-    
-}
-.testarticle{
-    max-width: 65%;
-    margin-right: auto;
-    margin-left: auto;
-}
-
 /*add media query ultrawide max width 1600*/ 
 /*END SECTION*/
 
+/* START ACCSESSIBILITY */
+
+/* Aligns text to the left, makes it easier to read */
+article.accessibility-measures{
+    text-align: left;   
+}
+/* Stops image at bottom from also aligning to the left */
+div.accessibility-measures-img{
+    text-align: center;
+}
 /* START ACTIVITY */
 
 /* General styles */
@@ -501,13 +497,6 @@ article.github-textcontent-container p{ /* p elements inside grid*/
     margin: 0;
     padding: 0;
     background-color: #f4f4f4; /* Background color for the page */
-}
-
-header{
-    background-color: #333; /* Dark background for header */
-    color: #fff; /* White text color */
-    padding: 1rem;
-    text-align: center;
 }
 
 .activity.main {
