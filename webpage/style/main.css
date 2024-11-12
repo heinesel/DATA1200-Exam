@@ -16,7 +16,6 @@
     /*Font size scale with screen size, with a max size and min size for readability and accessibility*/
     font-size: clamp(1rem, 1.6vw, 1.5rem); 
 }
-
 /* END SECTION */
 
 /* START HEADER */
@@ -36,7 +35,6 @@ nav menu{
     padding:0;
     padding-bottom: 0.5rem;
 }
-
 /* Sets size of the menu items */
 nav li{
     width: 10rem;
@@ -44,7 +42,6 @@ nav li{
     margin: 0.2rem;
     padding: 1rem;
     font-size: clamp(1.1rem, 3vw, 1.5rem);
-    
 }
  /* Style of links in menu */
 nav a{
@@ -52,12 +49,10 @@ nav a{
     color: yellow !important;
     text-decoration: none;
 }
-
  /* Makes it clearer that you are hovering over a menu item */
 nav a:hover {
     text-decoration: underline;
 }
-
 /* END SECTION /*
 
 /* START FOOTER */
@@ -83,25 +78,21 @@ footer {
     padding: 0;
     text-align: center;
 }
-
 /* Makes a flex box inside the flex container, to make middle and bottom footer content flex in a column instead of row */
 .footermiddle, .footerbottom{
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-
 /* Sets a font size for the footer */
 .footerleft p, .footermiddle a{
     font-size: clamp(0.7rem, 1.5vw, 1.5rem);
 }
-
 /* Sets line height and color for the links in footer */
 .footermiddle a{
     color: yellow !important;
     line-height: 2.5;
 }
-
 /* Social media icon style */
 img.smicon{    
     width: 4.5vw;   
@@ -124,20 +115,16 @@ h1,h2,h3,h4,h5,h6, body {
     text-align: center;
     padding: 0;
 }
-
 h1 {
     font-size: 2rem;
 }
-
 h2 {
     font-size: 1.6rem;
 }
-
  /* Removes margin from body */
 body {
     margin: 0;
 }
-
 /* Sets default link style */
 a:link {
     color: blue;
@@ -149,8 +136,7 @@ a:hover {
 a:visited {
     color: purple;
 }
-
-/* SECTION*/
+/* END SECTION*/
 
 /* START TEMPLATES */
 /* Styling that can be used on multiple pages or elements */
@@ -161,13 +147,12 @@ p.sixty-width {
     margin: auto;
     padding: 1rem;
 }
-
 /* Small paragraph font, mostly used for images */
 p.tiny{
     font-size: clamp(0.7rem, 1.1vw, 0.9rem);
     padding-bottom: 0.5rem;
 }
-
+/* A container for images, will place two by two  */
 section.image-grid-container {
     display: grid;
     grid-template-columns: 2fr 2fr; /* two images placed side by side*/
@@ -176,11 +161,10 @@ section.image-grid-container {
     margin-right: auto;
     margin-left: auto;
 }
-
+/* Sets width of images for image-grid-container */
 section.image-grid-container img {
     width: 100%;
 }
-
 /* END SECTION */
 
 /* START MATMOD */
@@ -194,7 +178,6 @@ div.utdanninger {
     margin-right: auto;
     margin-left: auto;
 }
-
 /*Grid for the short info boxes on top of matmod page */
 section.grid-container-shortinfo {
     /* Auto-resizing grid layout: https://blog.stackademic.com/auto-resizing-grid-layout-with-html-css-3ec0e3b56c52 */
@@ -238,7 +221,6 @@ details[open].matmod h2  {
     line-height: 2rem;
     font-size: 1rem;
 }
-
  /* Styles the summary style of the collapsable boxes */
 summary {
     font-size: 1.05rem;
@@ -250,6 +232,7 @@ summary {
 
 
 /* border around "Tabeller" under "studiets oppbygging" */
+/* Makes summary text normal were needed, ex: nested tables under "studiets oppbygging */
 summary.tabletext {
     border-radius: 0.5rem;
     background-color: #fcfcfc;
@@ -263,6 +246,7 @@ summary.tabletext:hover {
 
 /* Styling of tables in matmod*/
 
+
 /* changes the border */
 table {
     border-collapse: separate; 
@@ -275,7 +259,6 @@ table {
     margin: 1.25em 0;
     table-layout: fixed;
 }
-
 /* Link styling in tables */
 table a {
     color: inherit !important;
@@ -290,6 +273,7 @@ table a:hover {
 }
 
 /* Adds and styles a bullet point symbol for some tables cells */
+/* Adds and styles a bullet point symbol */
 .valgfri-emne td:nth-child(3)::after{
     content: '•';
     color: #599f69; 
@@ -297,7 +281,6 @@ table a:hover {
     font-size: 1.5rem; 
     text-align: right !important;
 }
-
 /* General styling for table cells */
 td,th {
     border: none;
@@ -320,12 +303,10 @@ th {
     color: #fff;
     font-weight: bold;
 }
-
 /* Aligns text in table cells*/
 td {
     text-align: left;
 }
-
 /* Changes color when hover over tables */
 tr:hover td {
     color: none;
@@ -336,7 +317,6 @@ tr:nth-child(even) td {
     background-color: #eeecec;
     
 }
-
 /* Odd rows background color */
 tr:nth-child(odd) td {
     background-color: #f9f7f7;
@@ -349,6 +329,8 @@ caption {
     font-size: 1rem;
     color: #555
 }
+
+/* Styling for aside in matmod */
 
 /*Flex container for aside in matmod*/
 .matmodflex{
@@ -398,12 +380,10 @@ div.fagleder, div.utdanninger{
     transition: transform 0.3s ease, transform 0.2s ease-out 0.1s; 
     text-decoration: underline;
 }
-
 /* Styling for "spå fremtiden" box */
 div.right, div.left{
     width:45%
 }
-
 div.left{
     float:left;
     text-align: right;
@@ -426,12 +406,10 @@ img.fagleder, img.utdannings_bilder{
     /* Makes image sit to the left of text */
     float: left;
 }
-
 /* Sizing of image in "spå fremtiden" box */
 img.twoguyslaptop{
     max-width: 100%;
 }
-
 /* END SECTION */
 
 /*START GITHUB*/
@@ -446,7 +424,6 @@ article.github-textcontent-container {
     margin-right: auto;
     margin-left: auto;
 }
-
 /* p elements inside grid*/
 article.github-textcontent-container p{ 
     text-align: left; 
@@ -454,7 +431,6 @@ article.github-textcontent-container p{
     line-height: 1.5;
 
 }
-
 /* Style of frame around list in github page */
 .listeramme{
     margin-left: auto;
@@ -465,15 +441,11 @@ article.github-textcontent-container p{
     padding: 1rem;
     
 }
-
 .listeramme li{
     padding: 1rem;
     font-weight: bold; 
     line-height: 1rem;
 }
-/*END SECTION*/
-
-/*add media query ultrawide max width 1600*/ 
 /*END SECTION*/
 
 /* START ACCSESSIBILITY */
@@ -486,6 +458,8 @@ article.accessibility-measures{
 div.accessibility-measures-img{
     text-align: center;
 }
+/* END ACCSESSIBILITY */
+
 /* START ACTIVITY */
 
 /* General styles */
@@ -495,19 +469,16 @@ div.accessibility-measures-img{
     padding: 0;
     background-color: #f4f4f4; /* Background color for the page */
 }
-
 .activity.main {
     max-width: 1200px; /* Maximum width for content */
     margin: 20px auto; /* Center content with auto margin */
     padding: 20px;
 }
-
 /* Main image section */
 .main-image {
     text-align: center;
     margin-bottom: 20px; /* Spacing below main image */
 }
-
 .main-image img {
     width: 60%; /* Image width fills 60% of its container */
     height: auto; /* Automatic height to maintain aspect ratio */
@@ -516,13 +487,11 @@ div.accessibility-measures-img{
     border-radius: 8px; /* Rounded corners on main image */
     transition: transform 0.4s ease, box-shadow 0.4s ease; /* Transitions for hover effects */
 }
-
 /* Hover effect for main image */
 .main-image img:hover {
     transform: scale(1.05); /* Slightly enlarges image on hover */
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6); /* Black shadow effect on hover */
 }
-
 /* Image gallery */
 .image-gallery {
     display: flex;
@@ -530,7 +499,6 @@ div.accessibility-measures-img{
     align-items: center; /* Centers images horizontally */
     margin: 20px 0;
 }
-
 /* Individual Image Container */
 .image-container {
     width: 60%; /* Matches the width of the main image */
@@ -538,7 +506,6 @@ div.accessibility-measures-img{
     position: relative; /* Allows for positioning adjustments */
     text-align: center;
 }
-
 /* Styling for gallery images */
 .image-container img {
     width: 60%; /* Fills the full width of the container */
@@ -548,20 +515,17 @@ div.accessibility-measures-img{
     border-radius: 8px; /* Rounded corners for gallery images */
     transition: transform 0.4s ease, box-shadow 0.4s ease; /* Smooth transition for hover effects */
 }
-
 /* Hover effect on gallery images */
 .image-container:hover img {
     transform: scale(1.05); /* Slightly enlarges image on hover */
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6); /* Black shadow effect on hover */
 }
-
 /* Map section */
 .maps {
     max-width: 1600px; /* Sets desired width here */
     margin: 0 auto; /* Centers the text */
     text-align: center; /* Centers text content */
 }
-
 .maps img {
     width: 60%; /* Fills width of its container */
     height: auto; /* Automatic height to maintain aspect ratio */
@@ -570,7 +534,6 @@ div.accessibility-measures-img{
     border-radius: 8px; /* Rounded corneres for map image */
     transition: transform 0.4s ease, box-shadow 0.4s ease; /* Transitions for hover effects */
 }
-
 /* Hover effect on map image */
 .maps img:hover {
     transform: scale(1.05); /* Slightly enlarges image on hover */
@@ -578,12 +541,10 @@ div.accessibility-measures-img{
 }
 /* END SECTION */
 
-
 /*START MEDIA QUERIES*/
 
 /*For smaller devices*/
 @media (max-width: 758px) {
-
     /* Sections take up whole width on smaller devices */
     .articletest, 
     section.matmodinfo,
@@ -595,22 +556,17 @@ div.accessibility-measures-img{
     div.left {
         width: 100%;
         max-width: 100%;
-        
     }
-
     /*Adjustment to 1 section per row on smaller devices*/
     section.grid-container-shortinfo,
     article.github-textcontent-container,
     section.image-grid-container {
         grid-template-columns: 1fr;  
-
     }
-
     .matmodflex{
         /* Makes gap between boxes slightly larger on small devices*/
         gap: 1.5rem 1.5rem;
     }
-
     /* Fagleder image goes above text on smaller devices */
     img.fagleder{
         float: none;
@@ -624,12 +580,10 @@ div.accessibility-measures-img{
         margin-right: auto;
         text-align: center;
     }
-
     .listeramme{
         padding: 0.5rem;
         max-width: 85%;
     }
-        
     /* Social media icons in footer gets more width to scale from on smaller devices */
     img.smicon{ 
         width: 10vw;
@@ -640,6 +594,7 @@ div.accessibility-measures-img{
    }
 }
 
+/* For larger devices */
 /* Everything below sets a max width for larger devices */
 @media (min-width: 1600px) {
     section.matmodinfo,  
@@ -654,7 +609,6 @@ div.accessibility-measures-img{
     } 
     .matmodflex{
         max-width: 1800px;
-
     }
     .matmodflex-item{
         max-width: 740px;
@@ -669,6 +623,4 @@ div.accessibility-measures-img{
         max-width: 120px;
     }
 }
-
-
 /* END SECTION */
