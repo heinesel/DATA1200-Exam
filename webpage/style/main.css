@@ -441,12 +441,16 @@ article.github-textcontent-container p{
 
 /* Aligns text to the left, makes it easier to read */
 article.accessibility-measures{
-    text-align: left;   
+    text-align: left;  
 }
 /* Stops image at bottom from also aligning to the left */
 div.accessibility-measures-img{
     text-align: center;
 }
+div.accessibility-measures-img img{
+    width: 75%;
+}
+
 /* END ACCSESSIBILITY */
 
 /* START ACTIVITY */
@@ -495,7 +499,8 @@ div.accessibility-measures-img{
     .matmodflex-item,
     .matmodflex-item-long, 
     div.right, 
-    div.left {
+    div.left,
+    div.accessibility-measures-img img {
         width: 100%;
         max-width: 100%;
     }
@@ -546,7 +551,8 @@ div.accessibility-measures-img{
     .articletest,
     article.github-textcontent-container,
     section.image-grid-container,
-    .footercontainer{
+    .footercontainer, 
+    div.accessibility-measures-img img{
         max-width: 1600px;
     } 
     .matmodflex{
