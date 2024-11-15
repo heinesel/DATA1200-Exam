@@ -440,17 +440,22 @@ article.github-textcontent-container p{
 /* START ACCSESSIBILITY */
 
 /* Aligns text to the left, makes it easier to read */
-article.accessibility-measures{
+article.accessibility-measures {
     text-align: left;  
+}
+/* Line height and spacing for paragraphs */
+article.accessibility-measures p {
+    line-height: 1.5;
+    padding-top: 0;
 }
 /* Stops image at bottom from also aligning to the left */
 div.accessibility-measures-img{
     text-align: center;
 }
+/* Scaling for image at bottom of page */
 div.accessibility-measures-img img{
     width: 75%;
 }
-
 /* END ACCSESSIBILITY */
 
 /* START ACTIVITY */
@@ -458,7 +463,6 @@ div.accessibility-measures-img img{
 .wide-image, .image-gallery-item, .maps{
     text-align: center;
 } 
-
 .wide-image img, .image-gallery-item img {
     width: 60%; /* Fills the full width of the container */
     height: auto; /* Maintains aspect ratio */
@@ -484,7 +488,6 @@ div.accessibility-measures-img img{
     margin: 0.5rem; /* Space around each gallery image */
     position: relative; /* Allows for positioning adjustments */
 }
-
 /* END SECTION */
 
 /*START MEDIA QUERIES*/
@@ -540,7 +543,6 @@ div.accessibility-measures-img img{
         flex-direction: column;
    }
 }
-
 /* For larger devices */
 /* Everything below sets a max width for larger devices */
 @media (min-width: 1600px) {
