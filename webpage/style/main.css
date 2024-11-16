@@ -572,10 +572,12 @@ div.accessibility-measures-img img{
     section.image-grid-container,
     .footercontainer, 
     div.accessibility-measures-img img,
-    .wide-image,
     .image-gallery-item{
         max-width: 1600px;
     } 
+    .wide-image{
+        max-width: 1900px;
+    }
     p.sixty-width{
         max-width: 1200px;
     }
@@ -594,5 +596,8 @@ div.accessibility-measures-img img{
     img.smicon{
         max-width: 120px;
     }   
+    .image-gallery-item img{
+        width: 100%;
+    }
 }
 /* END SECTION */
