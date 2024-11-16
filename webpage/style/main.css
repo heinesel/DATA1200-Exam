@@ -459,7 +459,6 @@ div.accessibility-measures-img img{
 
 .wide-image, .image-gallery-item{
     text-align: center;
-    max-width: 80%;
     margin-right: auto;
     margin-left: auto;
 } 
@@ -477,10 +476,10 @@ div.accessibility-measures-img img{
 }
 /* Wide image wider than gallery image */
 .wide-image img{
-    width: 100%;
+    width: 80%;
 }
 .image-gallery-item img{
-    width: 90%;
+    width: 70%;
 } 
 /* Image gallery */
 .image-gallery-container {
