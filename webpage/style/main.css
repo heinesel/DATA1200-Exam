@@ -146,6 +146,7 @@ p.sixty-width {
     max-width: 60%;
     margin: auto;
     padding: 1rem;
+    text-align: left;
 }
 /* Small paragraph font, mostly used for images */
 p.tiny{
@@ -439,10 +440,6 @@ article.github-textcontent-container p{
 
 /* START ACCSESSIBILITY */
 
-/* Aligns text to the left, makes it easier to read */
-article.accessibility-measures {
-    text-align: left;  
-}
 /* Line height and spacing for paragraphs */
 article.accessibility-measures p {
     line-height: 1.5;
@@ -460,7 +457,7 @@ div.accessibility-measures-img img{
 
 /* START ACTIVITY */
 
-.wide-image, .image-gallery-item, .maps{
+.wide-image, .image-gallery-item{
     text-align: center;
     max-width: 80%;
     margin-right: auto;
@@ -483,7 +480,7 @@ div.accessibility-measures-img img{
     width: 100%;
 }
 .image-gallery-item img{
-    width: 80%;
+    width: 90%;
 } 
 /* Image gallery */
 .image-gallery-container {
@@ -493,7 +490,6 @@ div.accessibility-measures-img img{
 }
 /* Individual Image Container */
 .image-gallery-item {
-    width: 75%; /* Matches the width of wide image */
     margin: 0.5rem; /* Space around each gallery image */
     position: relative; /* Allows for positioning adjustments */
 }
@@ -552,9 +548,19 @@ div.accessibility-measures-img img{
         width: 10vw;
     } 
     /* Makes the footer become a column instead of row on smaller devices */
-   .footercontainer{
+    .footercontainer{
         flex-direction: column;
-   }
+    }
+    /* Wider containers and images for smaller devices on activity page*/
+    .wide-image, .image-gallery-item{
+    max-width: 95%;
+    }
+    .wide-image img{
+        width: 95%;
+    }
+   .image-gallery-item img{
+    width: 85%;
+    } 
 }
 /* For larger devices */
 /* Everything below sets a max width for larger devices */
